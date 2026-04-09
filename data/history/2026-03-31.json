@@ -1,0 +1,87 @@
+{
+  "day": {
+    "date": "2026-03-31",
+    "rows": [
+      {
+        "game": "Godfather Megaways 94% RTP",
+        "source": "octopus",
+        "ggr_eur": 6733.97,
+        "rev_share_eur": 269.36,
+        "wager_eur": 41331.43,
+        "date": "2026-03-31",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Family Feud",
+        "source": "octopus",
+        "ggr_eur": 34.2,
+        "rev_share_eur": 1.37,
+        "wager_eur": 19935.06,
+        "date": "2026-03-31",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Stadium Megaways 94% RTP",
+        "source": "octopus",
+        "ggr_eur": 1444.25,
+        "rev_share_eur": 57.77,
+        "wager_eur": 12484.96,
+        "date": "2026-03-31",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Rambo",
+        "source": "octopus",
+        "ggr_eur": 972.55,
+        "rev_share_eur": 38.9,
+        "wager_eur": 7050.16,
+        "date": "2026-03-31",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Godfather Megaways 96% RTP",
+        "source": "octopus",
+        "ggr_eur": 961.14,
+        "rev_share_eur": 38.45,
+        "wager_eur": 4549.25,
+        "date": "2026-03-31",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Stadium Megaways 96% RTP",
+        "source": "octopus",
+        "ggr_eur": -1546.73,
+        "rev_share_eur": -61.87,
+        "wager_eur": 4116.64,
+        "date": "2026-03-31",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Ace Ventura",
+        "source": "octopus",
+        "ggr_eur": 611.01,
+        "rev_share_eur": 24.44,
+        "wager_eur": 4051.97,
+        "date": "2026-03-31",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Charlies Angels",
+        "source": "octopus",
+        "ggr_eur": 126.8,
+        "rev_share_eur": 5.07,
+        "wager_eur": 369.04,
+        "date": "2026-03-31",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      }
+    ]
+  }
+}
