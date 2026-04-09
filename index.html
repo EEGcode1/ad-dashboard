@@ -124,9 +124,7 @@ td.num{font-variant-numeric:tabular-nums;font-weight:600}
 td.src{font-size:11px;padding:10px 8px}
 .src-badge{display:inline-block;padding:2px 7px;border-radius:99px;font-size:10px;font-weight:600}
 .sb-lnw{background:#dbeafe;color:#1d4ed8}
-.sb-oct{background:#ede9fe;color:#7c3aed}
-.sb-bg{background:#fce7f3;color:#be185d}
-.sb-cc{background:#ccfbf1;color:#0d9488}
+.sb-bbg{background:#ede9fe;color:#7c3aed}
 .empty-row td{text-align:center;color:var(--mute);font-style:italic;padding:28px}
 
 /* Source status panel */
@@ -176,17 +174,18 @@ footer{text-align:center;font-size:12px;color:var(--mute);padding:32px 0 20px}
       <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
       Games
     </a>
+    <a class="nav-link" href="launch.html">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+      Launch Planner
+    </a>
     <a class="nav-link" href="roadmap.html">
       <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
       Roadmap
     </a>
   </div>
   <div class="nav-sources" id="nav-sources">
-    <span class="src-label">sources</span>
+    <span class="src-label">LNW data</span>
     <span class="src-dot" id="nd-lnw" title="LNW"></span>
-    <span class="src-dot" id="nd-oct" title="Octopus"></span>
-    <span class="src-dot" id="nd-bg"  title="BGaming"></span>
-    <span class="src-dot" id="nd-cc"  title="Crown Coins"></span>
   </div>
 </nav>
 
@@ -196,17 +195,17 @@ footer{text-align:center;font-size:12px;color:var(--mute);padding:32px 0 20px}
     <div class="hero-top">
       <div class="hero-eyebrow">Atlantic Digital · Internal Portal</div>
       <div class="hero-title">Revenue &amp; Pipeline Hub</div>
-      <div class="hero-sub">Live regulated + pre-reg revenue. Games catalogue. Delivery roadmap. One place.</div>
+      <div class="hero-sub">LNW AD Revenue · Games catalogue · Delivery roadmap. One place.</div>
       <div class="hero-id" id="hero-stamp">Loading data…</div>
     </div>
     <div class="kpi-grid">
       <div class="kpi">
-        <div class="label">Yesterday Combined</div>
+        <div class="label">Yesterday AD Revenue</div>
         <div class="val" id="k-yesterday">—</div>
         <div class="sub2" id="k-date">—</div>
       </div>
       <div class="kpi">
-        <div class="label">MTD Combined</div>
+        <div class="label">MTD AD Revenue</div>
         <div class="val" id="k-mtd">—</div>
         <div class="sub2" id="k-month">—</div>
       </div>
@@ -243,8 +242,8 @@ footer{text-align:center;font-size:12px;color:var(--mute);padding:32px 0 20px}
       <h3>LNW Revenue</h3>
       <p>SGI "Previous Day – By Game" reporting. 4% GGR rev share. Source-of-truth parsers only — no Gary's reports.</p>
       <div class="sc-metrics" id="fin-metrics">
-        <div class="sc-m"><span class="mk">Yesterday rev share</span><span class="mv" id="fm-yesterday">—</span></div>
-        <div class="sc-m"><span class="mk">MTD rev share</span><span class="mv" id="fm-mtd">—</span></div>
+        <div class="sc-m"><span class="mk">Yesterday AD Revenue</span><span class="mv" id="fm-yesterday">—</span></div>
+        <div class="sc-m"><span class="mk">MTD AD Revenue</span><span class="mv" id="fm-mtd">—</span></div>
         <div class="sc-m"><span class="mk">Source</span><span class="mv" id="fm-src">—</span></div>
       </div>
       <div class="sc-cta">Open Finance dashboard →</div>
@@ -310,9 +309,9 @@ footer{text-align:center;font-size:12px;color:var(--mute);padding:32px 0 20px}
             <tr>
               <th>#</th>
               <th>Game</th>
-              <th>Source</th>
+              <th>Route</th>
               <th>GGR</th>
-              <th>Rev Share</th>
+              <th>AD Revenue</th>
             </tr>
           </thead>
           <tbody id="top-games-body">
@@ -348,8 +347,16 @@ footer{text-align:center;font-size:12px;color:var(--mute);padding:32px 0 20px}
 <script>
 const EUR = v => '€' + Number(v||0).toLocaleString('en-GB',{minimumFractionDigits:0,maximumFractionDigits:0});
 const DT  = new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short'});
-const SRC_LABELS = {lnw:'LNW',octopus:'Octopus',bgaming:'BGaming',crowncoins:'Crown Coins',godfather:'Godfather'};
-const SRC_BADGE  = {lnw:'sb-lnw',octopus:'sb-oct',bgaming:'sb-bg',crowncoins:'sb-cc'};
+const SRC_LABELS = {lnw:'LNW Direct',bbg:'BBG',godfather:'BBG · Godfather','ace-ventura':'BBG · Ace Ventura'};
+const SRC_BADGE  = {lnw:'sb-lnw',bbg:'sb-bbg'};
+function routeLabel(g){
+  if(!g.game) return 'LNW';
+  const n = g.game.toLowerCase();
+  if(n.includes('godfather')||n.includes('the offer')) return 'BBG · GF';
+  if(n.includes('ace ventura')) return 'BBG · AV';
+  return 'LNW';
+}
+function routeBadge(g){ return routeLabel(g).startsWith('BBG') ? 'sb-bbg' : 'sb-lnw'; }
 
 async function load(){
   try{
@@ -372,9 +379,9 @@ function render(d){
   const mtdMonth = d.mtd?.month||'—';
 
   // KPIs
-  document.getElementById('k-yesterday').textContent = EUR(td.combined_total_eur);
+  document.getElementById('k-yesterday').textContent = EUR(td.lnw_rev_share_eur);
   document.getElementById('k-date').textContent = dayDate;
-  document.getElementById('k-mtd').textContent = EUR(tm.combined_total_eur);
+  document.getElementById('k-mtd').textContent = EUR(tm.lnw_rev_share_eur);
   document.getElementById('k-month').textContent = mtdMonth;
 
   // Live games count (unique games with yesterday data)
@@ -396,18 +403,13 @@ function render(d){
   document.getElementById('gm-active').textContent =
     new Set((d.day?.rows||[]).map(r=>r.game)).size || '—';
 
-  // Nav dots
-  ['lnw','octopus','bgaming','crowncoins'].forEach((s,i)=>{
-    const ids = ['nd-lnw','nd-oct','nd-bg','nd-cc'];
-    const el  = document.getElementById(ids[i]);
-    const ok  = d.sources?.[s]?.ok;
-    el.className = 'src-dot '+(ok?'ok':ok===false?'bad':'');
-  });
+  // Nav dot — LNW only
+  const lnwSrc = d.sources?.lnw||{};
+  document.getElementById('nd-lnw').className = 'src-dot '+(lnwSrc.ok?'ok':lnwSrc.ok===false?'bad':'');
 
-  // Source status panel
-  const srcs = ['lnw','octopus','bgaming','crowncoins'];
-  document.getElementById('source-status-list').innerHTML = srcs.map(s=>{
-    const src = d.sources?.[s]||{};
+  // Source status panel — LNW only
+  document.getElementById('source-status-list').innerHTML = (()=>{
+    const src = d.sources?.lnw||{};
     const stClass = src.ok ? 'ok' : src.ok===false ? 'bad' : 'unknown';
     const detail  = src.ok
       ? `${src.row_count||0} rows · ${src.covered_date||'—'}`
@@ -415,11 +417,11 @@ function render(d){
     return `<div class="status-item">
       <div class="status-dot ${stClass}"></div>
       <div class="status-info">
-        <div class="status-name">${SRC_LABELS[s]}</div>
+        <div class="status-name">LNW (SGI daily files)</div>
         <div class="status-detail">${detail}</div>
       </div>
     </div>`;
-  }).join('');
+  })();
 
   // Top 10 games table
   document.getElementById('top-date').textContent = mtdMonth;
@@ -429,11 +431,12 @@ function render(d){
       '<tr class="empty-row"><td colspan="5">No data yet — run the build first.</td></tr>';
   } else {
     document.getElementById('top-games-body').innerHTML = top10.map((g,i)=>{
-      const cls = SRC_BADGE[g.source]||'';
+      const lbl = routeLabel(g);
+      const cls = routeBadge(g);
       return `<tr>
         <td style="color:var(--mute);font-size:12px">${i+1}</td>
         <td class="game-name">${g.game}</td>
-        <td class="src"><span class="src-badge ${cls}">${SRC_LABELS[g.source]||g.source}</span></td>
+        <td class="src"><span class="src-badge ${cls}">${lbl}</span></td>
         <td class="num">${EUR(g.ggr_eur)}</td>
         <td class="num">${EUR(g.rev_share_eur||g.net_revenue_eur)}</td>
       </tr>`;
