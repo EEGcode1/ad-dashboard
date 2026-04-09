@@ -257,8 +257,8 @@ function renderWeekChart(d){
   const series = d.week?.by_day || [];
   const labels = series.map(s=>s.date.slice(5));
   const ggr    = series.map(s=>{
-    // back-compute GGR from rev share (÷0.04)
-    return s.lnw ? Math.round(s.lnw / 0.04) : 0;
+    // back-compute GGR from rev share (÷0.0438, avg effective rate from actual statements)
+    return s.lnw ? Math.round(s.lnw / 0.0438) : 0;
   });
   const ctx = document.getElementById('week-chart').getContext('2d');
   if(weekChart) weekChart.destroy();
