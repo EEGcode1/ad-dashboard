@@ -1,0 +1,4822 @@
+{
+  "2025-09-16": {
+    "date": "2025-09-16",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 502013.72,
+        "ggr_eur": 41746.45
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 185033.17,
+        "ggr_eur": 17544.63
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 116028.25,
+        "ggr_eur": 5793.81
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 11647.1,
+        "ggr_eur": 2177.32
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 8283.58,
+        "ggr_eur": 1748.62
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 11508.31,
+        "ggr_eur": 1484.55
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 6977.43,
+        "ggr_eur": 1420.25
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 4096.65,
+        "ggr_eur": 1330.46
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 10920.97,
+        "ggr_eur": 935.58
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 2275.4,
+        "ggr_eur": 760.58
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 24650.52,
+        "ggr_eur": 689.26
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 1692.56,
+        "ggr_eur": 522.36
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 3914.37,
+        "ggr_eur": 521.51
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 19883.99,
+        "ggr_eur": 329.82
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 298.54,
+        "ggr_eur": 65.66
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 387.33,
+        "ggr_eur": 61.74
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 2446.43,
+        "ggr_eur": -516.12
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 78642,
+        "ggr_eur": -8365.4
+      }
+    ]
+  },
+  "2025-09-17": {
+    "date": "2025-09-17",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 454484.15,
+        "ggr_eur": 19616.45
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 184516.95,
+        "ggr_eur": 12331
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 49590.78,
+        "ggr_eur": 4069.56
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 21752.48,
+        "ggr_eur": 2826.32
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 13021.21,
+        "ggr_eur": 2471.82
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 85035.6,
+        "ggr_eur": 2124.68
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 6695.47,
+        "ggr_eur": 1875.31
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 24063.57,
+        "ggr_eur": 1771.32
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 6577.66,
+        "ggr_eur": 1005.65
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 5517.31,
+        "ggr_eur": 988.8
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 3758.8,
+        "ggr_eur": 975.47
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 8071.47,
+        "ggr_eur": 967.04
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 13142.4,
+        "ggr_eur": 601.79
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1455.18,
+        "ggr_eur": 395.38
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 1418.5,
+        "ggr_eur": 212.45
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 1.39,
+        "ggr_eur": 1.14
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 99.48,
+        "ggr_eur": -17.25
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 8294.85,
+        "ggr_eur": -966.1
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 4459.93,
+        "ggr_eur": -1635.67
+      }
+    ]
+  },
+  "2025-09-18": {
+    "date": "2025-09-18",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 421171.96,
+        "ggr_eur": 14680.25
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 206260.53,
+        "ggr_eur": 8645.27
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 13137.07,
+        "ggr_eur": 5908.09
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 133886.03,
+        "ggr_eur": 5576.22
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 53172.63,
+        "ggr_eur": 5065.7
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 23832.29,
+        "ggr_eur": 3036.92
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 24317.65,
+        "ggr_eur": 2473.84
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 7856.46,
+        "ggr_eur": 1775.24
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 7462.82,
+        "ggr_eur": 1667.89
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 11003.13,
+        "ggr_eur": 1508.2
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 15591.99,
+        "ggr_eur": 868.74
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 7739.5,
+        "ggr_eur": 852.62
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 5551.84,
+        "ggr_eur": 775.86
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 7198.88,
+        "ggr_eur": 648.21
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 621.28,
+        "ggr_eur": 179.27
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 2.08,
+        "ggr_eur": 1.87
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1552.72,
+        "ggr_eur": -151.66
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 147.55,
+        "ggr_eur": -177.87
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 3168.92,
+        "ggr_eur": -1011.89
+      }
+    ]
+  },
+  "2025-09-19": {
+    "date": "2025-09-19",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 433776.63,
+        "ggr_eur": 28216.38
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 214443.74,
+        "ggr_eur": 8796.03
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 200537.89,
+        "ggr_eur": 2928.09
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 25030.83,
+        "ggr_eur": 1928.18
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 22912.57,
+        "ggr_eur": 1462.68
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 3147.61,
+        "ggr_eur": 1273.64
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 40652.25,
+        "ggr_eur": 1219.3
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 8203.73,
+        "ggr_eur": 692.82
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 5396.02,
+        "ggr_eur": 185.85
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 105.32,
+        "ggr_eur": 60.62
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 474.56,
+        "ggr_eur": 52.43
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 9696.64,
+        "ggr_eur": -15.69
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2022.33,
+        "ggr_eur": -77.55
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 7378.25,
+        "ggr_eur": -188.78
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 2129.84,
+        "ggr_eur": -315.72
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 351.23,
+        "ggr_eur": -433.81
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 8444.82,
+        "ggr_eur": -452.89
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 4441.97,
+        "ggr_eur": -743.03
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 15461.44,
+        "ggr_eur": -1023.83
+      }
+    ]
+  },
+  "2025-09-20": {
+    "date": "2025-09-20",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 464988.96,
+        "ggr_eur": 24387.91
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 201111.58,
+        "ggr_eur": 12460.04
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 62666.34,
+        "ggr_eur": 7912.8
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 7813.42,
+        "ggr_eur": 2509.55
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 45400.09,
+        "ggr_eur": 1992.96
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 24736.85,
+        "ggr_eur": 1797.2
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 10113.62,
+        "ggr_eur": 1772.77
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 21470.58,
+        "ggr_eur": 1527.01
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 4638.9,
+        "ggr_eur": 694.02
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2966.96,
+        "ggr_eur": 650.94
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 1965.39,
+        "ggr_eur": 257.95
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 710.74,
+        "ggr_eur": 204.25
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 267.39,
+        "ggr_eur": 58.55
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 10.91,
+        "ggr_eur": 6.8
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 4138.48,
+        "ggr_eur": -125.54
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 3036.51,
+        "ggr_eur": -551.94
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 10904.63,
+        "ggr_eur": -724.09
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 12665.79,
+        "ggr_eur": -2262.76
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 213531.46,
+        "ggr_eur": -3953.36
+      }
+    ]
+  },
+  "2025-09-21": {
+    "date": "2025-09-21",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 329175.38,
+        "ggr_eur": 33734.54
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 147326.78,
+        "ggr_eur": 13543.52
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 184936.04,
+        "ggr_eur": 2084.23
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 5065.76,
+        "ggr_eur": 1631.56
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 8555.14,
+        "ggr_eur": 1568.02
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 8139.97,
+        "ggr_eur": 1518.41
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 2663.47,
+        "ggr_eur": 676.67
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 1832.72,
+        "ggr_eur": 611.74
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1983.82,
+        "ggr_eur": 420.19
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 8135.97,
+        "ggr_eur": 292.42
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 7383.48,
+        "ggr_eur": 266.92
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 46526.59,
+        "ggr_eur": 143.85
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 25655.8,
+        "ggr_eur": 50.76
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 210.96,
+        "ggr_eur": -31
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2109.61,
+        "ggr_eur": -63.75
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 498.6,
+        "ggr_eur": -180.8
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 19043.73,
+        "ggr_eur": -439.94
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 20152.29,
+        "ggr_eur": -1285.82
+      }
+    ]
+  },
+  "2025-09-22": {
+    "date": "2025-09-22",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 444307.16,
+        "ggr_eur": 30618.97
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 368164.63,
+        "ggr_eur": 29204.2
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 175306.73,
+        "ggr_eur": 10380.39
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 29271.17,
+        "ggr_eur": 5365.98
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 12495.15,
+        "ggr_eur": 1436.1
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 8112.22,
+        "ggr_eur": 1153.16
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 2439.5,
+        "ggr_eur": 862.24
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 38418.6,
+        "ggr_eur": 828.4
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 11125.7,
+        "ggr_eur": 826.83
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 7620.94,
+        "ggr_eur": 471.64
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1662.55,
+        "ggr_eur": 202.12
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 19533.39,
+        "ggr_eur": 121.77
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 272.46,
+        "ggr_eur": 60.59
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 427.69,
+        "ggr_eur": 36.43
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2511.6,
+        "ggr_eur": -262.51
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 4114.27,
+        "ggr_eur": -399.13
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 1025.48,
+        "ggr_eur": -625.52
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 6642.92,
+        "ggr_eur": -1191.65
+      }
+    ]
+  },
+  "2025-09-23": {
+    "date": "2025-09-23",
+    "rows": [
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 228208.94,
+        "ggr_eur": 24386.23
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 342773.92,
+        "ggr_eur": 23176.44
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 314937.64,
+        "ggr_eur": 12730.71
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 34744.15,
+        "ggr_eur": 8003.42
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 57648.56,
+        "ggr_eur": 6655.25
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 19802.49,
+        "ggr_eur": 2332.46
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 12912.9,
+        "ggr_eur": 1479.62
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 3886.39,
+        "ggr_eur": 790.65
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 7652.86,
+        "ggr_eur": 788.42
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 9207.45,
+        "ggr_eur": 551.45
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 7328.95,
+        "ggr_eur": 495.83
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 2660.94,
+        "ggr_eur": 445.5
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 372.26,
+        "ggr_eur": 77.89
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 87.43,
+        "ggr_eur": 7.7
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 2.07,
+        "ggr_eur": 1.61
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 5699.28,
+        "ggr_eur": -3.02
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 13023.79,
+        "ggr_eur": -1361.94
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 5148.42,
+        "ggr_eur": -1464.41
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 8159.09,
+        "ggr_eur": -3275.81
+      }
+    ]
+  },
+  "2025-09-24": {
+    "date": "2025-09-24",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 305492.26,
+        "ggr_eur": 18068.57
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 249928.32,
+        "ggr_eur": 14785.82
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 63352.02,
+        "ggr_eur": 6114.28
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 21506.74,
+        "ggr_eur": 3511.93
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 9878,
+        "ggr_eur": 3129.37
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 10900.93,
+        "ggr_eur": 2783.4
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 6914.38,
+        "ggr_eur": 1954.79
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 7419.68,
+        "ggr_eur": 1146.72
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 17475.71,
+        "ggr_eur": 676.67
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1379.69,
+        "ggr_eur": 522.8
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 372.85,
+        "ggr_eur": 158.57
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 6.19,
+        "ggr_eur": 1.76
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 8696.94,
+        "ggr_eur": -200.03
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 320.08,
+        "ggr_eur": -297.4
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 19714.71,
+        "ggr_eur": -426.32
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 34467.37,
+        "ggr_eur": -466.66
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 20368.64,
+        "ggr_eur": -810.9
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 6659.26,
+        "ggr_eur": -875.53
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 347022.38,
+        "ggr_eur": -11560.35
+      }
+    ]
+  },
+  "2025-09-25": {
+    "date": "2025-09-25",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 341561.13,
+        "ggr_eur": 20091.85
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 393835.49,
+        "ggr_eur": 13879.69
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 9785.91,
+        "ggr_eur": 3013.38
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 58602.7,
+        "ggr_eur": 2675.77
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 49692.33,
+        "ggr_eur": 1960.83
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 6378.71,
+        "ggr_eur": 1691.29
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 5250.54,
+        "ggr_eur": 1413.1
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 4985.89,
+        "ggr_eur": 1243.75
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 15482.68,
+        "ggr_eur": 1086.42
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 37004.51,
+        "ggr_eur": 953.45
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 15653.41,
+        "ggr_eur": 853.83
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 4242.58,
+        "ggr_eur": 513.98
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 679.78,
+        "ggr_eur": 265.11
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 234.63,
+        "ggr_eur": 213.1
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 0.34,
+        "ggr_eur": 0.34
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 14082.33,
+        "ggr_eur": -123.65
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 3540.79,
+        "ggr_eur": -1068.91
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 214420.9,
+        "ggr_eur": -7334.21
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 34316.89,
+        "ggr_eur": -9315.87
+      }
+    ]
+  },
+  "2025-09-26": {
+    "date": "2025-09-26",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 557301.4,
+        "ggr_eur": 31141.96
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 110713.18,
+        "ggr_eur": 10650.14
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 207705.54,
+        "ggr_eur": 9143.05
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 79711.19,
+        "ggr_eur": 6891.07
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 15929.56,
+        "ggr_eur": 4842.22
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 39735.31,
+        "ggr_eur": 4078.05
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 403716.93,
+        "ggr_eur": 3516.75
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 14717.32,
+        "ggr_eur": 2458.18
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 3383,
+        "ggr_eur": 1355.98
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 8739.14,
+        "ggr_eur": 1292.09
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 43305.63,
+        "ggr_eur": 1144.64
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 10115.31,
+        "ggr_eur": 683.71
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 3191.89,
+        "ggr_eur": 611.06
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 6205.37,
+        "ggr_eur": 325.55
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 162.78,
+        "ggr_eur": 89.61
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 14910.48,
+        "ggr_eur": -1.81
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 786.88,
+        "ggr_eur": -609.58
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 20270.35,
+        "ggr_eur": -1394.28
+      }
+    ]
+  },
+  "2025-09-27": {
+    "date": "2025-09-27",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 358956.52,
+        "ggr_eur": 27913.38
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 489140.83,
+        "ggr_eur": 21510.53
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 236952.36,
+        "ggr_eur": 19636.97
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 204468.81,
+        "ggr_eur": 11174.36
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 44441.14,
+        "ggr_eur": 7168.04
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 71210.92,
+        "ggr_eur": 6147.51
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 45243.98,
+        "ggr_eur": 4525.77
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 10294.59,
+        "ggr_eur": 3049.53
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 19696.76,
+        "ggr_eur": 2038.9
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 4296.43,
+        "ggr_eur": 1469.36
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 10814.34,
+        "ggr_eur": 1209.84
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 19277.39,
+        "ggr_eur": 1179.18
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 8535.43,
+        "ggr_eur": 797.9
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 5928.92,
+        "ggr_eur": 756.7
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 728.98,
+        "ggr_eur": 91.54
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 4.69,
+        "ggr_eur": 2.7
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 165.09,
+        "ggr_eur": -14.2
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1866.16,
+        "ggr_eur": -118.07
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 17520.43,
+        "ggr_eur": -503.35
+      }
+    ]
+  },
+  "2025-09-28": {
+    "date": "2025-09-28",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 325422.98,
+        "ggr_eur": 36323.51
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 393001.14,
+        "ggr_eur": 17718.18
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 127697.92,
+        "ggr_eur": 9517.73
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 36530.54,
+        "ggr_eur": 5965.71
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 183838.95,
+        "ggr_eur": 5265.57
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 41391.94,
+        "ggr_eur": 5183.43
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 57500.59,
+        "ggr_eur": 5128.56
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 8945.26,
+        "ggr_eur": 2601.88
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 6940.45,
+        "ggr_eur": 2368.12
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 13973.52,
+        "ggr_eur": 2199.23
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 6757.92,
+        "ggr_eur": 1737.57
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 11118.32,
+        "ggr_eur": 1674.81
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 8453.33,
+        "ggr_eur": 1173.43
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 6257.86,
+        "ggr_eur": 879.62
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 496.04,
+        "ggr_eur": -87.89
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 450.66,
+        "ggr_eur": -165.36
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1754.43,
+        "ggr_eur": -457.6
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 12883.89,
+        "ggr_eur": -612.01
+      }
+    ]
+  },
+  "2025-09-29": {
+    "date": "2025-09-29",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 319018.94,
+        "ggr_eur": 29601.66
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 297589.37,
+        "ggr_eur": 19438.08
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 93305.16,
+        "ggr_eur": 17641.71
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 159058.23,
+        "ggr_eur": 15843.85
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 36787.69,
+        "ggr_eur": 5332.53
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 58459.42,
+        "ggr_eur": 3659.48
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 6234.05,
+        "ggr_eur": 2264.03
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 10444.67,
+        "ggr_eur": 1668.41
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 6264.12,
+        "ggr_eur": 1191.21
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 17056.15,
+        "ggr_eur": 1026.63
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 2211.2,
+        "ggr_eur": 439.49
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 10696.99,
+        "ggr_eur": 298.44
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 553.33,
+        "ggr_eur": 122.29
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 45512.85,
+        "ggr_eur": 62.58
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 389.2,
+        "ggr_eur": -114
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 5751.07,
+        "ggr_eur": -868.2
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 10520.2,
+        "ggr_eur": -992.95
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2778.53,
+        "ggr_eur": -1052.26
+      }
+    ]
+  },
+  "2025-09-30": {
+    "date": "2025-09-30",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 324215.74,
+        "ggr_eur": 27379.71
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 383464.19,
+        "ggr_eur": 18117.22
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 140911.11,
+        "ggr_eur": 14067.48
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 23030.11,
+        "ggr_eur": 7314.78
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 55418.8,
+        "ggr_eur": 6205.29
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 44168.05,
+        "ggr_eur": 3560.37
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 22743.25,
+        "ggr_eur": 2136.21
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 5918.55,
+        "ggr_eur": 2004.65
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 7225.05,
+        "ggr_eur": 1770.26
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 8320.62,
+        "ggr_eur": 1746.49
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 9776.85,
+        "ggr_eur": 736.45
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 3312.82,
+        "ggr_eur": 566.47
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 8140.96,
+        "ggr_eur": 269.99
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 179.74,
+        "ggr_eur": 29.57
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 307,
+        "ggr_eur": 17.7
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 8542.75,
+        "ggr_eur": -667.89
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 5662.71,
+        "ggr_eur": -887.14
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 96827.29,
+        "ggr_eur": -1864.21
+      }
+    ]
+  },
+  "2025-10-01": {
+    "date": "2025-10-01",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 573883.94,
+        "ggr_eur": 55697.72
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 315737.32,
+        "ggr_eur": 20154.38
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 146866.52,
+        "ggr_eur": 11011.14
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 54463.54,
+        "ggr_eur": 4924.2
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 36853.49,
+        "ggr_eur": 2750.62
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 12453.49,
+        "ggr_eur": 2321.36
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 6597.56,
+        "ggr_eur": 2078.95
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 4591.53,
+        "ggr_eur": 1508.16
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 7779.88,
+        "ggr_eur": 993.49
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 11438.34,
+        "ggr_eur": 891.34
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 4846.39,
+        "ggr_eur": 300.02
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 249.42,
+        "ggr_eur": 201.67
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 45451.33,
+        "ggr_eur": 174.57
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 566.32,
+        "ggr_eur": 112.98
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 8754.75,
+        "ggr_eur": -133.54
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 4098.64,
+        "ggr_eur": -301.64
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 2356.14,
+        "ggr_eur": -1731.19
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 3642.52,
+        "ggr_eur": -1819.54
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 49985.53,
+        "ggr_eur": -5856.96
+      }
+    ]
+  },
+  "2025-10-02": {
+    "date": "2025-10-02",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 622816.48,
+        "ggr_eur": 29134.66
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 207222.39,
+        "ggr_eur": 12363.41
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 133762.87,
+        "ggr_eur": 11106.99
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 49995.45,
+        "ggr_eur": 5733.37
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 30235.32,
+        "ggr_eur": 3461.45
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 46499.2,
+        "ggr_eur": 3421.6
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 24129.2,
+        "ggr_eur": 2244.24
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 8690.54,
+        "ggr_eur": 1511.32
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 4923.25,
+        "ggr_eur": 1346.66
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 6528.61,
+        "ggr_eur": 726.39
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 6098.18,
+        "ggr_eur": 714.26
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 3073.76,
+        "ggr_eur": 613.88
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 9038.68,
+        "ggr_eur": 201.57
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 8143.26,
+        "ggr_eur": 132.27
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 257.22,
+        "ggr_eur": 39.16
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 48.94,
+        "ggr_eur": 9.1
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 216.63,
+        "ggr_eur": -21.62
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 7617.02,
+        "ggr_eur": -179.33
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1321.32,
+        "ggr_eur": -240.46
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 9467.95,
+        "ggr_eur": -1766.67
+      }
+    ]
+  },
+  "2025-10-03": {
+    "date": "2025-10-03",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 689140.06,
+        "ggr_eur": 44540.76
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 512187.04,
+        "ggr_eur": 25198.82
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 159481.96,
+        "ggr_eur": 8978.29
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 34977.8,
+        "ggr_eur": 6021.79
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 45025.64,
+        "ggr_eur": 5138.21
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 4179.03,
+        "ggr_eur": 1279.36
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 11312.09,
+        "ggr_eur": 1231.46
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 19162.99,
+        "ggr_eur": 1085.66
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 4830.33,
+        "ggr_eur": 594.53
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 8810.65,
+        "ggr_eur": 520.56
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 18438.96,
+        "ggr_eur": 179.58
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 549.61,
+        "ggr_eur": 172.9
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 669.78,
+        "ggr_eur": 150.89
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 2391.33,
+        "ggr_eur": 41.62
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 288.96,
+        "ggr_eur": -0.46
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 5689.44,
+        "ggr_eur": -622.81
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 6350.13,
+        "ggr_eur": -724.19
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 3079.82,
+        "ggr_eur": -759.66
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 67745.54,
+        "ggr_eur": -926.76
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 7717.38,
+        "ggr_eur": -955.05
+      }
+    ]
+  },
+  "2025-10-04": {
+    "date": "2025-10-04",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 593506.51,
+        "ggr_eur": 27529.89
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 574421.39,
+        "ggr_eur": 23117.07
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 153257.23,
+        "ggr_eur": 16646.72
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 59159.13,
+        "ggr_eur": 3769.49
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 31369.32,
+        "ggr_eur": 2828.33
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 38741.88,
+        "ggr_eur": 2592.96
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 9671.33,
+        "ggr_eur": 1226.56
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 4868.94,
+        "ggr_eur": 1193.98
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 4799.42,
+        "ggr_eur": 1157.15
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 7167.31,
+        "ggr_eur": 875.78
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 18418.57,
+        "ggr_eur": 782.58
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 2279.82,
+        "ggr_eur": 210.9
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 249.5,
+        "ggr_eur": 85.84
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 368.81,
+        "ggr_eur": 54.68
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 7048.95,
+        "ggr_eur": -68.53
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 3145.05,
+        "ggr_eur": -509.39
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1623.05,
+        "ggr_eur": -539.95
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 9511.81,
+        "ggr_eur": -544.3
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 9458.16,
+        "ggr_eur": -891.48
+      }
+    ]
+  },
+  "2025-10-05": {
+    "date": "2025-10-05",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 383090.87,
+        "ggr_eur": 21159.56
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 533984.29,
+        "ggr_eur": 17302.41
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 120949.65,
+        "ggr_eur": 7163.23
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 62493.56,
+        "ggr_eur": 6515.36
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 38808.39,
+        "ggr_eur": 4533.55
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 7642.82,
+        "ggr_eur": 2145.68
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 8207.41,
+        "ggr_eur": 2128.4
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 7091.67,
+        "ggr_eur": 1988.87
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 23147.21,
+        "ggr_eur": 1407.07
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 2766.91,
+        "ggr_eur": 1151.62
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 7442.08,
+        "ggr_eur": 790.38
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 7107.77,
+        "ggr_eur": 426.22
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 2426.37,
+        "ggr_eur": 268.86
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 22043.25,
+        "ggr_eur": 252.19
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 617.13,
+        "ggr_eur": 136.56
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 108.72,
+        "ggr_eur": 81.68
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 3997.06,
+        "ggr_eur": 56.41
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 0.11,
+        "ggr_eur": 0.03
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 15096.3,
+        "ggr_eur": -1388.71
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 3854.09,
+        "ggr_eur": -2492.67
+      }
+    ]
+  },
+  "2025-10-06": {
+    "date": "2025-10-06",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 634252.36,
+        "ggr_eur": 36238.08
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 472582.82,
+        "ggr_eur": 16721.15
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 129869.56,
+        "ggr_eur": 15587.84
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 72076.07,
+        "ggr_eur": 8812.24
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 27650.26,
+        "ggr_eur": 2554.58
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 18910.45,
+        "ggr_eur": 2249.55
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 6278.78,
+        "ggr_eur": 1862.33
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 12179.91,
+        "ggr_eur": 1540.65
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 1999.88,
+        "ggr_eur": 1216.13
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 23890.52,
+        "ggr_eur": 769.34
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2552.28,
+        "ggr_eur": 734.91
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 277.86,
+        "ggr_eur": 221.59
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 350.91,
+        "ggr_eur": 216.35
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 5914.51,
+        "ggr_eur": 98.08
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1437.57,
+        "ggr_eur": -137.99
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 7121.3,
+        "ggr_eur": -1443.79
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 7014.3,
+        "ggr_eur": -1732.34
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 8276.84,
+        "ggr_eur": -1771.38
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 3252.99,
+        "ggr_eur": -2195.72
+      }
+    ]
+  },
+  "2025-10-07": {
+    "date": "2025-10-07",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 546136.49,
+        "ggr_eur": 34964.71
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 380527.15,
+        "ggr_eur": 25467.93
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 54271.25,
+        "ggr_eur": 8618.24
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 33008.74,
+        "ggr_eur": 3381.72
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 10454.76,
+        "ggr_eur": 2473.8
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 14784.71,
+        "ggr_eur": 2095.97
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 33086.44,
+        "ggr_eur": 1522.3
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 7306.83,
+        "ggr_eur": 1490.8
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 9806.41,
+        "ggr_eur": 1206.49
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 7938.97,
+        "ggr_eur": 1178.09
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 2415.31,
+        "ggr_eur": 863.63
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 4900.55,
+        "ggr_eur": 761.35
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2325.36,
+        "ggr_eur": 592.18
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 847.4,
+        "ggr_eur": 372.57
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 4610.09,
+        "ggr_eur": 55.38
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 12.54,
+        "ggr_eur": 3.34
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 1436.3,
+        "ggr_eur": -62.24
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 10323.33,
+        "ggr_eur": -665.01
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 9294.33,
+        "ggr_eur": -3729.87
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 135481.92,
+        "ggr_eur": -7110.29
+      }
+    ]
+  },
+  "2025-10-08": {
+    "date": "2025-10-08",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 345416.06,
+        "ggr_eur": 16412.08
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 327915.38,
+        "ggr_eur": 10390.78
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 134689.17,
+        "ggr_eur": 7513.22
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 37627.64,
+        "ggr_eur": 5476.34
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 26562.63,
+        "ggr_eur": 2808.83
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 5869.07,
+        "ggr_eur": 1765.07
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 8041.48,
+        "ggr_eur": 1634.9
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 7122.8,
+        "ggr_eur": 990.15
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 939.73,
+        "ggr_eur": 494.4
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 20481.88,
+        "ggr_eur": 451.64
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1350.76,
+        "ggr_eur": 450.42
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 7226.15,
+        "ggr_eur": 228.86
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 25372.28,
+        "ggr_eur": 116.92
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 170.98,
+        "ggr_eur": 6.81
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 2595.3,
+        "ggr_eur": 1.62
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 10.34,
+        "ggr_eur": -12.64
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 8718.26,
+        "ggr_eur": -707.47
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 3556.92,
+        "ggr_eur": -1014.93
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 6362.73,
+        "ggr_eur": -1813.17
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 43751.31,
+        "ggr_eur": -2971.12
+      }
+    ]
+  },
+  "2025-10-09": {
+    "date": "2025-10-09",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 365535.12,
+        "ggr_eur": 28396.41
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 162933.58,
+        "ggr_eur": 21276.03
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 213161.68,
+        "ggr_eur": 16256.23
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 34662.65,
+        "ggr_eur": 6405.39
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 51742.32,
+        "ggr_eur": 5070.64
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 39486.33,
+        "ggr_eur": 4449.54
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 19253.08,
+        "ggr_eur": 1845.81
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 10072.8,
+        "ggr_eur": 400.61
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 13205.36,
+        "ggr_eur": 393.5
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 8259.69,
+        "ggr_eur": 367.58
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 4537.73,
+        "ggr_eur": 354.54
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 5807.52,
+        "ggr_eur": 230.5
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1688.91,
+        "ggr_eur": 141.6
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 1408.67,
+        "ggr_eur": 135.27
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 498.68,
+        "ggr_eur": 42.69
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 11.72,
+        "ggr_eur": 3.24
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 6043.7,
+        "ggr_eur": -626.17
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 4640.9,
+        "ggr_eur": -667.05
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 24188.14,
+        "ggr_eur": -887.8
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 4633.18,
+        "ggr_eur": -1761.35
+      }
+    ]
+  },
+  "2025-10-10": {
+    "date": "2025-10-10",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 361992.7,
+        "ggr_eur": 22905.79
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 239099.82,
+        "ggr_eur": 16467.48
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 32575.7,
+        "ggr_eur": 2859.17
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 37249.34,
+        "ggr_eur": 2221.63
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 22416.89,
+        "ggr_eur": 1771.89
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 16906.27,
+        "ggr_eur": 1730.63
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 21146.51,
+        "ggr_eur": 1633.07
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 9922.74,
+        "ggr_eur": 1542.24
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 5066.99,
+        "ggr_eur": 1300.99
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 42213.85,
+        "ggr_eur": 1218.34
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 13132.8,
+        "ggr_eur": 1218.03
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 7862.74,
+        "ggr_eur": 1181.63
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 3151.14,
+        "ggr_eur": 1162.44
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2041.26,
+        "ggr_eur": 427.69
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 1566.22,
+        "ggr_eur": 231.04
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 234.82,
+        "ggr_eur": 38.24
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 3.22,
+        "ggr_eur": 2.21
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 94000.29,
+        "ggr_eur": -695.96
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 184651.14,
+        "ggr_eur": -3155.84
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 35922,
+        "ggr_eur": -6520.84
+      }
+    ]
+  },
+  "2025-10-11": {
+    "date": "2025-10-11",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 347577.71,
+        "ggr_eur": 32626.41
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 190136.01,
+        "ggr_eur": 10190.65
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 42453.41,
+        "ggr_eur": 8173.92
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 53300.57,
+        "ggr_eur": 6079.05
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 37679.08,
+        "ggr_eur": 3320.99
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 10808.46,
+        "ggr_eur": 2518.53
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 12821.73,
+        "ggr_eur": 1822.83
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 6100.79,
+        "ggr_eur": 1183.4
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 6629.42,
+        "ggr_eur": 339.67
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 20085.57,
+        "ggr_eur": 301.56
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 1557.61,
+        "ggr_eur": 287.78
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 251.9,
+        "ggr_eur": 47.68
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 6740.65,
+        "ggr_eur": 32.15
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2258.28,
+        "ggr_eur": 1.86
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 62.69,
+        "ggr_eur": -2.08
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 137809.97,
+        "ggr_eur": -1338.5
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 26904.65,
+        "ggr_eur": -1446.75
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 26669.55,
+        "ggr_eur": -2012.09
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 127789.34,
+        "ggr_eur": -5184.81
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 9718.35,
+        "ggr_eur": -8196.1
+      }
+    ]
+  },
+  "2025-10-12": {
+    "date": "2025-10-12",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 352745.54,
+        "ggr_eur": 14060.38
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 113638.62,
+        "ggr_eur": 8393.76
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 47119.88,
+        "ggr_eur": 8328.82
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 85830.15,
+        "ggr_eur": 7709.94
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 164565.97,
+        "ggr_eur": 6686.04
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 37693.85,
+        "ggr_eur": 6560
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 7384.49,
+        "ggr_eur": 2541.88
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 3934.73,
+        "ggr_eur": 1804.13
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 5850.6,
+        "ggr_eur": 1460.31
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 27742.69,
+        "ggr_eur": 555.41
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 10026.85,
+        "ggr_eur": 544.81
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 9205.28,
+        "ggr_eur": 395.76
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 27929.1,
+        "ggr_eur": 261.53
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1344.99,
+        "ggr_eur": 172.23
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 157.9,
+        "ggr_eur": 97.37
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 17.22,
+        "ggr_eur": -24.8
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 1139.78,
+        "ggr_eur": -50.18
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 5366.39,
+        "ggr_eur": -568.33
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 27094.35,
+        "ggr_eur": -1800.4
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 10926.37,
+        "ggr_eur": -3072.82
+      }
+    ]
+  },
+  "2025-10-13": {
+    "date": "2025-10-13",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 306315.69,
+        "ggr_eur": 25213.5
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 142450.33,
+        "ggr_eur": 13526.02
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 116818.78,
+        "ggr_eur": 8953.99
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 23793.43,
+        "ggr_eur": 3529.81
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 9492,
+        "ggr_eur": 2488.53
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 21482.66,
+        "ggr_eur": 1830.15
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 32515.61,
+        "ggr_eur": 1762.36
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 5307.79,
+        "ggr_eur": 1352.63
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 45268.62,
+        "ggr_eur": 1244.83
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 9106.04,
+        "ggr_eur": 1137.99
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 31022.28,
+        "ggr_eur": 756.86
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 6848.32,
+        "ggr_eur": 577.21
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 9130.94,
+        "ggr_eur": 111.45
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 643.37,
+        "ggr_eur": 74.95
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 56019.14,
+        "ggr_eur": -167.17
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 4756.22,
+        "ggr_eur": -554.61
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 6762.91,
+        "ggr_eur": -569.27
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2967.57,
+        "ggr_eur": -1135.3
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 4537.7,
+        "ggr_eur": -5546.52
+      }
+    ]
+  },
+  "2025-10-14": {
+    "date": "2025-10-14",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 298229.51,
+        "ggr_eur": 25348.2
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 137154.85,
+        "ggr_eur": 16637.47
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 206041.64,
+        "ggr_eur": 9963.76
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 43357.77,
+        "ggr_eur": 5140.28
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 30398.53,
+        "ggr_eur": 4405.81
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 20984.58,
+        "ggr_eur": 2831.04
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 15026.52,
+        "ggr_eur": 2194.49
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 16196.99,
+        "ggr_eur": 1317.57
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 20676.29,
+        "ggr_eur": 1001.72
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 3812.45,
+        "ggr_eur": 496.17
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1608.66,
+        "ggr_eur": 223.59
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 5854.91,
+        "ggr_eur": 84.67
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 840.06,
+        "ggr_eur": -496.51
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 15337,
+        "ggr_eur": -1344.47
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 3449.34,
+        "ggr_eur": -1406.12
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 7050.98,
+        "ggr_eur": -2573.98
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 19097.8,
+        "ggr_eur": -4191.95
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 46223.27,
+        "ggr_eur": -9378.15
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 8094.11,
+        "ggr_eur": -17014.91
+      }
+    ]
+  },
+  "2025-10-15": {
+    "date": "2025-10-15",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 291407.76,
+        "ggr_eur": 26906.79
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 224547.38,
+        "ggr_eur": 13116.46
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 156338.41,
+        "ggr_eur": 12810.76
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 32403.96,
+        "ggr_eur": 4906.55
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 155612.96,
+        "ggr_eur": 4662.52
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 6507.31,
+        "ggr_eur": 4339.81
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 20937.41,
+        "ggr_eur": 2884.08
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 20216.68,
+        "ggr_eur": 2236.47
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 9444.6,
+        "ggr_eur": 1752.59
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 6284.03,
+        "ggr_eur": 1701.52
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 8709.63,
+        "ggr_eur": 819.69
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 3321.27,
+        "ggr_eur": 737.67
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 11824.29,
+        "ggr_eur": 388.34
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 602.84,
+        "ggr_eur": 358.38
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 28813.48,
+        "ggr_eur": 168.82
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 777.41,
+        "ggr_eur": 130.07
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 7041.82,
+        "ggr_eur": -385.88
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 4431.53,
+        "ggr_eur": -529.76
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 44004.52,
+        "ggr_eur": -3404.37
+      }
+    ]
+  },
+  "2025-10-16": {
+    "date": "2025-10-16",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 172382.65,
+        "ggr_eur": 13642.99
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 284665.5,
+        "ggr_eur": 11596.7
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 19756.05,
+        "ggr_eur": 7671.44
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 22894.86,
+        "ggr_eur": 5412.64
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 13464.99,
+        "ggr_eur": 4343.71
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 32647.93,
+        "ggr_eur": 3185.75
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 8956.59,
+        "ggr_eur": 2045.62
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 110579.42,
+        "ggr_eur": 1950.17
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 155448.97,
+        "ggr_eur": 1821.78
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 5177.53,
+        "ggr_eur": 1578.47
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 28062.57,
+        "ggr_eur": 941.83
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 10284.43,
+        "ggr_eur": 705.2
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 9842.3,
+        "ggr_eur": 445.85
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 151.72,
+        "ggr_eur": 88.66
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 362.51,
+        "ggr_eur": 42.94
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 37.91,
+        "ggr_eur": 20.45
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1550.92,
+        "ggr_eur": -1.73
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 2566.72,
+        "ggr_eur": -38.1
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 29575.55,
+        "ggr_eur": -183.64
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 8867.61,
+        "ggr_eur": -8704.27
+      }
+    ]
+  },
+  "2025-10-17": {
+    "date": "2025-10-17",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 321774.52,
+        "ggr_eur": 19273.74
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 187034,
+        "ggr_eur": 15784.58
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 134934.84,
+        "ggr_eur": 13565.9
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 49309.36,
+        "ggr_eur": 4723.47
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 37040.78,
+        "ggr_eur": 3487.41
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 23861.51,
+        "ggr_eur": 3456.53
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 130180.58,
+        "ggr_eur": 3305.19
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 17406,
+        "ggr_eur": 3257.1
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 14890.56,
+        "ggr_eur": 1585.25
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 15875.94,
+        "ggr_eur": 1527.1
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 7763.34,
+        "ggr_eur": 1502.42
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 4859.47,
+        "ggr_eur": 1421.72
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1403.34,
+        "ggr_eur": 420.72
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 585.95,
+        "ggr_eur": 176.03
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 4649.94,
+        "ggr_eur": 32.12
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 8.99,
+        "ggr_eur": -6.69
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 191.76,
+        "ggr_eur": -61.69
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 10658.47,
+        "ggr_eur": -1915.35
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 9474.75,
+        "ggr_eur": -9883.65
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 15093.8,
+        "ggr_eur": -11251.83
+      }
+    ]
+  },
+  "2025-10-18": {
+    "date": "2025-10-18",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 282770.5,
+        "ggr_eur": 25304.74
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 136485.35,
+        "ggr_eur": 11364.39
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 136293.89,
+        "ggr_eur": 10024.15
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 26668.48,
+        "ggr_eur": 6239.48
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 171049.42,
+        "ggr_eur": 3051.79
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 34384.14,
+        "ggr_eur": 2995.51
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 9828.41,
+        "ggr_eur": 2990.81
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 8831.38,
+        "ggr_eur": 2268.05
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 52043.55,
+        "ggr_eur": 1542.18
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 4788.12,
+        "ggr_eur": 1379.34
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 12013.46,
+        "ggr_eur": 952.12
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 10841.01,
+        "ggr_eur": 872.08
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 13016.24,
+        "ggr_eur": 555.35
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 353.34,
+        "ggr_eur": 171.53
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 358.48,
+        "ggr_eur": 107.57
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1695.42,
+        "ggr_eur": -10.92
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 17.83,
+        "ggr_eur": -28.41
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 5034.1,
+        "ggr_eur": -992.55
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 8900.24,
+        "ggr_eur": -1152.87
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 35920.54,
+        "ggr_eur": -1440.12
+      }
+    ]
+  },
+  "2025-10-19": {
+    "date": "2025-10-19",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 282829.91,
+        "ggr_eur": 12778.92
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 146973.83,
+        "ggr_eur": 9577.22
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 86939.63,
+        "ggr_eur": 8218.95
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 23279.24,
+        "ggr_eur": 3479.2
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 111328.09,
+        "ggr_eur": 2748.22
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 10645.29,
+        "ggr_eur": 2046.96
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 6528.62,
+        "ggr_eur": 1252.61
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 8215.05,
+        "ggr_eur": 1033.64
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 11139.89,
+        "ggr_eur": 1002
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 5383.32,
+        "ggr_eur": 735.29
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 2203.8,
+        "ggr_eur": 620.84
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 19287.27,
+        "ggr_eur": 602.09
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 9683.47,
+        "ggr_eur": 192.4
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 18530.24,
+        "ggr_eur": 185.94
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 730.92,
+        "ggr_eur": 157.86
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 2112.54,
+        "ggr_eur": 72.47
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 18.52,
+        "ggr_eur": 3.39
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 885.94,
+        "ggr_eur": -5.34
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1792.29,
+        "ggr_eur": -634.66
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 41613.28,
+        "ggr_eur": -1679.64
+      }
+    ]
+  },
+  "2025-10-20": {
+    "date": "2025-10-20",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 243297.78,
+        "ggr_eur": 19222.6
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 142668.28,
+        "ggr_eur": 11000.27
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 89213.1,
+        "ggr_eur": 7652.47
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 69044.19,
+        "ggr_eur": 5163.85
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 9568.56,
+        "ggr_eur": 1997.23
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 10787.95,
+        "ggr_eur": 1955.92
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 23363.54,
+        "ggr_eur": 1881.02
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 4855.66,
+        "ggr_eur": 1264.84
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 32557.19,
+        "ggr_eur": 1011.47
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 15350.75,
+        "ggr_eur": 990.86
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 10685.59,
+        "ggr_eur": 970.41
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 11157.19,
+        "ggr_eur": 329.05
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1384.85,
+        "ggr_eur": 315.9
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 293.36,
+        "ggr_eur": 120.32
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 38.87,
+        "ggr_eur": 23.03
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1734.17,
+        "ggr_eur": 0.22
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 214.24,
+        "ggr_eur": -119.36
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 5055.63,
+        "ggr_eur": -936.25
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 4555.07,
+        "ggr_eur": -2435.65
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 32587.54,
+        "ggr_eur": -3332.66
+      }
+    ]
+  },
+  "2025-10-21": {
+    "date": "2025-10-21",
+    "rows": [
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 303807.71,
+        "ggr_eur": 19407.15
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 190204.41,
+        "ggr_eur": 13931.04
+      },
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 123258.78,
+        "ggr_eur": 9464.29
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 15434.52,
+        "ggr_eur": 3055.17
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 5546.3,
+        "ggr_eur": 2215.53
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 8706.29,
+        "ggr_eur": 2148.88
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 18367.81,
+        "ggr_eur": 2066.81
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 20897.23,
+        "ggr_eur": 1945.86
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 23683.64,
+        "ggr_eur": 1452.19
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 90112.5,
+        "ggr_eur": 1110.67
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 5677.23,
+        "ggr_eur": 660.32
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 41503.42,
+        "ggr_eur": 463.78
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1611.11,
+        "ggr_eur": 312.97
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 4399.42,
+        "ggr_eur": 233.61
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 366.94,
+        "ggr_eur": 182.69
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 3.45,
+        "ggr_eur": 2.3
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 539.97,
+        "ggr_eur": -194.87
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 12050.35,
+        "ggr_eur": -222.69
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 4767.91,
+        "ggr_eur": -727.97
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 3048.69,
+        "ggr_eur": -1067.65
+      }
+    ]
+  },
+  "2025-10-22": {
+    "date": "2025-10-22",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 805648.31,
+        "ggr_eur": 54150.23
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 286434.87,
+        "ggr_eur": 21885.76
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 163597.96,
+        "ggr_eur": 17876.75
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 199908.7,
+        "ggr_eur": 13116.76
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 2764.05,
+        "ggr_eur": 1847.16
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 16036.86,
+        "ggr_eur": 1080.71
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 21442.13,
+        "ggr_eur": 984.28
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 8861.12,
+        "ggr_eur": 830.31
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 6127.12,
+        "ggr_eur": 566.35
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 395.01,
+        "ggr_eur": 180.4
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 22502.97,
+        "ggr_eur": 173.65
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 215.67,
+        "ggr_eur": 65.86
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 5670.43,
+        "ggr_eur": 17.76
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 9968.18,
+        "ggr_eur": 4.11
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 4001.15,
+        "ggr_eur": -13.04
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 3644.57,
+        "ggr_eur": -302.47
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 17490.91,
+        "ggr_eur": -421.19
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 7300.84,
+        "ggr_eur": -1145.5
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 77046.2,
+        "ggr_eur": -16431.77
+      }
+    ]
+  },
+  "2025-10-23": {
+    "date": "2025-10-23",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 2386610.29,
+        "ggr_eur": 99501.66
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 334318.83,
+        "ggr_eur": 14803.11
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 63651.98,
+        "ggr_eur": 7561.81
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 53814.21,
+        "ggr_eur": 4902.38
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 25675.24,
+        "ggr_eur": 4119.08
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 230554.34,
+        "ggr_eur": 2772.25
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 11730.38,
+        "ggr_eur": 2750.55
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 271725.03,
+        "ggr_eur": 2234.95
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 12347.03,
+        "ggr_eur": 2229.36
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 7474.72,
+        "ggr_eur": 2158.85
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 5578.52,
+        "ggr_eur": 2013.96
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 19678.86,
+        "ggr_eur": 1598.59
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 1059.1,
+        "ggr_eur": 294.45
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 1263.16,
+        "ggr_eur": 110.22
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 363.52,
+        "ggr_eur": 40.33
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 135.4,
+        "ggr_eur": -5.79
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1549.36,
+        "ggr_eur": -60.23
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 6452.35,
+        "ggr_eur": -603.36
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 21158.2,
+        "ggr_eur": -1195.35
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 11691.57,
+        "ggr_eur": -1640.36
+      }
+    ]
+  },
+  "2025-10-25": {
+    "date": "2025-10-24",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 2938070.84,
+        "ggr_eur": 146725.66
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 311793.04,
+        "ggr_eur": 19246.02
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 121843.42,
+        "ggr_eur": 16296.61
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 323518.24,
+        "ggr_eur": 15039.52
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 227030.71,
+        "ggr_eur": 13353.2
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 37736.16,
+        "ggr_eur": 3821.42
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 11096.59,
+        "ggr_eur": 2506.04
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 32709.02,
+        "ggr_eur": 2290.48
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 17234.31,
+        "ggr_eur": 2147.42
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 7176.57,
+        "ggr_eur": 1693.91
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 22633.45,
+        "ggr_eur": 1083.56
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 56221.09,
+        "ggr_eur": 1008.08
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 4534.16,
+        "ggr_eur": 818.64
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 3162.78,
+        "ggr_eur": 360.28
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1063.06,
+        "ggr_eur": 359.41
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 9948.73,
+        "ggr_eur": 319.33
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 495.85,
+        "ggr_eur": 126.05
+      },
+      {
+        "game_id": 2430162,
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 28.42,
+        "ggr_eur": 1.09
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 4822.33,
+        "ggr_eur": -585.93
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 3269.9,
+        "ggr_eur": -702.58
+      }
+    ]
+  },
+  "2025-10-26": {
+    "date": "2025-10-26",
+    "rows": [
+      {
+        "game_id": 2430207,
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 1978408.59,
+        "ggr_eur": 126038.42
+      },
+      {
+        "game_id": 2430197,
+        "game": "Family Feud RTP 94",
+        "wager_eur": 207887.82,
+        "ggr_eur": 13538.21
+      },
+      {
+        "game_id": 2430198,
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 222135.59,
+        "ggr_eur": 10651.02
+      },
+      {
+        "game_id": 2430196,
+        "game": "Friends RTP 94",
+        "wager_eur": 241202.17,
+        "ggr_eur": 8416.13
+      },
+      {
+        "game_id": 2430121,
+        "game": "Ace Ventura",
+        "wager_eur": 23005.42,
+        "ggr_eur": 3791.78
+      },
+      {
+        "game_id": 2430177,
+        "game": "Stadium Megaways",
+        "wager_eur": 51607.17,
+        "ggr_eur": 3602.87
+      },
+      {
+        "game_id": 2430137,
+        "game": "The Godfather Megaways",
+        "wager_eur": 20527.41,
+        "ggr_eur": 2344.52
+      },
+      {
+        "game_id": 2430200,
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 54841.91,
+        "ggr_eur": 2334.27
+      },
+      {
+        "game_id": 2430114,
+        "game": "Cheers",
+        "wager_eur": 11104.47,
+        "ggr_eur": 1720.08
+      },
+      {
+        "game_id": 2430084,
+        "game": "The Godfather",
+        "wager_eur": 13579.81,
+        "ggr_eur": 1296.27
+      },
+      {
+        "game_id": 2430163,
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 8429.19,
+        "ggr_eur": 944.5
+      },
+      {
+        "game_id": 2430089,
+        "game": "Star Trek",
+        "wager_eur": 11141.65,
+        "ggr_eur": 804.94
+      },
+      {
+        "game_id": 2430164,
+        "game": "Rambo Mega Mines",
+        "wager_eur": 1283.87,
+        "ggr_eur": 784.69
+      },
+      {
+        "game_id": 2430171,
+        "game": "Young Guns RTP 94",
+        "wager_eur": 2704.31,
+        "ggr_eur": 521.16
+      },
+      {
+        "game_id": 2430139,
+        "game": "Candy Mine 94",
+        "wager_eur": 7987.01,
+        "ggr_eur": 144.01
+      },
+      {
+        "game_id": 2430124,
+        "game": "CSI",
+        "wager_eur": 779.41,
+        "ggr_eur": 122.26
+      },
+      {
+        "game_id": 2430169,
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 2520.18,
+        "ggr_eur": 19.53
+      },
+      {
+        "game_id": 2430156,
+        "game": "Rambo 94",
+        "wager_eur": 12206.1,
+        "ggr_eur": -5.26
+      },
+      {
+        "game_id": 2430073,
+        "game": "Charlies Angels",
+        "wager_eur": 24630.03,
+        "ggr_eur": -5172
+      }
+    ]
+  }
+}

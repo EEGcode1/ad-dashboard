@@ -81,6 +81,296 @@
         "date": "2026-03-02",
         "net_revenue_eur": 0.0,
         "win_eur": 0.0
+      },
+      {
+        "game": "Star Trek Megaways",
+        "source": "lnw",
+        "ggr_eur": 33993.33,
+        "rev_share_eur": 1359.73,
+        "wager_eur": 455657.44,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Godfather 3 Pillars of Power 93",
+        "source": "lnw",
+        "ggr_eur": 20961.21,
+        "rev_share_eur": 838.45,
+        "wager_eur": 351860.23,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Friends Bursting Bonus",
+        "source": "lnw",
+        "ggr_eur": 16853.81,
+        "rev_share_eur": 674.15,
+        "wager_eur": 169223.92,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Blazing Bandits",
+        "source": "lnw",
+        "ggr_eur": 16212.99,
+        "rev_share_eur": 648.52,
+        "wager_eur": 99610.96,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Friends RTP 94",
+        "source": "lnw",
+        "ggr_eur": 14789.12,
+        "rev_share_eur": 591.56,
+        "wager_eur": 143957.84,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Candy Mine Megaways RTP 94",
+        "source": "lnw",
+        "ggr_eur": 12210.18,
+        "rev_share_eur": 488.41,
+        "wager_eur": 102688.49,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Jewel Boom Super Drop",
+        "source": "lnw",
+        "ggr_eur": 9787.96,
+        "rev_share_eur": 391.52,
+        "wager_eur": 230355.74,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Family Feud Multi Drop RTP 94",
+        "source": "lnw",
+        "ggr_eur": 9710.35,
+        "rev_share_eur": 388.41,
+        "wager_eur": 132947.52,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "GODFATHER THE OFFER RTP 94",
+        "source": "lnw",
+        "ggr_eur": 4751.71,
+        "rev_share_eur": 190.07,
+        "wager_eur": 13106.12,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Friends The One With Roll RTP 94",
+        "source": "lnw",
+        "ggr_eur": 4039.73,
+        "rev_share_eur": 161.59,
+        "wager_eur": 65551.31,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Ace Ventura",
+        "source": "lnw",
+        "ggr_eur": 2632.86,
+        "rev_share_eur": 105.31,
+        "wager_eur": 18126.05,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Stadium Megaways",
+        "source": "lnw",
+        "ggr_eur": 2566.51,
+        "rev_share_eur": 102.66,
+        "wager_eur": 18793.77,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "The Godfather Megaways",
+        "source": "lnw",
+        "ggr_eur": 1113.99,
+        "rev_share_eur": 44.56,
+        "wager_eur": 13570.05,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Rambo 94",
+        "source": "lnw",
+        "ggr_eur": 948.89,
+        "rev_share_eur": 37.96,
+        "wager_eur": 5951.87,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "The Godfather 3 Pillars of Power",
+        "source": "lnw",
+        "ggr_eur": 886.45,
+        "rev_share_eur": 35.46,
+        "wager_eur": 2699.85,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Bill and Teds RTP 94",
+        "source": "lnw",
+        "ggr_eur": 547.9,
+        "rev_share_eur": 21.92,
+        "wager_eur": 1982.79,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Candy Mine Mega Mines",
+        "source": "lnw",
+        "ggr_eur": 474.25,
+        "rev_share_eur": 18.97,
+        "wager_eur": 1502.3,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Star Trek",
+        "source": "lnw",
+        "ggr_eur": 402.4,
+        "rev_share_eur": 16.1,
+        "wager_eur": 4613.27,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Charlies Angels",
+        "source": "lnw",
+        "ggr_eur": 347.28,
+        "rev_share_eur": 13.89,
+        "wager_eur": 5912.32,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "THE MASK OF ZORRO RTP 94",
+        "source": "lnw",
+        "ggr_eur": 329.1,
+        "rev_share_eur": 13.16,
+        "wager_eur": 1693.88,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Candy Mine 94",
+        "source": "lnw",
+        "ggr_eur": 225.46,
+        "rev_share_eur": 9.02,
+        "wager_eur": 1839.02,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "CSI",
+        "source": "lnw",
+        "ggr_eur": 103.17,
+        "rev_share_eur": 4.13,
+        "wager_eur": 287.88,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Rocket Eruption Triple Blast 93",
+        "source": "lnw",
+        "ggr_eur": 2.84,
+        "rev_share_eur": 0.11,
+        "wager_eur": 24.4,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "The Godfather",
+        "source": "lnw",
+        "ggr_eur": -201.53,
+        "rev_share_eur": -8.06,
+        "wager_eur": 4560.55,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Young Guns RTP 94",
+        "source": "lnw",
+        "ggr_eur": -415.52,
+        "rev_share_eur": -16.62,
+        "wager_eur": 678.56,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Cheers",
+        "source": "lnw",
+        "ggr_eur": -686.67,
+        "rev_share_eur": -27.47,
+        "wager_eur": 7328.99,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Rambo Mega Mines",
+        "source": "lnw",
+        "ggr_eur": -1119.6,
+        "rev_share_eur": -44.78,
+        "wager_eur": 1471.82,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Ace Ventura Ultranudge US",
+        "source": "lnw",
+        "ggr_eur": -6686.32,
+        "rev_share_eur": -267.45,
+        "wager_eur": 71322.06,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Family Feud RTP 94",
+        "source": "lnw",
+        "ggr_eur": -11363.44,
+        "rev_share_eur": -454.54,
+        "wager_eur": 339194.16,
+        "date": "2026-03-02",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
       }
     ]
   }

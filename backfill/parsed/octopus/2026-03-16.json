@@ -1,0 +1,64 @@
+{
+  "date": "2026-03-16",
+  "source": "octopus",
+  "ggr_eur": 18738.84,
+  "rev_share_eur": 749.55,
+  "rows": [
+    {
+      "game": "Godfather Megaways 94% RTP",
+      "source": "octopus",
+      "ggr_eur": 6929.27,
+      "rev_share_eur": 277.17,
+      "wager_eur": 43525.08
+    },
+    {
+      "game": "Family Feud",
+      "source": "octopus",
+      "ggr_eur": 4373.31,
+      "rev_share_eur": 174.93,
+      "wager_eur": 37450.6
+    },
+    {
+      "game": "Stadium Megaways 94% RTP",
+      "source": "octopus",
+      "ggr_eur": 1515.81,
+      "rev_share_eur": 60.63,
+      "wager_eur": 18453.29
+    },
+    {
+      "game": "Ace Ventura",
+      "source": "octopus",
+      "ggr_eur": 4536.36,
+      "rev_share_eur": 181.45,
+      "wager_eur": 14035.86
+    },
+    {
+      "game": "Rambo",
+      "source": "octopus",
+      "ggr_eur": 110.08,
+      "rev_share_eur": 4.4,
+      "wager_eur": 5340.49
+    },
+    {
+      "game": "Godfather Megaways 96% RTP",
+      "source": "octopus",
+      "ggr_eur": 488.75,
+      "rev_share_eur": 19.55,
+      "wager_eur": 3244.21
+    },
+    {
+      "game": "Stadium Megaways 96% RTP",
+      "source": "octopus",
+      "ggr_eur": 874.83,
+      "rev_share_eur": 34.99,
+      "wager_eur": 3198.96
+    },
+    {
+      "game": "Charlies Angels",
+      "source": "octopus",
+      "ggr_eur": -89.57,
+      "rev_share_eur": -3.58,
+      "wager_eur": 726.22
+    }
+  ]
+}

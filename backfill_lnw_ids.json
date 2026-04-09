@@ -1,0 +1,974 @@
+[
+  {
+    "id": "19b7d9090e7ccdac",
+    "date": "2026-01-02",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19b7cc2844de000c",
+    "date": "2026-01-02",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19b822d7c9ccbaa2",
+    "date": "2026-01-03",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19b8753a09fb70b7",
+    "date": "2026-01-04",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19b8c7a352ccbc26",
+    "date": "2026-01-05",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19b91a09227ca01b",
+    "date": "2026-01-06",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19b96c6e16b409a8",
+    "date": "2026-01-07",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19b9c8461573b7b8",
+    "date": "2026-01-08",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19ba23416f90f98e",
+    "date": "2026-01-09",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19ba6479f57373e9",
+    "date": "2026-01-10",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bab6e2679041a2",
+    "date": "2026-01-11",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bb09474371a692",
+    "date": "2026-01-12",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bb5ace059ffa9e",
+    "date": "2026-01-13",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bbad37b70319c1",
+    "date": "2026-01-14",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bc09e678757172",
+    "date": "2026-01-15",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bc6ae31db7441b",
+    "date": "2026-01-16",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bca6215c82f2f0",
+    "date": "2026-01-17",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bcf8847f853789",
+    "date": "2026-01-18",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bd4ae916f73261",
+    "date": "2026-01-19",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bd9c7204e5ff39",
+    "date": "2026-01-20",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bdeed8f3753538",
+    "date": "2026-01-21",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19be4ab090687d07",
+    "date": "2026-01-22",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19be92c84ec5287b",
+    "date": "2026-01-23",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bee60a110590d5",
+    "date": "2026-01-24",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bf38723bb4dc3f",
+    "date": "2026-01-25",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bf8ada46025ade",
+    "date": "2026-01-26",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19bfdc60947f9fdd",
+    "date": "2026-01-27",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c02fa48fc054f3",
+    "date": "2026-01-28",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c08b7c24adcdc0",
+    "date": "2026-01-29",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c0d46c6c1236c9",
+    "date": "2026-01-30",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c126d109de688b",
+    "date": "2026-01-31",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c1793901bb6184",
+    "date": "2026-02-01",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c1cba72dc86b0f",
+    "date": "2026-02-02",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c21d2a99bb0b28",
+    "date": "2026-02-03",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c26f981a615dc9",
+    "date": "2026-02-04",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c2cc43b7b9ed6f",
+    "date": "2026-02-05",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c3145a1c178236",
+    "date": "2026-02-06",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c31310d874dd43",
+    "date": "2026-02-06",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c367a1814dbbeb",
+    "date": "2026-02-07",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c3665521e7cd17",
+    "date": "2026-02-07",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c3ba0556e6b62e",
+    "date": "2026-02-08",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c3b8c35941971f",
+    "date": "2026-02-08",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c40efd405c2f6c",
+    "date": "2026-02-09",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c40a3a32afd830",
+    "date": "2026-02-09",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c45df26bf00dc7",
+    "date": "2026-02-10",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c45ca19934d30b",
+    "date": "2026-02-10",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c4b056dabeddf6",
+    "date": "2026-02-11",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c4af09ccea1a6f",
+    "date": "2026-02-11",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c50dec17d9ac84",
+    "date": "2026-02-12",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c50ca512ad5d3b",
+    "date": "2026-02-12",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c556099ed9be21",
+    "date": "2026-02-13",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c554cb9198daa4",
+    "date": "2026-02-13",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c5a868ddcee453",
+    "date": "2026-02-14",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c5a71d1cbb3a2a",
+    "date": "2026-02-14",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c5faccdcae3053",
+    "date": "2026-02-15",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c5f9977ba1b440",
+    "date": "2026-02-15",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c64d389d8ed7ac",
+    "date": "2026-02-16",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c64be90b2a186a",
+    "date": "2026-02-16",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c69f992b2e8889",
+    "date": "2026-02-17",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c69e6cb251c6f7",
+    "date": "2026-02-17",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c6f1fa64ae50f7",
+    "date": "2026-02-18",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c6f0bd5583f7fb",
+    "date": "2026-02-18",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c75e274c6748c4",
+    "date": "2026-02-19",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c75ccee1ca6a6c",
+    "date": "2026-02-19",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c796d26cd68e3f",
+    "date": "2026-02-20",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c7958c3b7e96c7",
+    "date": "2026-02-20",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c7e92d5231ce9f",
+    "date": "2026-02-21",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c7e7ea81823d31",
+    "date": "2026-02-21",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c83b9163bafd92",
+    "date": "2026-02-22",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c83a4e042d033c",
+    "date": "2026-02-22",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c88dfb95667bf4",
+    "date": "2026-02-23",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c88cb10ab011b9",
+    "date": "2026-02-23",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c8e05fd66cca45",
+    "date": "2026-02-24",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c8df19d06e07b1",
+    "date": "2026-02-24",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c932ce8db0339a",
+    "date": "2026-02-25",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c931ab1282d782",
+    "date": "2026-02-25",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c98f75b597d28b",
+    "date": "2026-02-26",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c98e2cc5f1dbc0",
+    "date": "2026-02-26",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19c9d7925bfcb285",
+    "date": "2026-02-27",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19c9d6403cab61e4",
+    "date": "2026-02-27",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19ca29f480236b74",
+    "date": "2026-02-28",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19ca28a7b68e2863",
+    "date": "2026-02-28",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19ca7c61628aee55",
+    "date": "2026-03-01",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19ca7b12c1675c1c",
+    "date": "2026-03-01",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cacf9dce377ab0",
+    "date": "2026-03-02",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cace5d1ecc4765",
+    "date": "2026-03-02",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cb212a1ced91e2",
+    "date": "2026-03-03",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cb1fdbcf7a4359",
+    "date": "2026-03-03",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cb73910e2faffe",
+    "date": "2026-03-04",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cb7244b95d609b",
+    "date": "2026-03-04",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cbd11ae5779dbb",
+    "date": "2026-03-05",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cbcfce85ecf8ed",
+    "date": "2026-03-05",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cc185b173adaaa",
+    "date": "2026-03-06",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cc171239f8c9cf",
+    "date": "2026-03-06",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cc6ba19987df04",
+    "date": "2026-03-07",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cc6a6d4ac0e8b2",
+    "date": "2026-03-07",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19ccbd231beadd12",
+    "date": "2026-03-08",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19ccbbde3432cafc",
+    "date": "2026-03-08",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cd1068cf8ccdd1",
+    "date": "2026-03-09",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cd0f1e671cc441",
+    "date": "2026-03-09",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cd61f82cb9462b",
+    "date": "2026-03-10",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cd60a9fe29dbd5",
+    "date": "2026-03-10",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cdb536501fedd5",
+    "date": "2026-03-11",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cdb3ee07cd4e9e",
+    "date": "2026-03-11",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19ce2681ba77d5e9",
+    "date": "2026-03-12",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19ce253618e297c6",
+    "date": "2026-03-12",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19ce5a00a543dbfa",
+    "date": "2026-03-13",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19ce58be27bbb748",
+    "date": "2026-03-13",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cead446757dfbe",
+    "date": "2026-03-14",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19ceac02cdc586cb",
+    "date": "2026-03-14",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19ceffa586af0e58",
+    "date": "2026-03-15",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cefe6794fc720d",
+    "date": "2026-03-15",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cf5132108cee99",
+    "date": "2026-03-16",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cf4ff30a58c7f8",
+    "date": "2026-03-16",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cfa397b96a105d",
+    "date": "2026-03-17",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cfa24c798e1a33",
+    "date": "2026-03-17",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19cff6d991b798e9",
+    "date": "2026-03-18",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19cff5e3ae1968d2",
+    "date": "2026-03-18",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d05388473fef50",
+    "date": "2026-03-19",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d0525094869acb",
+    "date": "2026-03-19",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d0a87f58e8a871",
+    "date": "2026-03-20",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d0a718b2c03271",
+    "date": "2026-03-20",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d0ee0864444014",
+    "date": "2026-03-21",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d0ec580c0b198b",
+    "date": "2026-03-21",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d13f8d4f0d02ac",
+    "date": "2026-03-22",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d13de466be6839",
+    "date": "2026-03-22",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d191fa5a52ef4f",
+    "date": "2026-03-23",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d1904d93a1146a",
+    "date": "2026-03-23",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d1e6f2373f2b83",
+    "date": "2026-03-24",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d1e5447265f5c0",
+    "date": "2026-03-24",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d236c78c1caeb6",
+    "date": "2026-03-25",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d2351c728531b9",
+    "date": "2026-03-25",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d2937539a622d6",
+    "date": "2026-03-26",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d291c5c2fd3df2",
+    "date": "2026-03-26",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d2dc6e32fed6e3",
+    "date": "2026-03-27",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d2dabf6a86966c",
+    "date": "2026-03-27",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d32ed575912821",
+    "date": "2026-03-28",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d32d26a446a3a5",
+    "date": "2026-03-28",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d37cf105adfa11",
+    "date": "2026-03-29",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d37b45a33895a5",
+    "date": "2026-03-29",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d3cf50a015abd7",
+    "date": "2026-03-30",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d3cdb008e12df9",
+    "date": "2026-03-30",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d421b53e9c2c3f",
+    "date": "2026-03-31",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d4200a9193342e",
+    "date": "2026-03-31",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d4959a65753812",
+    "date": "2026-04-01",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d493e925a9395c",
+    "date": "2026-04-01",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d4d1ade3187524",
+    "date": "2026-04-02",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d4cffecbd6fd50",
+    "date": "2026-04-02",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d518e5d6869401",
+    "date": "2026-04-03",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d5173cd07fd379",
+    "date": "2026-04-03",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d56c2eb4c5ec69",
+    "date": "2026-04-04",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d56a862e27ce6e",
+    "date": "2026-04-04",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d5bf685052a36a",
+    "date": "2026-04-05",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d5bdc4ecbd322e",
+    "date": "2026-04-05",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d610f14902e216",
+    "date": "2026-04-06",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d60f4851b343fb",
+    "date": "2026-04-06",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d6635858a15c2b",
+    "date": "2026-04-07",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d661b0004a7ed9",
+    "date": "2026-04-07",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d6b69a732b6225",
+    "date": "2026-04-08",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d6b4ef5200cd80",
+    "date": "2026-04-08",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  },
+  {
+    "id": "19d7127dbd25a42a",
+    "date": "2026-04-09",
+    "type": "lnw",
+    "subject": "Atlantic Digital Extended Report"
+  },
+  {
+    "id": "19d710cca1260121",
+    "date": "2026-04-09",
+    "type": "godfather",
+    "subject": "A Game for Yesterday - Godfather the Offer"
+  }
+]

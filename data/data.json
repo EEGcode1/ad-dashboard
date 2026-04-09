@@ -1,20 +1,20 @@
 {
-  "generated_at_utc": "2026-04-09T11:12:02.861517+00:00",
+  "generated_at_utc": "2026-04-09T12:46:37.692629+00:00",
   "sources": {
     "lnw": {
       "name": "lnw",
-      "ok": false,
-      "error": "xlsx downloads unavailable",
-      "row_count": 0,
-      "last_run_utc": "",
-      "covered_date": null
+      "ok": true,
+      "error": null,
+      "row_count": 4664,
+      "last_run_utc": "2026-04-09T12:46:37.693104+00:00",
+      "covered_date": "2026-04-08"
     },
     "octopus": {
       "name": "octopus",
       "ok": true,
       "error": null,
-      "row_count": 8,
-      "last_run_utc": "2026-04-09T11:12:02.861589+00:00",
+      "row_count": 41,
+      "last_run_utc": "2026-04-09T12:46:37.694570+00:00",
       "covered_date": "2026-04-08"
     },
     "bgaming": {
@@ -124,16 +124,346 @@
         "date": "2026-04-08",
         "net_revenue_eur": 0.0,
         "win_eur": 0.0
+      },
+      {
+        "game": "Jewel Boom Triple Drop 94",
+        "source": "lnw",
+        "ggr_eur": 39030.61,
+        "rev_share_eur": 1561.22,
+        "wager_eur": 504333.15,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Godfather 3 Pillars of Power 93",
+        "source": "lnw",
+        "ggr_eur": 25943.08,
+        "rev_share_eur": 1037.72,
+        "wager_eur": 348605.98,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "RAGING RHINO DOUBLE DANGER 94",
+        "source": "lnw",
+        "ggr_eur": 22648.33,
+        "rev_share_eur": 905.93,
+        "wager_eur": 309976.99,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Friends Bursting Bonus",
+        "source": "lnw",
+        "ggr_eur": 15323.95,
+        "rev_share_eur": 612.96,
+        "wager_eur": 106967.01,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Star Trek Megaways",
+        "source": "lnw",
+        "ggr_eur": 7678.42,
+        "rev_share_eur": 307.14,
+        "wager_eur": 145033.53,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Ace Ventura Ultranudge US",
+        "source": "lnw",
+        "ggr_eur": 5941.24,
+        "rev_share_eur": 237.65,
+        "wager_eur": 45164.45,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Young Guns RTP 94",
+        "source": "lnw",
+        "ggr_eur": 5309.21,
+        "rev_share_eur": 212.37,
+        "wager_eur": 28740.94,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Candy Mine Megaways RTP 94",
+        "source": "lnw",
+        "ggr_eur": 5276.79,
+        "rev_share_eur": 211.07,
+        "wager_eur": 86925.3,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Family Feud RTP 94",
+        "source": "lnw",
+        "ggr_eur": 5025.24,
+        "rev_share_eur": 201.01,
+        "wager_eur": 73592.58,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Rocket Eruption Triple Blast 93",
+        "source": "lnw",
+        "ggr_eur": 4135.43,
+        "rev_share_eur": 165.42,
+        "wager_eur": 38669.78,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Friends The One With Roll RTP 94",
+        "source": "lnw",
+        "ggr_eur": 3305.17,
+        "rev_share_eur": 132.21,
+        "wager_eur": 20991.69,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Jewel Boom Super Drop",
+        "source": "lnw",
+        "ggr_eur": 2891.86,
+        "rev_share_eur": 115.67,
+        "wager_eur": 150115.94,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "CSI US",
+        "source": "lnw",
+        "ggr_eur": 2524.37,
+        "rev_share_eur": 100.97,
+        "wager_eur": 21453.7,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "The Godfather Megaways",
+        "source": "lnw",
+        "ggr_eur": 2254.88,
+        "rev_share_eur": 90.2,
+        "wager_eur": 29828.26,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Bill and Teds RTP 94",
+        "source": "lnw",
+        "ggr_eur": 1757.51,
+        "rev_share_eur": 70.3,
+        "wager_eur": 5782.85,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Stadium Megaways",
+        "source": "lnw",
+        "ggr_eur": 1679.68,
+        "rev_share_eur": 67.19,
+        "wager_eur": 14343.46,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "GODFATHER THE OFFER RTP 94",
+        "source": "lnw",
+        "ggr_eur": 1594.08,
+        "rev_share_eur": 63.76,
+        "wager_eur": 14372.07,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Star Trek",
+        "source": "lnw",
+        "ggr_eur": 1431.1,
+        "rev_share_eur": 57.24,
+        "wager_eur": 7650.29,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Candy Mine 94",
+        "source": "lnw",
+        "ggr_eur": 1225.3,
+        "rev_share_eur": 49.01,
+        "wager_eur": 3586.47,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Family Feud Multi Drop RTP 94",
+        "source": "lnw",
+        "ggr_eur": 1002.72,
+        "rev_share_eur": 40.11,
+        "wager_eur": 31146.03,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "The Godfather",
+        "source": "lnw",
+        "ggr_eur": 830.58,
+        "rev_share_eur": 33.22,
+        "wager_eur": 3448.52,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Rambo Mega Mines",
+        "source": "lnw",
+        "ggr_eur": 467.51,
+        "rev_share_eur": 18.7,
+        "wager_eur": 911.65,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Rambo 94",
+        "source": "lnw",
+        "ggr_eur": 454.39,
+        "rev_share_eur": 18.18,
+        "wager_eur": 9424.09,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "The Godfather 3 Pillars of Power",
+        "source": "lnw",
+        "ggr_eur": 304.83,
+        "rev_share_eur": 12.19,
+        "wager_eur": 2680.65,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "THE MASK OF ZORRO RTP 94",
+        "source": "lnw",
+        "ggr_eur": 159.24,
+        "rev_share_eur": 6.37,
+        "wager_eur": 1245.06,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Candy Mine Mega Mines",
+        "source": "lnw",
+        "ggr_eur": 92.86,
+        "rev_share_eur": 3.71,
+        "wager_eur": 3179.67,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Bill and Teds RTP 92",
+        "source": "lnw",
+        "ggr_eur": 31.31,
+        "rev_share_eur": 1.25,
+        "wager_eur": 87.33,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Ace Ventura",
+        "source": "lnw",
+        "ggr_eur": -58.96,
+        "rev_share_eur": -2.36,
+        "wager_eur": 10487.73,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "CSI",
+        "source": "lnw",
+        "ggr_eur": -72.83,
+        "rev_share_eur": -2.91,
+        "wager_eur": 353.02,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Blazing Bandits",
+        "source": "lnw",
+        "ggr_eur": -170.41,
+        "rev_share_eur": -6.82,
+        "wager_eur": 1563.87,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Cheers",
+        "source": "lnw",
+        "ggr_eur": -366.92,
+        "rev_share_eur": -14.68,
+        "wager_eur": 6331.06,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Charlies Angels",
+        "source": "lnw",
+        "ggr_eur": -1451.55,
+        "rev_share_eur": -58.06,
+        "wager_eur": 5835.22,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "game": "Friends RTP 94",
+        "source": "lnw",
+        "ggr_eur": -2235.56,
+        "rev_share_eur": -89.42,
+        "wager_eur": 110508.39,
+        "date": "2026-04-08",
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
       }
     ],
     "totals": {
-      "lnw_rev_share_eur": 0,
+      "lnw_rev_share_eur": 6158.52,
       "octopus_rev_share_eur": 228.96,
       "bgaming_rev_share_eur": 0,
       "crowncoins_net_revenue_eur": 0,
-      "regulated_total_eur": 0,
+      "regulated_total_eur": 6158.52,
       "tidal_total_eur": 228.96,
-      "combined_total_eur": 228.96
+      "combined_total_eur": 6387.48
     }
   },
   "week": {
@@ -141,11 +471,146 @@
     "to": "2026-04-08",
     "by_game": [
       {
+        "source": "lnw",
+        "game": "Jewel Boom Triple Drop 94",
+        "wager_eur": 5311347.93,
+        "ggr_eur": 362141.51,
+        "rev_share_eur": 14485.65,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "RAGING RHINO DOUBLE DANGER 94",
+        "wager_eur": 3991532.51,
+        "ggr_eur": 247168.44,
+        "rev_share_eur": 9886.73,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Godfather 3 Pillars of Power 93",
+        "wager_eur": 3419215.98,
+        "ggr_eur": 230300.77,
+        "rev_share_eur": 9212.02,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Star Trek Megaways",
+        "wager_eur": 1953445.84,
+        "ggr_eur": 110830.0,
+        "rev_share_eur": 4433.2,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 1275976.22,
+        "ggr_eur": 82032.44,
+        "rev_share_eur": 3281.29,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 429139.07,
+        "ggr_eur": 56668.68,
+        "rev_share_eur": 2266.74,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Candy Mine Megaways RTP 94",
+        "wager_eur": 1046080.29,
+        "ggr_eur": 54438.59,
+        "rev_share_eur": 2177.54,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Family Feud RTP 94",
+        "wager_eur": 459422.83,
+        "ggr_eur": 31745.35,
+        "rev_share_eur": 1269.82,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Friends Bursting Bonus",
+        "wager_eur": 812948.4,
+        "ggr_eur": 31484.79,
+        "rev_share_eur": 1259.39,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Rocket Eruption Triple Blast 93",
+        "wager_eur": 535614.22,
+        "ggr_eur": 25866.75,
+        "rev_share_eur": 1034.68,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Young Guns RTP 94",
+        "wager_eur": 255800.04,
+        "ggr_eur": 25081.64,
+        "rev_share_eur": 1003.27,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Family Feud Multi Drop RTP 94",
+        "wager_eur": 230599.93,
+        "ggr_eur": 17892.21,
+        "rev_share_eur": 715.67,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "CSI US",
+        "wager_eur": 187329.04,
+        "ggr_eur": 16915.03,
+        "rev_share_eur": 676.58,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 224067.65,
+        "ggr_eur": 16024.82,
+        "rev_share_eur": 640.99,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
         "source": "octopus",
         "game": "Godfather Megaways 94% RTP",
         "wager_eur": 335674.22,
         "ggr_eur": 15943.83,
         "rev_share_eur": 637.75,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Stadium Megaways",
+        "wager_eur": 156281.19,
+        "ggr_eur": 14919.06,
+        "rev_share_eur": 596.77,
         "net_revenue_eur": 0.0,
         "win_eur": 0.0
       },
@@ -168,6 +633,42 @@
         "win_eur": 0.0
       },
       {
+        "source": "lnw",
+        "game": "Friends RTP 94",
+        "wager_eur": 976596.4,
+        "ggr_eur": 9464.51,
+        "rev_share_eur": 378.57,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "The Godfather Megaways",
+        "wager_eur": 219627.31,
+        "ggr_eur": 9414.12,
+        "rev_share_eur": 376.57,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Cheers",
+        "wager_eur": 52698.73,
+        "ggr_eur": 7821.7,
+        "rev_share_eur": 312.87,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "The Godfather",
+        "wager_eur": 46827.48,
+        "ggr_eur": 7100.1,
+        "rev_share_eur": 284.01,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
         "source": "octopus",
         "game": "Ace Ventura",
         "wager_eur": 50120.49,
@@ -177,11 +678,128 @@
         "win_eur": 0.0
       },
       {
+        "source": "lnw",
+        "game": "Ace Ventura",
+        "wager_eur": 93130.71,
+        "ggr_eur": 5866.02,
+        "rev_share_eur": 234.63,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 27587.06,
+        "ggr_eur": 2758.7,
+        "rev_share_eur": 110.36,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
         "source": "octopus",
         "game": "Rambo",
         "wager_eur": 53535.73,
         "ggr_eur": 2619.25,
         "rev_share_eur": 104.78,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Blazing Bandits",
+        "wager_eur": 22065.94,
+        "ggr_eur": 2541.63,
+        "rev_share_eur": 101.66,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Candy Mine 94",
+        "wager_eur": 15326.69,
+        "ggr_eur": 2505.15,
+        "rev_share_eur": 100.2,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Charlies Angels",
+        "wager_eur": 40795.01,
+        "ggr_eur": 2160.89,
+        "rev_share_eur": 86.43,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Rambo Mega Mines",
+        "wager_eur": 11038.15,
+        "ggr_eur": 1820.7,
+        "rev_share_eur": 72.83,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "The Godfather 3 Pillars of Power",
+        "wager_eur": 14749.9,
+        "ggr_eur": 1757.34,
+        "rev_share_eur": 70.29,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 4206.86,
+        "ggr_eur": 1083.99,
+        "rev_share_eur": 43.36,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Star Trek",
+        "wager_eur": 70752.83,
+        "ggr_eur": 736.62,
+        "rev_share_eur": 29.46,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "GODFATHER THE OFFER RTP 94",
+        "wager_eur": 92533.08,
+        "ggr_eur": 343.02,
+        "rev_share_eur": 13.72,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 17256.37,
+        "ggr_eur": 10.12,
+        "rev_share_eur": 0.4,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "THE MASK OF ZORRO RTP 94",
+        "wager_eur": 10422.32,
+        "ggr_eur": -244.72,
+        "rev_share_eur": -9.79,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "CSI",
+        "wager_eur": 3119.65,
+        "ggr_eur": -290.34,
+        "rev_share_eur": -11.61,
         "net_revenue_eur": 0.0,
         "win_eur": 0.0
       },
@@ -204,6 +822,15 @@
         "win_eur": 0.0
       },
       {
+        "source": "lnw",
+        "game": "Rambo 94",
+        "wager_eur": 50570.53,
+        "ggr_eur": -1781.61,
+        "rev_share_eur": -71.25,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
         "source": "octopus",
         "game": "Charlies Angels",
         "wager_eur": 5729.41,
@@ -216,87 +843,222 @@
     "by_day": [
       {
         "date": "2026-04-02",
-        "lnw": 0.0,
+        "lnw": 9870.4,
         "octopus": 176.78,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 176.78,
-        "combined": 176.78
+        "combined": 10047.18
       },
       {
         "date": "2026-04-03",
-        "lnw": 0.0,
+        "lnw": 9983.56,
         "octopus": 508.4,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 508.4,
-        "combined": 508.4
+        "combined": 10491.96
       },
       {
         "date": "2026-04-04",
-        "lnw": 0.0,
+        "lnw": 7187.51,
         "octopus": 105.59,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 105.59,
-        "combined": 105.59
+        "combined": 7293.1
       },
       {
         "date": "2026-04-05",
-        "lnw": 0.0,
+        "lnw": 8269.91,
         "octopus": 415.86,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 415.86,
-        "combined": 415.86
+        "combined": 8685.77
       },
       {
         "date": "2026-04-06",
-        "lnw": 0.0,
+        "lnw": 6801.75,
         "octopus": 61.63,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 61.63,
-        "combined": 61.63
+        "combined": 6863.38
       },
       {
         "date": "2026-04-07",
-        "lnw": 0.0,
+        "lnw": 6791.4,
         "octopus": 210.1,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 210.1,
-        "combined": 210.1
+        "combined": 7001.5
       },
       {
         "date": "2026-04-08",
-        "lnw": 0.0,
+        "lnw": 6158.52,
         "octopus": 228.96,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 228.96,
-        "combined": 228.96
+        "combined": 6387.48
       }
     ],
     "totals": {
-      "lnw_rev_share_eur": 0,
+      "lnw_rev_share_eur": 55063.05,
       "octopus_rev_share_eur": 1707.32,
       "bgaming_rev_share_eur": 0,
       "crowncoins_net_revenue_eur": 0,
-      "regulated_total_eur": 0,
+      "regulated_total_eur": 55063.05,
       "tidal_total_eur": 1707.32,
-      "combined_total_eur": 1707.32
+      "combined_total_eur": 56770.37
     }
   },
   "mtd": {
     "month": "2026-04",
     "by_game": [
       {
+        "source": "lnw",
+        "game": "Jewel Boom Triple Drop 94",
+        "wager_eur": 5786060.61,
+        "ggr_eur": 396091.92,
+        "rev_share_eur": 15843.67,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "RAGING RHINO DOUBLE DANGER 94",
+        "wager_eur": 4310825.6,
+        "ggr_eur": 265011.01,
+        "rev_share_eur": 10600.43,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Godfather 3 Pillars of Power 93",
+        "wager_eur": 3771261.48,
+        "ggr_eur": 252225.8,
+        "rev_share_eur": 10089.02,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Star Trek Megaways",
+        "wager_eur": 2684702.43,
+        "ggr_eur": 152041.26,
+        "rev_share_eur": 6081.65,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Jewel Boom Super Drop",
+        "wager_eur": 1432348.63,
+        "ggr_eur": 86514.13,
+        "rev_share_eur": 3460.56,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Candy Mine Megaways RTP 94",
+        "wager_eur": 1311725.68,
+        "ggr_eur": 63430.88,
+        "rev_share_eur": 2537.23,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Ace Ventura Ultranudge US",
+        "wager_eur": 519697.92,
+        "ggr_eur": 60067.82,
+        "rev_share_eur": 2402.71,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Family Feud RTP 94",
+        "wager_eur": 613644.81,
+        "ggr_eur": 43773.79,
+        "rev_share_eur": 1750.96,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Friends Bursting Bonus",
+        "wager_eur": 912392.7,
+        "ggr_eur": 41168.3,
+        "rev_share_eur": 1646.73,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Rocket Eruption Triple Blast 93",
+        "wager_eur": 658588.16,
+        "ggr_eur": 32769.21,
+        "rev_share_eur": 1310.78,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Young Guns RTP 94",
+        "wager_eur": 304600.57,
+        "ggr_eur": 25555.88,
+        "rev_share_eur": 1022.24,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Family Feud Multi Drop RTP 94",
+        "wager_eur": 258775.4,
+        "ggr_eur": 23465.45,
+        "rev_share_eur": 938.6,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
         "source": "octopus",
         "game": "Godfather Megaways 94% RTP",
         "wager_eur": 380096.34,
         "ggr_eur": 21043.01,
         "rev_share_eur": 841.72,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Stadium Megaways",
+        "wager_eur": 177546.96,
+        "ggr_eur": 19612.03,
+        "rev_share_eur": 784.49,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "CSI US",
+        "wager_eur": 290742.86,
+        "ggr_eur": 17163.82,
+        "rev_share_eur": 686.53,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Friends The One With Roll RTP 94",
+        "wager_eur": 249479.38,
+        "ggr_eur": 14306.8,
+        "rev_share_eur": 572.27,
         "net_revenue_eur": 0.0,
         "win_eur": 0.0
       },
@@ -310,11 +1072,56 @@
         "win_eur": 0.0
       },
       {
+        "source": "lnw",
+        "game": "The Godfather Megaways",
+        "wager_eur": 247201.39,
+        "ggr_eur": 12617.96,
+        "rev_share_eur": 504.72,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Friends RTP 94",
+        "wager_eur": 1104641.3,
+        "ggr_eur": 12380.26,
+        "rev_share_eur": 495.2,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
         "source": "octopus",
         "game": "Family Feud",
         "wager_eur": 180544.23,
         "ggr_eur": 11621.13,
         "rev_share_eur": 464.85,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Cheers",
+        "wager_eur": 57754.52,
+        "ggr_eur": 9417.49,
+        "rev_share_eur": 376.7,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "The Godfather",
+        "wager_eur": 54718.66,
+        "ggr_eur": 9066.75,
+        "rev_share_eur": 362.68,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Ace Ventura",
+        "wager_eur": 106862.7,
+        "ggr_eur": 7618.75,
+        "rev_share_eur": 304.74,
         "net_revenue_eur": 0.0,
         "win_eur": 0.0
       },
@@ -337,11 +1144,128 @@
         "win_eur": 0.0
       },
       {
+        "source": "lnw",
+        "game": "Candy Mine 94",
+        "wager_eur": 21234.38,
+        "ggr_eur": 4235.04,
+        "rev_share_eur": 169.4,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Blazing Bandits",
+        "wager_eur": 24691.2,
+        "ggr_eur": 2923.13,
+        "rev_share_eur": 116.92,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "The Godfather 3 Pillars of Power",
+        "wager_eur": 17641.34,
+        "ggr_eur": 2678.43,
+        "rev_share_eur": 107.13,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "GODFATHER THE OFFER RTP 94",
+        "wager_eur": 102377.11,
+        "ggr_eur": 2499.06,
+        "rev_share_eur": 99.96,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Rambo Mega Mines",
+        "wager_eur": 11910.06,
+        "ggr_eur": 1986.54,
+        "rev_share_eur": 79.46,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Bill and Teds RTP 94",
+        "wager_eur": 33674.2,
+        "ggr_eur": 1979.35,
+        "rev_share_eur": 79.19,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Charlies Angels",
+        "wager_eur": 49029.46,
+        "ggr_eur": 1938.71,
+        "rev_share_eur": 77.54,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Star Trek",
+        "wager_eur": 76301.33,
+        "ggr_eur": 1533.73,
+        "rev_share_eur": 61.34,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Bill and Teds RTP 92",
+        "wager_eur": 4206.86,
+        "ggr_eur": 1083.99,
+        "rev_share_eur": 43.36,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Candy Mine Mega Mines",
+        "wager_eur": 20856.44,
+        "ggr_eur": 375.87,
+        "rev_share_eur": 15.03,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "THE MASK OF ZORRO RTP 94",
+        "wager_eur": 12956.26,
+        "ggr_eur": 19.5,
+        "rev_share_eur": 0.78,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "CSI",
+        "wager_eur": 3313.32,
+        "ggr_eur": -354.13,
+        "rev_share_eur": -14.16,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
         "source": "octopus",
         "game": "Charlies Angels",
         "wager_eur": 6075.36,
         "ggr_eur": -2480.83,
         "rev_share_eur": -99.23,
+        "net_revenue_eur": 0.0,
+        "win_eur": 0.0
+      },
+      {
+        "source": "lnw",
+        "game": "Rambo 94",
+        "wager_eur": 56731.41,
+        "ggr_eur": -2492.88,
+        "rev_share_eur": -99.7,
         "net_revenue_eur": 0.0,
         "win_eur": 0.0
       },
@@ -367,139 +1291,1021 @@
     "by_day": [
       {
         "date": "2026-04-01",
-        "lnw": 0.0,
+        "lnw": 7445.11,
         "octopus": 230.87,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 230.87,
-        "combined": 230.87
+        "combined": 7675.98
       },
       {
         "date": "2026-04-02",
-        "lnw": 0.0,
+        "lnw": 9870.4,
         "octopus": 176.78,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 176.78,
-        "combined": 176.78
+        "combined": 10047.18
       },
       {
         "date": "2026-04-03",
-        "lnw": 0.0,
+        "lnw": 9983.56,
         "octopus": 508.4,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 508.4,
-        "combined": 508.4
+        "combined": 10491.96
       },
       {
         "date": "2026-04-04",
-        "lnw": 0.0,
+        "lnw": 7187.51,
         "octopus": 105.59,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 105.59,
-        "combined": 105.59
+        "combined": 7293.1
       },
       {
         "date": "2026-04-05",
-        "lnw": 0.0,
+        "lnw": 8269.91,
         "octopus": 415.86,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 415.86,
-        "combined": 415.86
+        "combined": 8685.77
       },
       {
         "date": "2026-04-06",
-        "lnw": 0.0,
+        "lnw": 6801.75,
         "octopus": 61.63,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 61.63,
-        "combined": 61.63
+        "combined": 6863.38
       },
       {
         "date": "2026-04-07",
-        "lnw": 0.0,
+        "lnw": 6791.4,
         "octopus": 210.1,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 210.1,
-        "combined": 210.1
+        "combined": 7001.5
       },
       {
         "date": "2026-04-08",
-        "lnw": 0.0,
+        "lnw": 6158.52,
         "octopus": 228.96,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 228.96,
-        "combined": 228.96
+        "combined": 6387.48
       }
     ],
     "cumulative": [
       {
         "date": "2026-04-01",
-        "lnw_cum": 0.0,
+        "lnw_cum": 7445.11,
         "tidal_cum": 230.87,
-        "combined_cum": 230.87
+        "combined_cum": 7675.98
       },
       {
         "date": "2026-04-02",
-        "lnw_cum": 0.0,
+        "lnw_cum": 17315.51,
         "tidal_cum": 407.65,
-        "combined_cum": 407.65
+        "combined_cum": 17723.16
       },
       {
         "date": "2026-04-03",
-        "lnw_cum": 0.0,
+        "lnw_cum": 27299.07,
         "tidal_cum": 916.05,
-        "combined_cum": 916.05
+        "combined_cum": 28215.12
       },
       {
         "date": "2026-04-04",
-        "lnw_cum": 0.0,
+        "lnw_cum": 34486.58,
         "tidal_cum": 1021.64,
-        "combined_cum": 1021.64
+        "combined_cum": 35508.22
       },
       {
         "date": "2026-04-05",
-        "lnw_cum": 0.0,
+        "lnw_cum": 42756.49,
         "tidal_cum": 1437.5,
-        "combined_cum": 1437.5
+        "combined_cum": 44193.99
       },
       {
         "date": "2026-04-06",
-        "lnw_cum": 0.0,
+        "lnw_cum": 49558.24,
         "tidal_cum": 1499.13,
-        "combined_cum": 1499.13
+        "combined_cum": 51057.37
       },
       {
         "date": "2026-04-07",
-        "lnw_cum": 0.0,
+        "lnw_cum": 56349.64,
         "tidal_cum": 1709.23,
-        "combined_cum": 1709.23
+        "combined_cum": 58058.87
       },
       {
         "date": "2026-04-08",
-        "lnw_cum": 0.0,
+        "lnw_cum": 62508.16,
         "tidal_cum": 1938.19,
-        "combined_cum": 1938.19
+        "combined_cum": 64446.35
       }
     ],
     "totals": {
-      "lnw_rev_share_eur": 0,
+      "lnw_rev_share_eur": 62508.16,
       "octopus_rev_share_eur": 1938.19,
       "bgaming_rev_share_eur": 0,
       "crowncoins_net_revenue_eur": 0,
-      "regulated_total_eur": 0,
+      "regulated_total_eur": 62508.16,
       "tidal_total_eur": 1938.19,
-      "combined_total_eur": 1938.19
+      "combined_total_eur": 64446.35
     }
   },
   "all": {
     "by_day": [
+      {
+        "date": "2025-09-16",
+        "lnw": 2730.03,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2730.03
+      },
+      {
+        "date": "2025-09-17",
+        "lnw": 1984.61,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1984.61
+      },
+      {
+        "date": "2025-09-18",
+        "lnw": 2092.9,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2092.9
+      },
+      {
+        "date": "2025-09-19",
+        "lnw": 1742.59,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1742.59
+      },
+      {
+        "date": "2025-09-20",
+        "lnw": 1944.61,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1944.61
+      },
+      {
+        "date": "2025-09-21",
+        "lnw": 2181.67,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2181.67
+      },
+      {
+        "date": "2025-09-22",
+        "lnw": 3163.6,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3163.6
+      },
+      {
+        "date": "2025-09-23",
+        "lnw": 3032.73,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3032.73
+      },
+      {
+        "date": "2025-09-24",
+        "lnw": 1528.69,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1528.69
+      },
+      {
+        "date": "2025-09-25",
+        "lnw": 1280.51,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1280.51
+      },
+      {
+        "date": "2025-09-26",
+        "lnw": 3048.74,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3048.74
+      },
+      {
+        "date": "2025-09-27",
+        "lnw": 4321.47,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4321.47
+      },
+      {
+        "date": "2025-09-28",
+        "lnw": 3856.58,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3856.58
+      },
+      {
+        "date": "2025-09-29",
+        "lnw": 3822.52,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3822.52
+      },
+      {
+        "date": "2025-09-30",
+        "lnw": 3300.13,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3300.13
+      },
+      {
+        "date": "2025-10-01",
+        "lnw": 3731.11,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3731.11
+      },
+      {
+        "date": "2025-10-02",
+        "lnw": 2822.1,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2822.1
+      },
+      {
+        "date": "2025-10-03",
+        "lnw": 3645.81,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3645.81
+      },
+      {
+        "date": "2025-10-04",
+        "lnw": 3180.73,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3180.73
+      },
+      {
+        "date": "2025-10-05",
+        "lnw": 2545.06,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2545.06
+      },
+      {
+        "date": "2025-10-06",
+        "lnw": 3261.65,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3261.65
+      },
+      {
+        "date": "2025-10-07",
+        "lnw": 2939.25,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2939.25
+      },
+      {
+        "date": "2025-10-08",
+        "lnw": 1688.9,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1688.9
+      },
+      {
+        "date": "2025-10-09",
+        "lnw": 3273.09,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3273.09
+      },
+      {
+        "date": "2025-10-10",
+        "lnw": 1901.62,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1901.62
+      },
+      {
+        "date": "2025-10-11",
+        "lnw": 1949.87,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1949.87
+      },
+      {
+        "date": "2025-10-12",
+        "lnw": 2162.24,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2162.24
+      },
+      {
+        "date": "2025-10-13",
+        "lnw": 2183.5,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2183.5
+      },
+      {
+        "date": "2025-10-14",
+        "lnw": 1329.54,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1329.54
+      },
+      {
+        "date": "2025-10-15",
+        "lnw": 2944.01,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2944.01
+      },
+      {
+        "date": "2025-10-16",
+        "lnw": 1862.67,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1862.67
+      },
+      {
+        "date": "2025-10-17",
+        "lnw": 2016.0,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2016.0
+      },
+      {
+        "date": "2025-10-18",
+        "lnw": 2647.76,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2647.76
+      },
+      {
+        "date": "2025-10-19",
+        "lnw": 1695.54,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1695.54
+      },
+      {
+        "date": "2025-10-20",
+        "lnw": 1883.01,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 1883.01
+      },
+      {
+        "date": "2025-10-21",
+        "lnw": 2257.6,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2257.6
+      },
+      {
+        "date": "2025-10-22",
+        "lnw": 3778.64,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3778.64
+      },
+      {
+        "date": "2025-10-23",
+        "lnw": 5743.46,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 5743.46
+      },
+      {
+        "date": "2025-10-24",
+        "lnw": 9036.33,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 9036.33
+      },
+      {
+        "date": "2025-10-26",
+        "lnw": 6875.9,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 6875.9
+      },
+      {
+        "date": "2025-10-27",
+        "lnw": 9169.54,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 9169.54
+      },
+      {
+        "date": "2025-10-28",
+        "lnw": 9731.42,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 9731.42
+      },
+      {
+        "date": "2025-10-29",
+        "lnw": 12299.01,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 12299.01
+      },
+      {
+        "date": "2025-10-30",
+        "lnw": 6760.41,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 6760.41
+      },
+      {
+        "date": "2025-10-31",
+        "lnw": 8920.89,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 8920.89
+      },
+      {
+        "date": "2025-11-02",
+        "lnw": 4893.29,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4893.29
+      },
+      {
+        "date": "2025-11-03",
+        "lnw": 2689.8,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2689.8
+      },
+      {
+        "date": "2025-11-04",
+        "lnw": 5977.3,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 5977.3
+      },
+      {
+        "date": "2025-11-05",
+        "lnw": 4386.2,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4386.2
+      },
+      {
+        "date": "2025-11-06",
+        "lnw": 4576.97,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4576.97
+      },
+      {
+        "date": "2025-11-07",
+        "lnw": 6204.06,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 6204.06
+      },
+      {
+        "date": "2025-11-08",
+        "lnw": 3342.54,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3342.54
+      },
+      {
+        "date": "2025-11-09",
+        "lnw": 5549.9,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 5549.9
+      },
+      {
+        "date": "2025-11-10",
+        "lnw": 4975.41,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4975.41
+      },
+      {
+        "date": "2025-11-11",
+        "lnw": 6189.25,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 6189.25
+      },
+      {
+        "date": "2025-11-12",
+        "lnw": 5034.04,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 5034.04
+      },
+      {
+        "date": "2025-11-13",
+        "lnw": 3670.32,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3670.32
+      },
+      {
+        "date": "2025-11-14",
+        "lnw": 4390.77,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4390.77
+      },
+      {
+        "date": "2025-11-16",
+        "lnw": 3313.41,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3313.41
+      },
+      {
+        "date": "2025-11-17",
+        "lnw": 2895.68,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2895.68
+      },
+      {
+        "date": "2025-11-18",
+        "lnw": 3376.81,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3376.81
+      },
+      {
+        "date": "2025-11-19",
+        "lnw": 3242.04,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3242.04
+      },
+      {
+        "date": "2025-11-20",
+        "lnw": 3017.33,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3017.33
+      },
+      {
+        "date": "2025-11-22",
+        "lnw": 4536.75,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4536.75
+      },
+      {
+        "date": "2025-11-23",
+        "lnw": 3856.62,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3856.62
+      },
+      {
+        "date": "2025-11-24",
+        "lnw": 5262.92,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 5262.92
+      },
+      {
+        "date": "2025-11-25",
+        "lnw": 5544.69,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 5544.69
+      },
+      {
+        "date": "2025-11-26",
+        "lnw": 8489.92,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 8489.92
+      },
+      {
+        "date": "2025-11-27",
+        "lnw": 13072.31,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 13072.31
+      },
+      {
+        "date": "2025-11-28",
+        "lnw": 10396.66,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 10396.66
+      },
+      {
+        "date": "2025-11-30",
+        "lnw": 9547.68,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 9547.68
+      },
+      {
+        "date": "2025-12-01",
+        "lnw": 7065.07,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 7065.07
+      },
+      {
+        "date": "2025-12-02",
+        "lnw": 9676.26,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 9676.26
+      },
+      {
+        "date": "2025-12-03",
+        "lnw": 13208.89,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 13208.89
+      },
+      {
+        "date": "2025-12-04",
+        "lnw": 9298.28,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 9298.28
+      },
+      {
+        "date": "2025-12-05",
+        "lnw": 8345.83,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 8345.83
+      },
+      {
+        "date": "2025-12-06",
+        "lnw": 6722.22,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 6722.22
+      },
+      {
+        "date": "2025-12-07",
+        "lnw": 6881.29,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 6881.29
+      },
+      {
+        "date": "2025-12-08",
+        "lnw": 4079.52,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4079.52
+      },
+      {
+        "date": "2025-12-09",
+        "lnw": 5256.02,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 5256.02
+      },
+      {
+        "date": "2025-12-10",
+        "lnw": 7078.96,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 7078.96
+      },
+      {
+        "date": "2025-12-11",
+        "lnw": 5772.65,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 5772.65
+      },
+      {
+        "date": "2025-12-12",
+        "lnw": 5827.67,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 5827.67
+      },
+      {
+        "date": "2025-12-13",
+        "lnw": 6139.47,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 6139.47
+      },
+      {
+        "date": "2025-12-14",
+        "lnw": 4721.71,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4721.71
+      },
+      {
+        "date": "2025-12-15",
+        "lnw": 3476.26,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3476.26
+      },
+      {
+        "date": "2025-12-16",
+        "lnw": 3982.47,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3982.47
+      },
+      {
+        "date": "2025-12-17",
+        "lnw": 4538.51,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4538.51
+      },
+      {
+        "date": "2025-12-18",
+        "lnw": 2959.35,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2959.35
+      },
+      {
+        "date": "2025-12-21",
+        "lnw": 2954.99,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2954.99
+      },
+      {
+        "date": "2025-12-22",
+        "lnw": 3237.7,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3237.7
+      },
+      {
+        "date": "2025-12-23",
+        "lnw": 3936.27,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3936.27
+      },
+      {
+        "date": "2025-12-24",
+        "lnw": 4432.59,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4432.59
+      },
+      {
+        "date": "2025-12-26",
+        "lnw": 4112.8,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 4112.8
+      },
+      {
+        "date": "2025-12-27",
+        "lnw": 2697.3,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 2697.3
+      },
+      {
+        "date": "2025-12-28",
+        "lnw": 3891.9,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 3891.9
+      },
+      {
+        "date": "2025-12-29",
+        "lnw": 7182.1,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 7182.1
+      },
+      {
+        "date": "2025-12-30",
+        "lnw": 5265.4,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 5265.4
+      },
       {
         "date": "2025-12-31",
         "lnw": 0.0,
@@ -511,885 +2317,885 @@
       },
       {
         "date": "2026-01-01",
-        "lnw": 0.0,
+        "lnw": 5675.33,
         "octopus": 951.01,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 951.01,
-        "combined": 951.01
+        "combined": 6626.34
       },
       {
         "date": "2026-01-02",
-        "lnw": 0.0,
+        "lnw": 6418.06,
         "octopus": 28.93,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 28.93,
-        "combined": 28.93
+        "combined": 6446.99
       },
       {
         "date": "2026-01-03",
-        "lnw": 0.0,
+        "lnw": 4744.56,
         "octopus": 459.1,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 459.1,
-        "combined": 459.1
+        "combined": 5203.66
       },
       {
         "date": "2026-01-04",
-        "lnw": 0.0,
+        "lnw": 4713.95,
         "octopus": 724.85,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 724.85,
-        "combined": 724.85
+        "combined": 5438.8
       },
       {
         "date": "2026-01-05",
-        "lnw": 0.0,
+        "lnw": 6808.52,
         "octopus": 1186.72,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 1186.72,
-        "combined": 1186.72
+        "combined": 7995.24
       },
       {
         "date": "2026-01-06",
-        "lnw": 0.0,
+        "lnw": 5855.53,
         "octopus": 325.28,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 325.28,
-        "combined": 325.28
+        "combined": 6180.81
       },
       {
         "date": "2026-01-07",
-        "lnw": 0.0,
+        "lnw": 6613.97,
         "octopus": 895.97,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 895.97,
-        "combined": 895.97
+        "combined": 7509.94
       },
       {
         "date": "2026-01-08",
-        "lnw": 0.0,
+        "lnw": 5343.2,
         "octopus": 584.0,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 584.0,
-        "combined": 584.0
+        "combined": 5927.2
       },
       {
         "date": "2026-01-09",
-        "lnw": 0.0,
+        "lnw": 5610.02,
         "octopus": 452.08,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 452.08,
-        "combined": 452.08
+        "combined": 6062.1
       },
       {
         "date": "2026-01-10",
-        "lnw": 0.0,
+        "lnw": 4785.2,
         "octopus": 931.12,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 931.12,
-        "combined": 931.12
+        "combined": 5716.32
       },
       {
         "date": "2026-01-11",
-        "lnw": 0.0,
+        "lnw": 4848.51,
         "octopus": 605.89,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 605.89,
-        "combined": 605.89
+        "combined": 5454.4
       },
       {
         "date": "2026-01-12",
-        "lnw": 0.0,
+        "lnw": 3806.52,
         "octopus": 437.5,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 437.5,
-        "combined": 437.5
+        "combined": 4244.02
       },
       {
         "date": "2026-01-13",
-        "lnw": 0.0,
+        "lnw": 4065.78,
         "octopus": 677.95,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 677.95,
-        "combined": 677.95
+        "combined": 4743.73
       },
       {
         "date": "2026-01-14",
-        "lnw": 0.0,
+        "lnw": 3833.3,
         "octopus": 692.15,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 692.15,
-        "combined": 692.15
+        "combined": 4525.45
       },
       {
         "date": "2026-01-15",
-        "lnw": 0.0,
+        "lnw": 3520.67,
         "octopus": 590.69,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 590.69,
-        "combined": 590.69
+        "combined": 4111.36
       },
       {
         "date": "2026-01-16",
-        "lnw": 0.0,
+        "lnw": 3345.62,
         "octopus": 756.27,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 756.27,
-        "combined": 756.27
+        "combined": 4101.89
       },
       {
         "date": "2026-01-17",
-        "lnw": 0.0,
+        "lnw": 4301.41,
         "octopus": 1536.45,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 1536.45,
-        "combined": 1536.45
+        "combined": 5837.86
       },
       {
         "date": "2026-01-18",
-        "lnw": 0.0,
+        "lnw": 3195.57,
         "octopus": 539.01,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 539.01,
-        "combined": 539.01
+        "combined": 3734.58
       },
       {
         "date": "2026-01-19",
-        "lnw": 0.0,
+        "lnw": 2805.57,
         "octopus": -275.49,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": -275.49,
-        "combined": -275.49
+        "combined": 2530.08
       },
       {
         "date": "2026-01-20",
-        "lnw": 0.0,
+        "lnw": 3157.84,
         "octopus": 548.68,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 548.68,
-        "combined": 548.68
+        "combined": 3706.52
       },
       {
         "date": "2026-01-21",
-        "lnw": 0.0,
+        "lnw": 2739.54,
         "octopus": 559.22,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 559.22,
-        "combined": 559.22
+        "combined": 3298.76
       },
       {
         "date": "2026-01-22",
-        "lnw": 0.0,
+        "lnw": 4379.59,
         "octopus": 1461.58,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 1461.58,
-        "combined": 1461.58
+        "combined": 5841.17
       },
       {
         "date": "2026-01-23",
-        "lnw": 0.0,
+        "lnw": 5635.35,
         "octopus": 283.53,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 283.53,
-        "combined": 283.53
+        "combined": 5918.88
       },
       {
         "date": "2026-01-24",
-        "lnw": 0.0,
+        "lnw": 5519.76,
         "octopus": -40.66,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": -40.66,
-        "combined": -40.66
+        "combined": 5479.1
       },
       {
         "date": "2026-01-25",
-        "lnw": 0.0,
+        "lnw": 3108.66,
         "octopus": 411.65,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 411.65,
-        "combined": 411.65
+        "combined": 3520.31
       },
       {
         "date": "2026-01-26",
-        "lnw": 0.0,
+        "lnw": -1481.85,
         "octopus": 358.02,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 358.02,
-        "combined": 358.02
+        "combined": -1123.83
       },
       {
         "date": "2026-01-27",
-        "lnw": 0.0,
+        "lnw": 10835.21,
         "octopus": 452.69,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 452.69,
-        "combined": 452.69
+        "combined": 11287.9
       },
       {
         "date": "2026-01-28",
-        "lnw": 0.0,
+        "lnw": 8595.44,
         "octopus": 396.63,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 396.63,
-        "combined": 396.63
+        "combined": 8992.07
       },
       {
         "date": "2026-01-29",
-        "lnw": 0.0,
+        "lnw": 6266.57,
         "octopus": 449.12,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 449.12,
-        "combined": 449.12
+        "combined": 6715.69
       },
       {
         "date": "2026-01-30",
-        "lnw": 0.0,
+        "lnw": 8716.7,
         "octopus": 626.36,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 626.36,
-        "combined": 626.36
+        "combined": 9343.06
       },
       {
         "date": "2026-01-31",
-        "lnw": 0.0,
+        "lnw": 8351.18,
         "octopus": 248.2,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 248.2,
-        "combined": 248.2
+        "combined": 8599.38
       },
       {
         "date": "2026-02-01",
-        "lnw": 0.0,
+        "lnw": 5988.13,
         "octopus": 279.0,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 279.0,
-        "combined": 279.0
+        "combined": 6267.13
       },
       {
         "date": "2026-02-02",
-        "lnw": 0.0,
+        "lnw": 5949.65,
         "octopus": 298.21,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 298.21,
-        "combined": 298.21
+        "combined": 6247.86
       },
       {
         "date": "2026-02-03",
-        "lnw": 0.0,
+        "lnw": 7980.64,
         "octopus": 890.78,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 890.78,
-        "combined": 890.78
+        "combined": 8871.42
       },
       {
         "date": "2026-02-04",
-        "lnw": 0.0,
+        "lnw": 8367.46,
         "octopus": 201.02,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 201.02,
-        "combined": 201.02
+        "combined": 8568.48
       },
       {
         "date": "2026-02-05",
-        "lnw": 0.0,
+        "lnw": 8065.79,
         "octopus": 399.49,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 399.49,
-        "combined": 399.49
+        "combined": 8465.28
       },
       {
         "date": "2026-02-06",
-        "lnw": 0.0,
+        "lnw": 6871.68,
         "octopus": 699.59,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 699.59,
-        "combined": 699.59
+        "combined": 7571.27
       },
       {
         "date": "2026-02-07",
-        "lnw": 0.0,
+        "lnw": 7191.9,
         "octopus": 444.89,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 444.89,
-        "combined": 444.89
+        "combined": 7636.79
       },
       {
         "date": "2026-02-08",
-        "lnw": 0.0,
+        "lnw": 6684.63,
         "octopus": 10.2,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 10.2,
-        "combined": 10.2
+        "combined": 6694.83
       },
       {
         "date": "2026-02-09",
-        "lnw": 0.0,
+        "lnw": 4578.15,
         "octopus": 854.63,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 854.63,
-        "combined": 854.63
+        "combined": 5432.78
       },
       {
         "date": "2026-02-10",
-        "lnw": 0.0,
+        "lnw": 5763.69,
         "octopus": 184.91,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 184.91,
-        "combined": 184.91
+        "combined": 5948.6
       },
       {
         "date": "2026-02-11",
-        "lnw": 0.0,
+        "lnw": 6720.52,
         "octopus": 129.27,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 129.27,
-        "combined": 129.27
+        "combined": 6849.79
       },
       {
         "date": "2026-02-12",
-        "lnw": 0.0,
+        "lnw": 6276.81,
         "octopus": 416.71,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 416.71,
-        "combined": 416.71
+        "combined": 6693.52
       },
       {
         "date": "2026-02-13",
-        "lnw": 0.0,
+        "lnw": 5360.21,
         "octopus": 183.9,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 183.9,
-        "combined": 183.9
+        "combined": 5544.11
       },
       {
         "date": "2026-02-14",
-        "lnw": 0.0,
+        "lnw": 5696.73,
         "octopus": 506.82,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 506.82,
-        "combined": 506.82
+        "combined": 6203.55
       },
       {
         "date": "2026-02-15",
-        "lnw": 0.0,
+        "lnw": 4934.18,
         "octopus": 519.78,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 519.78,
-        "combined": 519.78
+        "combined": 5453.96
       },
       {
         "date": "2026-02-16",
-        "lnw": 0.0,
+        "lnw": 3043.12,
         "octopus": 254.81,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 254.81,
-        "combined": 254.81
+        "combined": 3297.93
       },
       {
         "date": "2026-02-17",
-        "lnw": 0.0,
+        "lnw": 5522.3,
         "octopus": 335.52,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 335.52,
-        "combined": 335.52
+        "combined": 5857.82
       },
       {
         "date": "2026-02-18",
-        "lnw": 0.0,
+        "lnw": 4634.36,
         "octopus": 179.15,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 179.15,
-        "combined": 179.15
+        "combined": 4813.51
       },
       {
         "date": "2026-02-19",
-        "lnw": 0.0,
+        "lnw": 7988.54,
         "octopus": 307.57,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 307.57,
-        "combined": 307.57
+        "combined": 8296.11
       },
       {
         "date": "2026-02-20",
-        "lnw": 0.0,
+        "lnw": 5860.22,
         "octopus": 189.1,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 189.1,
-        "combined": 189.1
+        "combined": 6049.32
       },
       {
         "date": "2026-02-21",
-        "lnw": 0.0,
+        "lnw": 6503.24,
         "octopus": 633.93,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 633.93,
-        "combined": 633.93
+        "combined": 7137.17
       },
       {
         "date": "2026-02-22",
-        "lnw": 0.0,
+        "lnw": 5702.75,
         "octopus": 465.34,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 465.34,
-        "combined": 465.34
+        "combined": 6168.09
       },
       {
         "date": "2026-02-23",
-        "lnw": 0.0,
+        "lnw": 4777.59,
         "octopus": 103.78,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 103.78,
-        "combined": 103.78
+        "combined": 4881.37
       },
       {
         "date": "2026-02-24",
-        "lnw": 0.0,
+        "lnw": 4657.44,
         "octopus": 416.73,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 416.73,
-        "combined": 416.73
+        "combined": 5074.17
       },
       {
         "date": "2026-02-25",
-        "lnw": 0.0,
+        "lnw": 6914.72,
         "octopus": 550.48,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 550.48,
-        "combined": 550.48
+        "combined": 7465.2
       },
       {
         "date": "2026-02-26",
-        "lnw": 0.0,
+        "lnw": 6366.82,
         "octopus": 501.36,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 501.36,
-        "combined": 501.36
+        "combined": 6868.18
       },
       {
         "date": "2026-02-27",
-        "lnw": 0.0,
+        "lnw": 6155.93,
         "octopus": 854.72,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 854.72,
-        "combined": 854.72
+        "combined": 7010.65
       },
       {
         "date": "2026-02-28",
-        "lnw": 0.0,
+        "lnw": 7890.34,
         "octopus": 497.09,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 497.09,
-        "combined": 497.09
+        "combined": 8387.43
       },
       {
         "date": "2026-03-01",
-        "lnw": 0.0,
+        "lnw": 6665.06,
         "octopus": 500.62,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 500.62,
-        "combined": 500.62
+        "combined": 7165.68
       },
       {
         "date": "2026-03-02",
-        "lnw": 0.0,
+        "lnw": 5336.74,
         "octopus": 219.35,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 219.35,
-        "combined": 219.35
+        "combined": 5556.09
       },
       {
         "date": "2026-03-03",
-        "lnw": 0.0,
+        "lnw": 5446.43,
         "octopus": 213.99,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 213.99,
-        "combined": 213.99
+        "combined": 5660.42
       },
       {
         "date": "2026-03-04",
-        "lnw": 0.0,
+        "lnw": 5694.05,
         "octopus": 186.94,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 186.94,
-        "combined": 186.94
+        "combined": 5880.99
       },
       {
         "date": "2026-03-05",
-        "lnw": 0.0,
+        "lnw": 5586.54,
         "octopus": 317.35,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 317.35,
-        "combined": 317.35
+        "combined": 5903.89
       },
       {
         "date": "2026-03-06",
-        "lnw": 0.0,
+        "lnw": 5137.21,
         "octopus": 495.7,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 495.7,
-        "combined": 495.7
+        "combined": 5632.91
       },
       {
         "date": "2026-03-07",
-        "lnw": 0.0,
+        "lnw": 4524.4,
         "octopus": 118.81,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 118.81,
-        "combined": 118.81
+        "combined": 4643.21
       },
       {
         "date": "2026-03-08",
-        "lnw": 0.0,
+        "lnw": 5125.6,
         "octopus": 706.0,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 706.0,
-        "combined": 706.0
+        "combined": 5831.6
       },
       {
         "date": "2026-03-09",
-        "lnw": 0.0,
+        "lnw": 3740.7,
         "octopus": 249.45,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 249.45,
-        "combined": 249.45
+        "combined": 3990.15
       },
       {
         "date": "2026-03-10",
-        "lnw": 0.0,
+        "lnw": 2726.68,
         "octopus": 257.99,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 257.99,
-        "combined": 257.99
+        "combined": 2984.67
       },
       {
         "date": "2026-03-11",
-        "lnw": 0.0,
+        "lnw": 3810.19,
         "octopus": 444.59,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 444.59,
-        "combined": 444.59
+        "combined": 4254.78
       },
       {
         "date": "2026-03-12",
-        "lnw": 0.0,
+        "lnw": 3490.83,
         "octopus": 334.31,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 334.31,
-        "combined": 334.31
+        "combined": 3825.14
       },
       {
         "date": "2026-03-13",
-        "lnw": 0.0,
+        "lnw": 4812.9,
         "octopus": 483.61,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 483.61,
-        "combined": 483.61
+        "combined": 5296.51
       },
       {
         "date": "2026-03-14",
-        "lnw": 0.0,
+        "lnw": 1976.92,
         "octopus": 397.28,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 397.28,
-        "combined": 397.28
+        "combined": 2374.2
       },
       {
         "date": "2026-03-15",
-        "lnw": 0.0,
+        "lnw": 3085.61,
         "octopus": 199.89,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 199.89,
-        "combined": 199.89
+        "combined": 3285.5
       },
       {
         "date": "2026-03-16",
-        "lnw": 0.0,
+        "lnw": 7369.75,
         "octopus": 749.54,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 749.54,
-        "combined": 749.54
+        "combined": 8119.29
       },
       {
         "date": "2026-03-17",
-        "lnw": 0.0,
+        "lnw": 8086.34,
         "octopus": 868.52,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 868.52,
-        "combined": 868.52
+        "combined": 8954.86
       },
       {
         "date": "2026-03-18",
-        "lnw": 0.0,
+        "lnw": 8585.02,
         "octopus": 44.76,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 44.76,
-        "combined": 44.76
+        "combined": 8629.78
       },
       {
         "date": "2026-03-19",
-        "lnw": 0.0,
+        "lnw": 11105.37,
         "octopus": -83.02,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": -83.02,
-        "combined": -83.02
+        "combined": 11022.35
       },
       {
         "date": "2026-03-20",
-        "lnw": 0.0,
+        "lnw": 9545.98,
         "octopus": 382.11,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 382.11,
-        "combined": 382.11
+        "combined": 9928.09
       },
       {
         "date": "2026-03-21",
-        "lnw": 0.0,
+        "lnw": 7829.81,
         "octopus": 35.07,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 35.07,
-        "combined": 35.07
+        "combined": 7864.88
       },
       {
         "date": "2026-03-22",
-        "lnw": 0.0,
+        "lnw": 7444.74,
         "octopus": 440.13,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 440.13,
-        "combined": 440.13
+        "combined": 7884.87
       },
       {
         "date": "2026-03-23",
-        "lnw": 0.0,
+        "lnw": 6664.82,
         "octopus": 185.16,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 185.16,
-        "combined": 185.16
+        "combined": 6849.98
       },
       {
         "date": "2026-03-24",
-        "lnw": 0.0,
+        "lnw": 7920.9,
         "octopus": 627.44,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 627.44,
-        "combined": 627.44
+        "combined": 8548.34
       },
       {
         "date": "2026-03-25",
-        "lnw": 0.0,
+        "lnw": 6848.54,
         "octopus": -534.66,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": -534.66,
-        "combined": -534.66
+        "combined": 6313.88
       },
       {
         "date": "2026-03-26",
-        "lnw": 0.0,
+        "lnw": 7317.68,
         "octopus": -57.62,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": -57.62,
-        "combined": -57.62
+        "combined": 7260.06
       },
       {
         "date": "2026-03-27",
-        "lnw": 0.0,
+        "lnw": 5789.62,
         "octopus": 4.16,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 4.16,
-        "combined": 4.16
+        "combined": 5793.78
       },
       {
         "date": "2026-03-28",
-        "lnw": 0.0,
+        "lnw": 7230.28,
         "octopus": 139.29,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 139.29,
-        "combined": 139.29
+        "combined": 7369.57
       },
       {
         "date": "2026-03-29",
-        "lnw": 0.0,
+        "lnw": 6051.29,
         "octopus": 453.07,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 453.07,
-        "combined": 453.07
+        "combined": 6504.36
       },
       {
         "date": "2026-03-30",
-        "lnw": 0.0,
+        "lnw": 5578.53,
         "octopus": 235.71,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 235.71,
-        "combined": 235.71
+        "combined": 5814.24
       },
       {
         "date": "2026-03-31",
-        "lnw": 0.0,
+        "lnw": 6879.97,
         "octopus": 373.49,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 373.49,
-        "combined": 373.49
+        "combined": 7253.46
       },
       {
         "date": "2026-04-01",
-        "lnw": 0.0,
+        "lnw": 7445.11,
         "octopus": 230.87,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 230.87,
-        "combined": 230.87
+        "combined": 7675.98
       },
       {
         "date": "2026-04-02",
-        "lnw": 0.0,
+        "lnw": 9870.4,
         "octopus": 176.78,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 176.78,
-        "combined": 176.78
+        "combined": 10047.18
       },
       {
         "date": "2026-04-03",
-        "lnw": 0.0,
+        "lnw": 9983.56,
         "octopus": 508.4,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 508.4,
-        "combined": 508.4
+        "combined": 10491.96
       },
       {
         "date": "2026-04-04",
-        "lnw": 0.0,
+        "lnw": 7187.51,
         "octopus": 105.59,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 105.59,
-        "combined": 105.59
+        "combined": 7293.1
       },
       {
         "date": "2026-04-05",
-        "lnw": 0.0,
+        "lnw": 8269.91,
         "octopus": 415.86,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 415.86,
-        "combined": 415.86
+        "combined": 8685.77
       },
       {
         "date": "2026-04-06",
-        "lnw": 0.0,
+        "lnw": 6801.75,
         "octopus": 61.63,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 61.63,
-        "combined": 61.63
+        "combined": 6863.38
       },
       {
         "date": "2026-04-07",
-        "lnw": 0.0,
+        "lnw": 6791.4,
         "octopus": 210.1,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 210.1,
-        "combined": 210.1
+        "combined": 7001.5
       },
       {
         "date": "2026-04-08",
-        "lnw": 0.0,
+        "lnw": 6158.52,
         "octopus": 228.96,
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 228.96,
-        "combined": 228.96
+        "combined": 6387.48
       }
     ]
   },
