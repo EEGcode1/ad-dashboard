@@ -385,8 +385,8 @@ const THUMB_MAP = [
   ['godfather megaways',          'ad_GFMW.gif'],
   ['godfather the offer',         'ad_GF_TheOffer.png'],   // BBG-routed; S3 path TBC
   ['the godfather',               'ad_god_father.gif'],
-  ['raging rhino double danger',  'ad_raging_rhino_dd.png'],  // AD licensed brand; S3 upload TBC
-  ['raging rhino',                'ad_raging_rhino_dd.png'],
+  ['raging rhino double danger',  'local:ad_raging_rhino_dd.jpg'],  // AD licensed brand
+  ['raging rhino',                'local:ad_raging_rhino_dd.jpg'],
   ['star trek megaways',          'ad_star_trek_mw.jpg'],
   ['star trek',                   'ad_star_trek.svg'],
   ['ace ventura',                 'ad_aceventura.gif'],
@@ -423,7 +423,10 @@ const THUMB_MAP = [
 function thumbUrl(name){
   const g = (name||'').toLowerCase();
   for(const [key,file] of THUMB_MAP){
-    if(g.includes(key)) return S3+file;
+    if(g.includes(key)){
+      if(file.startsWith('local:')) return file.slice(6);  // relative path, served alongside HTML
+      return S3+file;
+    }
   }
   return null;
 }
