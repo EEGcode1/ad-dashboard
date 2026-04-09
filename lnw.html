@@ -184,7 +184,7 @@
       <h1>LNW Regulated Revenue</h1>
       <div class="subtitle">
         Source: <strong>SGI_Reporting@lnw.com</strong> ·
-        Effective rates: 4.38% direct LNW · 3.97% Ace Ventura net (BBG) · 2.06% Godfather The Offer net (BBG) · AD deal = 10% IP fee + 50/50 split of remainder
+        Effective rates: 4.38% direct LNW · 3.29% Ace Ventura net (BBG) · 2.49% Godfather The Offer net (BBG) · derived from actual GP fees ÷ LNW daily GGR
       </div>
     </div>
     <div id="source-badge"></div>
@@ -224,9 +224,9 @@
     </div>
     <table id="day-table"><tbody><tr><td class="empty">Loading…</td></tr></tbody></table>
     <div class="legend">
-      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>Direct LNW (4.38% net)</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div>BangBang — Ace Ventura (3.97% AD net · BBG gross 7.22%)</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#a855f7"></div>BangBang — Godfather The Offer (2.06% AD net · branded fee correction pending)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>Direct LNW (4.38%)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div>BangBang — Ace Ventura (3.29% AD net)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#a855f7"></div>BangBang — Godfather The Offer (2.49% AD net · branded fee correction pending)</div>
     </div>
   </div>
 
@@ -237,9 +237,9 @@
     </div>
     <table id="week-table"><tbody><tr><td class="empty">Loading…</td></tr></tbody></table>
     <div class="legend">
-      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>Direct LNW (4.38% net)</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div>BangBang — Ace Ventura (3.97% AD net · BBG gross 7.22%)</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#a855f7"></div>BangBang — Godfather The Offer (2.06% AD net · branded fee correction pending)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>Direct LNW (4.38%)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div>BangBang — Ace Ventura (3.29% AD net)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#a855f7"></div>BangBang — Godfather The Offer (2.49% AD net · branded fee correction pending)</div>
     </div>
   </div>
 
@@ -273,13 +273,11 @@ function gameRoute(game){
 
 /* ── AD effective rev share rates (mirrors Python)
    BBG deal: AD takes 10% IP fee + 50% of remaining 90% = 55% of BBG gross.
-   BBG gross rates from actual BBG statements; AD net = gross × 0.55          ── */
-const LNW_RATE       = 0.0438;   // direct LNW games (from actual LNW supplier statements)
-const BBG_SPLIT      = 0.55;     // AD's share of BBG gross (10% IP fee + 50% of 90%)
-const BBG_AV_GROSS   = 0.0722;   // BBG gross: Ace Ventura (weighted avg Nov 25 / Jan 26)
-const BBG_GF_GROSS   = 0.0375;   // BBG gross: Godfather The Offer (actual paid; below contract)
-const BBG_AV_RATE    = BBG_AV_GROSS * BBG_SPLIT;   // 3.97% — AD net
-const BBG_GF_RATE    = BBG_GF_GROSS * BBG_SPLIT;   // 2.06% — AD net (correction pending)
+   Rates computed as AD net (55% × GP Fees) / LNW daily GGR — same basis as
+   our history data — NOT GP Fees / BBG-statement GGR (different market scope). ── */
+const LNW_RATE    = 0.0438;   // direct LNW games (from actual LNW supplier statements)
+const BBG_AV_RATE = 0.0329;   // AV net: weighted avg Nov 25 (3.38%) + Jan 26 (3.21%)
+const BBG_GF_RATE = 0.0249;   // GF net: Jan 26 only (2.49%); branded fee correction pending
 
 function revShareRate(game){
   if(isBbgAv(game)) return BBG_AV_RATE;
@@ -508,8 +506,8 @@ function gameTable(rows, includeTotal){
     .sort((a,b)=>(b.ggr_eur||0)-(a.ggr_eur||0));
 
   const tagLabel = {
-    'bbg-av': 'BBG · AV · 3.97% net',
-    'bbg-gf': 'BBG · GF · 2.06% net ⚠',
+    'bbg-av': 'BBG · AV · 3.29% net',
+    'bbg-gf': 'BBG · GF · 2.49% net ⚠',
     'lnw':    'LNW · 4.38%',
   };
   const tagCls = {
