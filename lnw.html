@@ -300,6 +300,25 @@
     </div>
   </div>
 
+  <!-- ── Monthly trends ── -->
+  <div class="section-label">Monthly Trends — Sep 2025 to Present</div>
+  <div class="grid2" style="margin-bottom:20px">
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Monthly rev share</h2>
+        <span class="meta" id="monthly-rev-meta"></span>
+      </div>
+      <div class="chart-wrap" style="height:240px"><canvas id="monthly-rev-chart"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Monthly GGR</h2>
+        <span class="meta" id="monthly-ggr-meta"></span>
+      </div>
+      <div class="chart-wrap" style="height:240px"><canvas id="monthly-ggr-chart"></canvas></div>
+    </div>
+  </div>
+
   <!-- ── Yesterday by game ── -->
   <div class="section-label">Yesterday</div>
   <div class="panel" style="margin-bottom:20px">
@@ -347,11 +366,11 @@
     </div>
   </div>
 
-  <!-- ── All-time by game ── -->
-  <div class="section-label">All-Time</div>
+  <!-- ── Since Sep 2025 by game ── -->
+  <div class="section-label">Since Sep 2025 (All Data)</div>
   <div class="panel" style="margin-bottom:20px">
     <div class="panel-head">
-      <h2>All-time by game</h2>
+      <h2>Since Sep 2025 — by game</h2>
       <span class="meta" id="alltime-meta"></span>
     </div>
     <table id="alltime-table"><tbody><tr><td class="empty">Loading…</td></tr></tbody></table>
@@ -498,6 +517,7 @@ function render(d){
   renderKPIsProj(d);
   renderMtdChart(d);
   renderWeekChart(d);
+  renderMonthlyTrendCharts(d);
   renderDayTable(d);
   renderWeekTable(d);
   renderMonthly(d);
@@ -568,8 +588,8 @@ function renderKPIsMain(d){
       val:EUR(ytd.lnw_rev_share_eur),sub:`Jan – ${d.ytd?.to||''}`},
     {icon:'📊',cls:'gold',label:'7-day rev share',
       val:EUR(tw.lnw_rev_share_eur),sub:`Avg ${EUR(dailyAvg7)}/day`},
-    {icon:'🎯',cls:'green',label:'All-time rev share',
-      val:EUR(at.lnw_rev_share_eur),sub:`Sep 2025 → present`},
+    {icon:'🎯',cls:'green',label:'Since Sep 2025',
+      val:EUR(at.lnw_rev_share_eur),sub:`${(_data?.monthly||[]).length} months of data`},
     {icon:'🎮',cls:'rose',label:'Active games (yesterday)',
       val:dayLnw.length,sub:`GGR ${EUR(dayGGR)} total`},
   ];
@@ -664,6 +684,74 @@ function renderWeekChart(d){
           ticks:{color:'#4f6391',font:{size:11},callback:v=>'€'+Number(v).toLocaleString('en-GB',{notation:'compact'})}},
         x:{grid:{display:false},ticks:{color:'#4f6391',font:{size:11}}}
       }
+    }
+  });
+}
+
+let monthlyRevChart, monthlyGgrChart;
+
+function renderMonthlyTrendCharts(d){
+  const months = d.monthly || [];
+  if(!months.length) return;
+
+  const labels  = months.map(m => m.label);
+  const revData = months.map(m => m.totals?.lnw_rev_share_eur || 0);
+  const ggrData = months.map(m => m.totals?.ggr_eur || 0);
+
+  // Highlight incomplete month (last one if not complete)
+  const bgRev = months.map((m,i) =>
+    !m.complete ? 'rgba(251,191,36,.55)' : 'rgba(59,130,246,.75)');
+  const bgGgr = months.map((m,i) =>
+    !m.complete ? 'rgba(251,191,36,.45)' : 'rgba(6,182,212,.6)');
+  const borderRev = months.map(m => !m.complete ? '#fbbf24' : '#3b82f6');
+  const borderGgr = months.map(m => !m.complete ? '#fbbf24' : '#06b6d4');
+
+  const total = revData.reduce((a,v)=>a+v,0);
+  const totalGgr = ggrData.reduce((a,v)=>a+v,0);
+  document.getElementById('monthly-rev-meta').textContent = `Total ${EUR(total)}`;
+  document.getElementById('monthly-ggr-meta').textContent = `Total ${EUR(totalGgr)}`;
+
+  const scaleOpts = {
+    y:{grid:{color:'rgba(255,255,255,.05)'},border:{dash:[4,4]},
+      ticks:{color:'#4f6391',font:{size:11},callback:v=>'€'+Number(v).toLocaleString('en-GB',{notation:'compact'})}},
+    x:{grid:{display:false},ticks:{color:'#4f6391',font:{size:11},maxRotation:35}}
+  };
+
+  // Rev chart
+  const ctxR = document.getElementById('monthly-rev-chart').getContext('2d');
+  if(monthlyRevChart) monthlyRevChart.destroy();
+  monthlyRevChart = new Chart(ctxR, {type:'bar',
+    data:{labels, datasets:[{
+      data: revData,
+      backgroundColor: bgRev,
+      borderColor: borderRev,
+      borderWidth: 1.5,
+      borderRadius: 6, borderSkipped: false,
+    }]},
+    options:{...CHART_DEFAULTS,
+      plugins:{...CHART_DEFAULTS.plugins,
+        tooltip:{...CHART_DEFAULTS.plugins.tooltip,
+          callbacks:{label: ctx => ' ' + EURf(ctx.parsed.y)}}},
+      scales: scaleOpts,
+    }
+  });
+
+  // GGR chart
+  const ctxG = document.getElementById('monthly-ggr-chart').getContext('2d');
+  if(monthlyGgrChart) monthlyGgrChart.destroy();
+  monthlyGgrChart = new Chart(ctxG, {type:'bar',
+    data:{labels, datasets:[{
+      data: ggrData,
+      backgroundColor: bgGgr,
+      borderColor: borderGgr,
+      borderWidth: 1.5,
+      borderRadius: 6, borderSkipped: false,
+    }]},
+    options:{...CHART_DEFAULTS,
+      plugins:{...CHART_DEFAULTS.plugins,
+        tooltip:{...CHART_DEFAULTS.plugins.tooltip,
+          callbacks:{label: ctx => ' ' + EUR(ctx.parsed.y)}}},
+      scales: scaleOpts,
     }
   });
 }
