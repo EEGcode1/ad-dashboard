@@ -7,75 +7,151 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
   :root{
-    --ink:#0b1120;--mute:#64748b;--line:#e2e8f0;
-    --bg:#f0f4f8;--panel:#ffffff;
-    --lnw:#1d4ed8;--lnw-light:#dbeafe;
+    --ink:#0f172a;--mute:#64748b;--line:#e2e8f0;
+    --bg:#f1f5f9;--panel:#ffffff;
+    --lnw:#2563eb;--lnw-light:#dbeafe;--lnw-dark:#1e3a8a;
     --good:#16a34a;--warn:#d97706;--bad:#dc2626;
+    --bbg:#7c3aed;--bbg-light:#ede9fe;
+    --gold:#f59e0b;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{background:var(--bg);color:var(--ink);
-    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif}
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif;
+    min-height:100vh}
   a{color:var(--lnw);text-decoration:none}
-  .nav{background:#0b1120;border-bottom:1px solid rgba(255,255,255,.08);
-    padding:0 28px;height:56px;display:flex;align-items:center;gap:32px;
+
+  /* ── NAV ── */
+  .nav{background:#0f172a;border-bottom:1px solid rgba(255,255,255,.07);
+    padding:0 28px;height:58px;display:flex;align-items:center;gap:24px;
     position:sticky;top:0;z-index:100}
-  .nav-brand{font-size:14px;font-weight:700;letter-spacing:.04em;color:#fff;
-    text-decoration:none;white-space:nowrap;margin-right:8px}
-  .nav-brand span{opacity:.5;font-weight:400}
-  .nav-links{display:flex;gap:4px;flex:1}
-  .nav-link{display:inline-flex;align-items:center;gap:7px;padding:6px 13px;
-    border-radius:8px;font-size:13px;font-weight:500;color:rgba(255,255,255,.6);
+  .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+  .nav-brand-logo{width:30px;height:30px;border-radius:8px;
+    background:linear-gradient(135deg,var(--lnw),#7c3aed);
+    display:flex;align-items:center;justify-content:center;
+    font-size:13px;font-weight:800;color:#fff;letter-spacing:-.02em}
+  .nav-brand-name{font-size:14px;font-weight:700;color:#fff;letter-spacing:.01em}
+  .nav-brand-name span{opacity:.4;font-weight:400;margin-left:6px}
+  .nav-links{display:flex;gap:2px;flex:1}
+  .nav-link{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;
+    border-radius:8px;font-size:13px;font-weight:500;color:rgba(255,255,255,.55);
     text-decoration:none;transition:background .15s,color .15s}
-  .nav-link:hover,.nav-link.active{background:rgba(255,255,255,.1);color:#fff}
-  .nav-link svg{opacity:.7;flex-shrink:0}
-  .nav-link.active svg{opacity:1}
-  .wrap{max-width:1280px;margin:0 auto;padding:28px 24px}
+  .nav-link:hover,.nav-link.active{background:rgba(255,255,255,.09);color:#fff}
+  .nav-link svg{flex-shrink:0}
+  .nav-right{display:flex;align-items:center;gap:12px;margin-left:auto}
+  .nav-status{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,.5)}
+  .nav-dot{width:6px;height:6px;border-radius:99px;background:var(--good)}
+
+  /* ── LAYOUT ── */
+  .wrap{max-width:1360px;margin:0 auto;padding:28px 24px}
+
+  /* ── PAGE HEADER ── */
   .page-header{margin-bottom:24px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px}
-  .page-header h1{font-size:22px;letter-spacing:-0.02em}
-  .badge{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:99px;
-    font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
-  .badge.ok{background:var(--lnw-light);color:var(--lnw)}
+  .page-header h1{font-size:24px;font-weight:800;letter-spacing:-0.03em;color:var(--ink)}
+  .page-header .subtitle{font-size:13px;color:var(--mute);margin-top:3px}
+  .badge{display:inline-flex;align-items:center;gap:6px;padding:5px 13px;border-radius:99px;
+    font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+  .badge.ok{background:#dcfce7;color:#15803d}
   .badge.bad{background:#fee2e2;color:var(--bad)}
-  .banner{padding:12px 16px;border-radius:10px;margin-bottom:16px;font-size:13px}
-  .banner.err{background:#fee2e2;color:#7f1d1d;border:1px solid #fca5a5}
-  .banner.warn{background:#fef3c7;color:#78350f;border:1px solid #fcd34d}
-  .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
-  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
-  .kpi .label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin-bottom:8px}
-  .kpi .val{font-size:28px;font-weight:700;letter-spacing:-0.03em;color:var(--ink)}
-  .kpi .val.accent{color:var(--lnw)}
-  .kpi .sub{font-size:12px;color:var(--mute);margin-top:4px}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
-  .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-  .panel-head{padding:16px 20px;border-bottom:1px solid var(--line);
-    display:flex;justify-content:space-between;align-items:center}
-  .panel-head h2{font-size:15px;font-weight:600}
-  .panel-head .meta{font-size:12px;color:var(--mute)}
-  .panel-body{padding:20px}
-  .chart-wrap{padding:16px 20px 20px}
-  table{width:100%;border-collapse:collapse;font-size:13px}
-  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line)}
-  th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);font-weight:600}
-  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
-  tbody tr:last-child td{border-bottom:none}
-  tbody tr:hover td{background:#f8fafc}
-  .tfoot-row td{font-weight:700;background:#f8fafc;color:var(--ink)}
-  .empty{padding:32px;text-align:center;color:var(--mute);font-size:13px}
-  .source-row{padding:12px 20px;border-top:1px solid var(--line);
-    display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mute)}
-  .dot{width:7px;height:7px;border-radius:99px}
+  .dot{width:7px;height:7px;border-radius:99px;flex-shrink:0}
   .dot.ok{background:var(--good)}
   .dot.bad{background:var(--bad)}
-  footer{margin-top:32px;text-align:center;font-size:12px;color:var(--mute);padding-bottom:20px}
-  @media(max-width:900px){
-    .kpi-row{grid-template-columns:repeat(2,1fr)}
-    .grid2{grid-template-columns:1fr}
-  }
+
+  /* ── BANNERS ── */
+  .banner{padding:12px 16px;border-radius:10px;margin-bottom:14px;font-size:13px;
+    display:flex;align-items:flex-start;gap:10px;line-height:1.5}
+  .banner-icon{font-size:16px;flex-shrink:0;margin-top:1px}
+  .banner.err{background:#fee2e2;color:#7f1d1d;border:1px solid #fca5a5}
+  .banner.warn{background:#fef3c7;color:#78350f;border:1px solid #fde68a}
+  .banner.info{background:#eff6ff;color:#1e3a8a;border:1px solid #bfdbfe}
+
+  /* ── KPI ROW ── */
+  .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:22px 24px;position:relative;overflow:hidden;
+    transition:box-shadow .15s}
+  .kpi:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+  .kpi-icon{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;
+    justify-content:center;margin-bottom:14px;font-size:20px}
+  .kpi-icon.blue{background:var(--lnw-light)}
+  .kpi-icon.green{background:#dcfce7}
+  .kpi-icon.purple{background:var(--bbg-light)}
+  .kpi-icon.gold{background:#fef3c7}
+  .kpi .label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin-bottom:6px;font-weight:600}
+  .kpi .val{font-size:30px;font-weight:800;letter-spacing:-0.04em;color:var(--ink);line-height:1}
+  .kpi .val.accent{color:var(--lnw)}
+  .kpi .sub{font-size:12px;color:var(--mute);margin-top:8px}
+  .kpi-stripe{position:absolute;top:0;right:0;width:4px;height:100%;border-radius:0 16px 16px 0}
+  .kpi-stripe.blue{background:linear-gradient(to bottom,#3b82f6,#1d4ed8)}
+  .kpi-stripe.green{background:linear-gradient(to bottom,#4ade80,#16a34a)}
+  .kpi-stripe.purple{background:linear-gradient(to bottom,#a78bfa,#7c3aed)}
+  .kpi-stripe.gold{background:linear-gradient(to bottom,#fbbf24,#d97706)}
+
+  /* ── PANELS ── */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .panel-head{padding:18px 22px;border-bottom:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center}
+  .panel-head h2{font-size:15px;font-weight:700}
+  .panel-head .meta{font-size:12px;color:var(--mute)}
+  .chart-wrap{padding:16px 20px 20px}
+
+  /* ── GAME TABLE ── */
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:0}
+  thead th{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute);
+    font-weight:700;padding:10px 14px;border-bottom:2px solid var(--line);white-space:nowrap}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .game-row{border-bottom:1px solid var(--line);transition:background .1s}
+  .game-row:last-child{border-bottom:none}
+  .game-row:hover{background:#f8fafc}
+  .game-row td{padding:9px 14px;vertical-align:middle}
+
+  /* Game thumbnail */
+  .game-thumb{width:42px;height:42px;border-radius:10px;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+    font-size:10px;font-weight:800;color:#fff;text-align:center;
+    letter-spacing:.01em;line-height:1.2;overflow:hidden;user-select:none}
+  .game-cell{display:flex;align-items:center;gap:12px}
+  .game-info{display:flex;flex-direction:column;gap:1px}
+  .game-name{font-size:13px;font-weight:600;color:var(--ink);line-height:1.3}
+  .game-tag{display:inline-flex;align-items:center;gap:4px;padding:2px 7px;border-radius:5px;
+    font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-top:2px}
+  .game-tag.bbg-av{background:var(--bbg-light);color:var(--bbg)}
+  .game-tag.bbg-gf{background:#f3e8ff;color:#6d28d9}
+  .game-tag.lnw{background:var(--lnw-light);color:var(--lnw)}
+  .rev-val{font-weight:700;color:var(--lnw);font-size:13px}
+  .ggr-val{font-weight:600;color:var(--ink)}
+  .tfoot-row td{font-weight:700;background:#f8fafc;padding:11px 14px;border-top:2px solid var(--line)}
+  .tfoot-row .rev-val{font-size:14px}
+  .empty{padding:40px;text-align:center;color:var(--mute);font-size:13px}
+
+  /* Rev share rate badge */
+  .rate-badge{display:inline-flex;padding:2px 6px;border-radius:4px;
+    font-size:10px;font-weight:700;margin-left:6px}
+  .rate-badge.bbg-av{background:var(--bbg-light);color:var(--bbg)}
+  .rate-badge.bbg-gf{background:#f3e8ff;color:#6d28d9}
+  .rate-badge.std{background:var(--lnw-light);color:var(--lnw)}
+
+  /* ── LEGEND ── */
+  .legend{display:flex;align-items:center;gap:16px;padding:12px 22px;
+    border-top:1px solid var(--line);background:#fafbfc;font-size:12px;color:var(--mute)}
+  .legend-item{display:flex;align-items:center;gap:6px}
+  .legend-dot{width:8px;height:8px;border-radius:3px;flex-shrink:0}
+
+  footer{margin-top:32px;text-align:center;font-size:11px;color:var(--mute);padding-bottom:24px}
+
+  @media(max-width:1100px){.kpi-row{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:900px){.grid2{grid-template-columns:1fr}}
+  @media(max-width:640px){.kpi-row{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
+
 <nav class="nav">
-  <a class="nav-brand" href="index.html">Atlantic Digital <span>/ Portal</span></a>
+  <a class="nav-brand" href="index.html">
+    <div class="nav-brand-logo">AD</div>
+    <div class="nav-brand-name">Atlantic Digital <span>/ Revenue Portal</span></div>
+  </a>
   <div class="nav-links">
     <a class="nav-link" href="index.html">
       <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
@@ -94,14 +170,21 @@
       Roadmap
     </a>
   </div>
+  <div class="nav-right">
+    <div class="nav-status" id="nav-status">
+      <div class="nav-dot" style="background:#475569"></div>
+      Loading…
+    </div>
+  </div>
 </nav>
 
 <div class="wrap">
   <div class="page-header">
     <div>
       <h1>LNW Regulated Revenue</h1>
-      <div style="font-size:13px;color:var(--mute);margin-top:4px">
-        Source: <strong>SGI_Reporting@lnw.com</strong> · "Previous Day - By Game" tab only · 4% GGR rev share
+      <div class="subtitle">
+        Source: <strong>SGI_Reporting@lnw.com</strong> ·
+        Effective rates: 4.38% direct LNW · 7.22% Ace Ventura (BBG) · 3.75% Godfather The Offer (BBG) · all rates from actual supplier statements
       </div>
     </div>
     <div id="source-badge"></div>
@@ -125,7 +208,7 @@
     </div>
     <div class="panel">
       <div class="panel-head">
-        <h2>Daily GGR — last 7 days</h2>
+        <h2>Daily rev share — last 7 days</h2>
         <span class="meta" id="week-meta"></span>
       </div>
       <div class="chart-wrap" style="height:240px">
@@ -140,6 +223,11 @@
       <span class="meta" id="day-meta"></span>
     </div>
     <table id="day-table"><tbody><tr><td class="empty">Loading…</td></tr></tbody></table>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>Direct LNW (4.38%)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div>BangBang Games — Ace Ventura (7.22%)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#a855f7"></div>BangBang Games — Godfather The Offer (3.75% — correction pending)</div>
+    </div>
   </div>
 
   <div class="panel" style="margin-bottom:20px">
@@ -148,16 +236,79 @@
       <span class="meta" id="week-table-meta"></span>
     </div>
     <table id="week-table"><tbody><tr><td class="empty">Loading…</td></tr></tbody></table>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>Direct LNW (4.38%)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div>BangBang Games — Ace Ventura (7.22%)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#a855f7"></div>BangBang Games — Godfather The Offer (3.75% — correction pending)</div>
+    </div>
   </div>
 
-  <footer id="footer">Built by ad-dashboard · GitHub Actions · source-of-truth parsers</footer>
+  <footer id="footer">Atlantic Digital Revenue Portal · Generated from live data</footer>
 </div>
 
 <script>
+/* ── Helpers ── */
 const EUR  = v => '€' + Number(v||0).toLocaleString('en-GB',{minimumFractionDigits:0,maximumFractionDigits:0});
 const EURf = v => '€' + Number(v||0).toLocaleString('en-GB',{minimumFractionDigits:2,maximumFractionDigits:2});
 const pct  = v => v != null ? Number(v > 2 ? v : v*100).toFixed(1)+'%' : '—';
 const DT   = new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short'});
+
+/* ── BBG game detection (mirrors Python logic) ── */
+const BBG_AV_GAMES  = ['ace ventura'];
+const BBG_GF_GAMES  = ['godfather the offer','godfather: the offer','godfather the offer rtp'];
+
+function isBbgAv(game){
+  const g = (game||'').toLowerCase();
+  return BBG_AV_GAMES.some(f=>g.includes(f));
+}
+function isBbgGf(game){
+  const g = (game||'').toLowerCase();
+  return BBG_GF_GAMES.some(f=>g.includes(f));
+}
+function gameRoute(game){
+  if(isBbgAv(game)) return 'bbg-av';
+  if(isBbgGf(game)) return 'bbg-gf';
+  return 'lnw';
+}
+
+/* ── Game rev share rate (mirrors Python) ── */
+const LNW_RATE  = 0.0438;
+const BBG_AV    = 0.0722;
+const BBG_GF    = 0.0375;
+function revShareRate(game){
+  if(isBbgAv(game)) return BBG_AV;
+  if(isBbgGf(game)) return BBG_GF;
+  return LNW_RATE;
+}
+
+/* ── Thumbnail generator ── */
+// Derives a unique gradient from game name using djb2 hash
+function hashStr(s){
+  let h = 5381;
+  for(let i=0;i<s.length;i++) h = ((h<<5)+h)+s.charCodeAt(i);
+  return h >>> 0;
+}
+const PALETTES = [
+  ['#1d4ed8','#0ea5e9'], // blue-sky
+  ['#7c3aed','#ec4899'], // purple-pink
+  ['#0f766e','#22d3ee'], // teal-cyan
+  ['#b45309','#f59e0b'], // amber
+  ['#065f46','#34d399'], // green
+  ['#9f1239','#f43f5e'], // red-rose
+  ['#1e3a8a','#6366f1'], // navy-indigo
+  ['#7e22ce','#a855f7'], // deep purple
+  ['#0369a1','#38bdf8'], // ocean
+  ['#92400e','#fb923c'], // orange
+];
+function gameThumb(name, size=42){
+  const h = hashStr(name||'');
+  const [c1,c2] = PALETTES[h % PALETTES.length];
+  const deg = 135 + (h % 90);
+  // abbreviation: up to 2 words, first letter each
+  const words = name.trim().split(/\s+/);
+  const abbr  = words.slice(0,2).map(w=>w[0]).join('').toUpperCase();
+  return `<div class="game-thumb" style="background:linear-gradient(${deg}deg,${c1},${c2});width:${size}px;height:${size}px">${abbr}</div>`;
+}
 
 let mtdChart, weekChart;
 
@@ -168,11 +319,12 @@ async function load(){
     render(d);
   } catch(e){
     document.getElementById('banners').innerHTML =
-      `<div class="banner err">Failed to load data.json: ${e.message}</div>`;
+      `<div class="banner err"><span class="banner-icon">⚠️</span>Failed to load data.json: ${e.message}</div>`;
   }
 }
 
 function render(d){
+  renderNavStatus(d);
   renderBadge(d);
   renderBanners(d);
   renderKPIs(d);
@@ -181,27 +333,38 @@ function render(d){
   renderDayTable(d);
   renderWeekTable(d);
   document.getElementById('footer').textContent =
-    'Built ' + (d.generated_at_utc ? DT.format(new Date(d.generated_at_utc)) : '') +
-    ' · ad-dashboard · GitHub Actions · source-of-truth parsers';
+    'Generated ' + (d.generated_at_utc ? DT.format(new Date(d.generated_at_utc)) : '') +
+    ' · Atlantic Digital Revenue Portal · Data from SGI_Reporting@lnw.com';
+}
+
+function renderNavStatus(d){
+  const ok  = d.sources?.lnw?.ok;
+  const cov = d.sources?.lnw?.covered_date || '';
+  const el  = document.getElementById('nav-status');
+  el.innerHTML = `<div class="nav-dot" style="background:${ok?'#22c55e':'#ef4444'}"></div>
+    <span>LNW ${ok?'Live':'Stale'}${cov?' · '+cov:''}</span>`;
 }
 
 function renderBadge(d){
   const ok = d.sources?.lnw?.ok;
-  const badge = document.getElementById('source-badge');
-  badge.innerHTML = `<span class="badge ${ok?'ok':'bad'}">`+
-    `<span class="dot ${ok?'ok':'bad'}"></span>`+
-    (ok ? 'Live' : 'Stale')+`</span>`;
+  document.getElementById('source-badge').innerHTML =
+    `<span class="badge ${ok?'ok':'bad'}">
+      <span class="dot ${ok?'ok':'bad'}"></span>
+      ${ok?'Data current':'Source stale'}
+    </span>`;
 }
 
 function renderBanners(d){
   const host = document.getElementById('banners');
   const msgs = [];
   if(!d.sources?.lnw?.ok){
-    msgs.push(`<div class="banner err">⚠ LNW source is stale: ${d.sources?.lnw?.error||'unknown'}</div>`);
+    msgs.push(`<div class="banner err"><span class="banner-icon">⚠️</span><div><strong>LNW data stale</strong> — ${d.sources?.lnw?.error||'unknown error'}. Revenue figures may not reflect latest activity.</div></div>`);
   }
   if(!d.day?.rows?.filter(r=>r.source==='lnw').length && d.sources?.lnw?.ok){
-    msgs.push(`<div class="banner warn">LNW source returned OK but no rows found — investigate xlsx.</div>`);
+    msgs.push(`<div class="banner warn"><span class="banner-icon">⚠️</span><div><strong>No LNW rows in yesterday's data</strong> — investigate SGI xlsx attachment.</div></div>`);
   }
+  // Godfather branded fee alert
+  msgs.push(`<div class="banner info"><span class="banner-icon">ℹ️</span><div><strong>Godfather The Offer — branded fee discrepancy outstanding.</strong> LNW has not been applying the branded slot rate. BangBang Games raised this with LNW on 2 Apr 2026; correction + back-payment expected on next BBG statement. Current GF figures use 3.75% (actual paid) rather than the correct branded rate.</div></div>`);
   host.innerHTML = msgs.join('');
 }
 
@@ -209,17 +372,41 @@ function renderKPIs(d){
   const t_day  = d.day?.totals  || {};
   const t_week = d.week?.totals || {};
   const t_mtd  = d.mtd?.totals  || {};
-  const dayRows = (d.day?.rows||[]).filter(r=>r.source==='lnw');
+  const dayLnw = (d.day?.rows||[]).filter(r=>r.source==='lnw');
+  const dayGGR  = dayLnw.reduce((a,r)=>a+(r.ggr_eur||0),0);
+
+  // Compute GGR implied from rev shares using dynamic rates
+  const mtdGGR = (d.mtd?.by_game||[])
+    .filter(r=>r.source==='lnw')
+    .reduce((a,r)=>a+(r.ggr_eur||0),0);
+
   const kpis = [
-    {label:'Yesterday rev share',  val: EUR(t_day.lnw_rev_share_eur),   sub: `GGR ${EUR(dayRows.reduce((a,r)=>a+(r.ggr_eur||0),0))} · ${dayRows.length} games`, accent:true},
-    {label:'MTD rev share',        val: EUR(t_mtd.lnw_rev_share_eur),   sub: d.mtd?.month || ''},
-    {label:'7-day rev share',      val: EUR(t_week.lnw_rev_share_eur),  sub: `${d.week?.from||''} → ${d.week?.to||''}`},
-    {label:'Games (yesterday)',     val: dayRows.length,                  sub: 'distinct game titles'},
+    {icon:'💰',iconCls:'blue',stripe:'blue',accent:true,
+      label:'Yesterday rev share',
+      val: EUR(t_day.lnw_rev_share_eur),
+      sub: `GGR ${EUR(dayGGR)} · ${dayLnw.length} games`},
+    {icon:'📈',iconCls:'green',stripe:'green',
+      label:'MTD rev share',
+      val: EUR(t_mtd.lnw_rev_share_eur),
+      sub: `${d.mtd?.month||''} · GGR ${EUR(mtdGGR)}`},
+    {icon:'📅',iconCls:'purple',stripe:'purple',
+      label:'7-day rev share',
+      val: EUR(t_week.lnw_rev_share_eur),
+      sub: `${d.week?.from||''} → ${d.week?.to||''}`},
+    {icon:'🎮',iconCls:'gold',stripe:'gold',
+      label:'Games tracked (all-time)',
+      val: new Set((d.mtd?.by_game||[]).filter(r=>r.source==='lnw').map(r=>r.game)).size +
+           new Set((d.week?.by_game||[]).filter(r=>r.source==='lnw').map(r=>r.game)).size,
+      sub: `${dayLnw.length} active yesterday`},
   ];
   document.getElementById('kpis').innerHTML = kpis.map(k=>
-    `<div class="kpi"><div class="label">${k.label}</div>`+
-    `<div class="val${k.accent?' accent':''}">${k.val}</div>`+
-    `<div class="sub">${k.sub}</div></div>`
+    `<div class="kpi">
+      <div class="kpi-stripe ${k.stripe}"></div>
+      <div class="kpi-icon ${k.iconCls}">${k.icon}</div>
+      <div class="label">${k.label}</div>
+      <div class="val${k.accent?' accent':''}">${k.val}</div>
+      <div class="sub">${k.sub}</div>
+    </div>`
   ).join('');
 }
 
@@ -230,24 +417,35 @@ function renderMtdChart(d){
   const ctx = document.getElementById('mtd-chart').getContext('2d');
   if(mtdChart) mtdChart.destroy();
   document.getElementById('mtd-meta').textContent = d.mtd?.month || '';
+  const grad = ctx.createLinearGradient(0,0,0,200);
+  grad.addColorStop(0,'rgba(37,99,235,0.18)');
+  grad.addColorStop(1,'rgba(37,99,235,0.01)');
   mtdChart = new Chart(ctx,{
     type:'line',
     data:{labels, datasets:[{
       label:'LNW rev share cumulative',
       data: vals,
       fill:true,
-      backgroundColor:'rgba(29,78,216,0.08)',
-      borderColor:'#1d4ed8',
-      borderWidth:2,
-      tension:0.3,
-      pointRadius:vals.length > 14 ? 0 : 3,
+      backgroundColor:grad,
+      borderColor:'#2563eb',
+      borderWidth:2.5,
+      tension:0.35,
+      pointRadius: vals.length > 14 ? 0 : 4,
+      pointBackgroundColor:'#fff',
+      pointBorderColor:'#2563eb',
+      pointBorderWidth:2,
     }]},
     options:{
       responsive:true, maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>'€'+c.parsed.y.toLocaleString('en-GB')}}},
+      plugins:{legend:{display:false},
+        tooltip:{callbacks:{label:c=>'€'+c.parsed.y.toLocaleString('en-GB')},
+          backgroundColor:'#0f172a',titleColor:'#94a3b8',bodyColor:'#fff',
+          padding:10,cornerRadius:8}},
       scales:{
-        y:{grid:{color:'#f1f5f9'},ticks:{callback:v=>'€'+Number(v).toLocaleString('en-GB',{notation:'compact'})}},
-        x:{grid:{display:false}}
+        y:{grid:{color:'#f1f5f9'},border:{dash:[4,4]},
+          ticks:{callback:v=>'€'+Number(v).toLocaleString('en-GB',{notation:'compact'}),
+            color:'#94a3b8',font:{size:11}}},
+        x:{grid:{display:false},ticks:{color:'#94a3b8',font:{size:11}}}
       }
     }
   });
@@ -256,67 +454,112 @@ function renderMtdChart(d){
 function renderWeekChart(d){
   const series = d.week?.by_day || [];
   const labels = series.map(s=>s.date.slice(5));
-  const ggr    = series.map(s=>{
-    // back-compute GGR from rev share (÷0.0438, avg effective rate from actual statements)
-    return s.lnw ? Math.round(s.lnw / 0.0438) : 0;
-  });
+  // Use lnw rev share directly from series
+  const revData = series.map(s=>+(s.lnw||0).toFixed(2));
   const ctx = document.getElementById('week-chart').getContext('2d');
   if(weekChart) weekChart.destroy();
   document.getElementById('week-meta').textContent = `${d.week?.from||''} → ${d.week?.to||''}`;
   weekChart = new Chart(ctx,{
     type:'bar',
     data:{labels, datasets:[{
-      label:'GGR',
-      data: ggr,
-      backgroundColor:'#93c5fd',
-      borderRadius:5,
-    },{
-      label:'Rev Share (4%)',
-      data: series.map(s=>s.lnw||0),
-      backgroundColor:'#1d4ed8',
-      borderRadius:5,
+      label:'Rev Share',
+      data: revData,
+      backgroundColor:'#2563eb',
+      borderRadius:6,
+      borderSkipped:false,
     }]},
     options:{
       responsive:true, maintainAspectRatio:false,
-      plugins:{legend:{position:'bottom',labels:{boxWidth:12,padding:16}}},
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label:c=>'€'+c.parsed.y.toLocaleString('en-GB')},
+          backgroundColor:'#0f172a',titleColor:'#94a3b8',bodyColor:'#fff',
+          padding:10,cornerRadius:8}
+      },
       scales:{
-        y:{grid:{color:'#f1f5f9'},stacked:false,
-          ticks:{callback:v=>'€'+Number(v).toLocaleString('en-GB',{notation:'compact'})}},
-        x:{grid:{display:false}}
+        y:{grid:{color:'#f1f5f9'},border:{dash:[4,4]},
+          ticks:{callback:v=>'€'+Number(v).toLocaleString('en-GB',{notation:'compact'}),
+            color:'#94a3b8',font:{size:11}}},
+        x:{grid:{display:false},ticks:{color:'#94a3b8',font:{size:11}}}
       }
     }
   });
 }
 
+/* ── Game table (with thumbnails + BBG tagging) ── */
 function gameTable(rows, includeTotal){
-  if(!rows||!rows.length) return '<tr><td colspan="5" class="empty">No data yet — run the daily-refresh workflow.</td></tr>';
+  if(!rows||!rows.length) return '<tr><td colspan="5" class="empty">No data yet.</td></tr>';
   const lnwRows = rows.filter(r=>r.source==='lnw');
   if(!lnwRows.length) return '<tr><td colspan="5" class="empty">No LNW rows in this period.</td></tr>';
-  const sorted = [...lnwRows].sort((a,b)=>(b.ggr_eur||0)-(a.ggr_eur||0));
-  let html = sorted.map(r=>
-    `<tr>
-      <td>${r.game||'—'}</td>
+
+  // Sort by ggr descending; compute rev share at correct rates
+  const sorted = [...lnwRows]
+    .map(r=>({
+      ...r,
+      _rev: (r.ggr_eur||0) * revShareRate(r.game),
+      _route: gameRoute(r.game),
+    }))
+    .sort((a,b)=>(b.ggr_eur||0)-(a.ggr_eur||0));
+
+  const tagLabel = {
+    'bbg-av': 'BBG · AV · 7.22%',
+    'bbg-gf': 'BBG · GF · 3.75%',
+    'lnw':    'LNW · 4.38%',
+  };
+  const tagCls = {
+    'bbg-av': 'bbg-av',
+    'bbg-gf': 'bbg-gf',
+    'lnw':    'lnw',
+  };
+
+  let html = sorted.map(r=>{
+    const thumb = gameThumb(r.game||'?');
+    const tag   = `<span class="game-tag ${tagCls[r._route]}">${tagLabel[r._route]}</span>`;
+    return `<tr class="game-row">
+      <td>
+        <div class="game-cell">
+          ${thumb}
+          <div class="game-info">
+            <div class="game-name">${r.game||'—'}</div>
+            ${tag}
+          </div>
+        </div>
+      </td>
+      <td class="num ggr-val">${EUR(r.ggr_eur)}</td>
       <td class="num">${EURf(r.wager_eur)}</td>
-      <td class="num">${EURf(r.ggr_eur)}</td>
       <td class="num">${pct(r.rtp)}</td>
-      <td class="num" style="font-weight:600;color:#1d4ed8">${EURf(r.rev_share_eur)}</td>
-    </tr>`
-  ).join('');
+      <td class="num rev-val">${EURf(r._rev)}</td>
+    </tr>`;
+  }).join('');
+
   if(includeTotal){
-    const tw = lnwRows.reduce((a,r)=>a+(r.wager_eur||0),0);
-    const tg = lnwRows.reduce((a,r)=>a+(r.ggr_eur||0),0);
-    const ts = lnwRows.reduce((a,r)=>a+(r.rev_share_eur||0),0);
-    html += `<tr class="tfoot-row"><td>Total</td><td class="num">${EURf(tw)}</td><td class="num">${EURf(tg)}</td><td class="num">—</td><td class="num" style="color:#1d4ed8">${EURf(ts)}</td></tr>`;
+    const tg = sorted.reduce((a,r)=>a+(r.ggr_eur||0),0);
+    const tw = sorted.reduce((a,r)=>a+(r.wager_eur||0),0);
+    const ts = sorted.reduce((a,r)=>a+r._rev,0);
+    html += `<tr class="tfoot-row">
+      <td><strong>${sorted.length} games</strong></td>
+      <td class="num ggr-val">${EUR(tg)}</td>
+      <td class="num">${EURf(tw)}</td>
+      <td class="num">—</td>
+      <td class="num rev-val">${EURf(ts)}</td>
+    </tr>`;
   }
   return html;
 }
 
 function renderDayTable(d){
   const date = d.day?.date || '';
+  const dayLnw = (d.day?.rows||[]).filter(r=>r.source==='lnw');
   document.getElementById('day-title').textContent = `Yesterday by game — ${date}`;
-  document.getElementById('day-meta').textContent = `${(d.day?.rows||[]).filter(r=>r.source==='lnw').length} games`;
+  document.getElementById('day-meta').textContent = `${dayLnw.length} game titles`;
   document.getElementById('day-table').innerHTML =
-    `<thead><tr><th>Game</th><th class="num">Wager</th><th class="num">GGR</th><th class="num">RTP</th><th class="num">Rev Share (4%)</th></tr></thead>`+
+    `<thead><tr>
+      <th>Game</th>
+      <th class="num">GGR</th>
+      <th class="num">Wager</th>
+      <th class="num">RTP</th>
+      <th class="num">Rev Share</th>
+    </tr></thead>`+
     `<tbody>${gameTable(d.day?.rows||[], true)}</tbody>`;
 }
 
@@ -324,7 +567,13 @@ function renderWeekTable(d){
   document.getElementById('week-table-meta').textContent =
     `${d.week?.from||''} → ${d.week?.to||''}`;
   document.getElementById('week-table').innerHTML =
-    `<thead><tr><th>Game</th><th class="num">Wager</th><th class="num">GGR</th><th class="num">RTP</th><th class="num">Rev Share (4%)</th></tr></thead>`+
+    `<thead><tr>
+      <th>Game</th>
+      <th class="num">GGR</th>
+      <th class="num">Wager</th>
+      <th class="num">RTP</th>
+      <th class="num">Rev Share</th>
+    </tr></thead>`+
     `<tbody>${gameTable(d.week?.by_game||[], true)}</tbody>`;
 }
 
