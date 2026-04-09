@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ad-dashboard data.json",
+  "type": "object",
+  "required": ["generated_at_utc", "sources", "rows", "totals"],
+  "properties": {
+    "generated_at_utc": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this payload was built by build_data.py."
+    },
+    "sources": {
+      "type": "object",
+      "description": "Per-source freshness + error flags.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "ok", "last_run_utc"],
+        "properties": {
+          "name": { "type": "string" },
+          "ok": { "type": "boolean" },
+          "error": { "type": ["string", "null"] },
+          "row_count": { "type": "integer", "minimum": 0 },
+          "last_run_utc": { "type": "string", "format": "date-time" },
+          "covered_date": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "rows": {
+      "type": "array",
+      "description": "Per-game or per-day rows across all sources.",
+      "items": {
+        "type": "object",
+        "required": ["source", "date"],
+        "properties": {
+          "source": {
+            "type": "string",
+            "enum": ["lnw", "octopus", "bgaming", "crowncoins"]
+          },
+          "date": { "type": "string" },
+          "game": { "type": "string" },
+          "wager_eur": { "type": "number" },
+          "win_eur": { "type": "number" },
+          "ggr_eur": { "type": "number" },
+          "rtp": { "type": ["number", "null"] },
+          "rev_share_eur": { "type": "number" },
+          "net_revenue_eur": { "type": "number" },
+          "notes": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "godfather": {
+      "type": ["object", "null"],
+      "description": "Godfather the Offer — separate Bangbang Games collab line item.",
+      "properties": {
+        "source": { "const": "godfather_collab" },
+        "partner": { "const": "bangbang" },
+        "date": { "type": "string" },
+        "wager_eur": { "type": "number" },
+        "ggr_eur": { "type": "number" },
+        "rtp": { "type": ["number", "null"] }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "properties": {
+        "lnw_rev_share_eur": { "type": "number" },
+        "octopus_rev_share_eur": { "type": "number" },
+        "bgaming_rev_share_eur": { "type": "number" },
+        "crowncoins_net_revenue_eur": { "type": "number" },
+        "regulated_total_eur": { "type": "number" },
+        "tidal_total_eur": { "type": "number" },
+        "combined_total_eur": { "type": "number" }
+      }
+    }
+  }
+}

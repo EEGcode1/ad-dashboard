@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlantic Digital — Revenue Dashboard</title>
+<meta name="build-stamp" content="{{BUILD_STAMP}}">
+<style>
+  :root{
+    --ink:#0b1120; --mute:#64748b; --line:#e2e8f0;
+    --bg:#f8fafc; --panel:#ffffff;
+    --good:#16a34a; --warn:#d97706; --bad:#dc2626;
+    --brand:#0ea5a4;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif}
+  .wrap{max-width:1200px;margin:0 auto;padding:24px}
+  header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:24px;flex-wrap:wrap;gap:12px}
+  h1{font-size:24px;margin:0;letter-spacing:-0.01em}
+  .muted{color:var(--mute);font-size:13px}
+  .tabs{display:flex;gap:4px;margin-bottom:20px;border-bottom:1px solid var(--line)}
+  .tab{padding:10px 18px;cursor:pointer;border:none;background:transparent;font:inherit;color:var(--mute);border-bottom:2px solid transparent;margin-bottom:-1px}
+  .tab.active{color:var(--ink);border-bottom-color:var(--brand);font-weight:600}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .card .label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin-bottom:6px}
+  .card .value{font-size:26px;font-weight:700;letter-spacing:-0.02em}
+  .card .delta{font-size:12px;color:var(--mute);margin-top:4px}
+  .sources{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+  .chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:99px;border:1px solid var(--line);background:#fff;font-size:13px}
+  .dot{width:8px;height:8px;border-radius:99px;background:var(--mute)}
+  .chip.ok .dot{background:var(--good)}
+  .chip.bad .dot{background:var(--bad)}
+  .chip .when{color:var(--mute);font-size:11px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:20px}
+  .panel h2{margin:0 0 14px 0;font-size:16px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+  th{font-weight:600;color:var(--mute);text-transform:uppercase;font-size:11px;letter-spacing:.06em}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .empty{padding:30px;text-align:center;color:var(--mute);font-size:13px}
+  .banner{padding:12px 16px;border-radius:10px;margin-bottom:16px;font-size:13px}
+  .banner.warn{background:#fef3c7;color:#78350f;border:1px solid #fcd34d}
+  .banner.err{background:#fee2e2;color:#7f1d1d;border:1px solid #fca5a5}
+  footer{margin-top:30px;color:var(--mute);font-size:12px;text-align:center}
+  @media(max-width:760px){
+    .cards{grid-template-columns:repeat(2,1fr)}
+    h1{font-size:20px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Atlantic Digital — Revenue Dashboard</h1>
+      <div class="muted" id="subtitle">Loading…</div>
+    </div>
+    <div class="muted" id="build-info"></div>
+  </header>
+
+  <div id="banners"></div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-tab="combined">Combined</button>
+    <button class="tab" data-tab="lnw">LNW Regulated</button>
+    <button class="tab" data-tab="tidal">Tidal</button>
+  </div>
+
+  <div id="source-chips" class="sources"></div>
+
+  <div id="cards" class="cards"></div>
+
+  <div class="panel">
+    <h2>Per-game detail</h2>
+    <div id="table-host"></div>
+  </div>
+
+  <div class="panel" id="godfather-panel" style="display:none">
+    <h2>Godfather the Offer — Bangbang Games collab</h2>
+    <div id="godfather-body"></div>
+  </div>
+
+  <footer>
+    Built by ad-dashboard · GitHub Actions · <span id="source-of-truth">source-of-truth parsers only</span>
+  </footer>
+</div>
+
+<script>
+const EUR = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+const EURf = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'EUR', maximumFractionDigits: 2 });
+const DT = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium', timeStyle: 'short' });
+
+let state = { tab: 'combined', data: null };
+
+async function load() {
+  try {
+    const res = await fetch('data.json?ts=' + Date.now());
+    state.data = await res.json();
+    render();
+  } catch (e) {
+    document.getElementById('banners').innerHTML =
+      `<div class="banner err">Failed to load data.json: ${e.message}</div>`;
+  }
+}
+
+function render() {
+  const d = state.data;
+  if (!d) return;
+
+  document.getElementById('subtitle').textContent =
+    'Last build: ' + (d.generated_at_utc ? DT.format(new Date(d.generated_at_utc)) : '—');
+  document.getElementById('build-info').textContent =
+    document.querySelector('meta[name="build-stamp"]').content;
+
+  renderBanners(d);
+  renderChips(d);
+  renderCards(d);
+  renderTable(d);
+  renderGodfather(d);
+}
+
+function renderBanners(d) {
+  const host = document.getElementById('banners');
+  const messages = [];
+  if (d.sources && !d.sources.lnw?.ok) {
+    messages.push(`<div class="banner err">⚠ LNW (SGI) source is stale: ${d.sources.lnw?.error || 'unknown error'}</div>`);
+  }
+  const tidalDown = ['octopus','bgaming','crowncoins'].filter(s => d.sources && !d.sources[s]?.ok);
+  if (tidalDown.length >= 2) {
+    messages.push(`<div class="banner warn">⚠ ${tidalDown.length} Tidal sources are stale: ${tidalDown.join(', ')}. Numbers below are partial.</div>`);
+  } else if (tidalDown.length === 1) {
+    messages.push(`<div class="banner warn">Tidal source '${tidalDown[0]}' is stale. Rest of Tidal stack is fresh.</div>`);
+  }
+  host.innerHTML = messages.join('');
+}
+
+function renderChips(d) {
+  const host = document.getElementById('source-chips');
+  if (!d.sources) { host.innerHTML = ''; return; }
+  const order = ['lnw','octopus','bgaming','crowncoins','godfather'];
+  host.innerHTML = order.map(name => {
+    const s = d.sources[name];
+    if (!s) return '';
+    const cls = s.ok ? 'ok' : 'bad';
+    const when = s.last_run_utc ? DT.format(new Date(s.last_run_utc)) : 'never';
+    const covered = s.covered_date ? ` · ${s.covered_date}` : '';
+    return `<div class="chip ${cls}"><span class="dot"></span>${name}${covered}<span class="when">${when}</span></div>`;
+  }).join('');
+}
+
+function renderCards(d) {
+  const t = d.totals || {};
+  let cards;
+  if (state.tab === 'combined') {
+    cards = [
+      { label: 'Combined total', value: EUR.format(t.combined_total_eur || 0) },
+      { label: 'Regulated (LNW)', value: EUR.format(t.regulated_total_eur || 0) },
+      { label: 'Tidal stack', value: EUR.format(t.tidal_total_eur || 0) },
+      { label: 'Rows captured', value: (d.rows || []).length },
+    ];
+  } else if (state.tab === 'lnw') {
+    cards = [
+      { label: 'LNW rev share (4%)', value: EUR.format(t.lnw_rev_share_eur || 0) },
+      { label: 'Games', value: (d.rows || []).filter(r => r.source === 'lnw').length },
+      { label: 'Source', value: 'SGI xlsx' },
+      { label: 'Status', value: d.sources?.lnw?.ok ? 'fresh' : 'stale' },
+    ];
+  } else {
+    cards = [
+      { label: 'Tidal total', value: EUR.format(t.tidal_total_eur || 0) },
+      { label: 'Octopus (4%)', value: EUR.format(t.octopus_rev_share_eur || 0) },
+      { label: 'BGaming (4%)', value: EUR.format(t.bgaming_rev_share_eur || 0) },
+      { label: 'CrownCoins (net)', value: EUR.format(t.crowncoins_net_revenue_eur || 0) },
+    ];
+  }
+  document.getElementById('cards').innerHTML = cards.map(c =>
+    `<div class="card"><div class="label">${c.label}</div><div class="value">${c.value}</div></div>`
+  ).join('');
+}
+
+function renderTable(d) {
+  const host = document.getElementById('table-host');
+  let rows = d.rows || [];
+  if (state.tab === 'lnw') rows = rows.filter(r => r.source === 'lnw');
+  if (state.tab === 'tidal') rows = rows.filter(r => r.source !== 'lnw');
+
+  if (!rows.length) {
+    host.innerHTML = '<div class="empty">No rows yet. Run the daily-refresh workflow to populate this.</div>';
+    return;
+  }
+  rows = [...rows].sort((a,b) => (b.rev_share_eur || b.net_revenue_eur || 0) - (a.rev_share_eur || a.net_revenue_eur || 0));
+
+  host.innerHTML = `
+    <table>
+      <thead><tr>
+        <th>Source</th><th>Date</th><th>Game</th>
+        <th class="num">Wager</th><th class="num">GGR</th>
+        <th class="num">RTP</th><th class="num">Rev / Net</th>
+      </tr></thead>
+      <tbody>
+        ${rows.map(r => `
+          <tr>
+            <td>${r.source}</td>
+            <td>${r.date || ''}</td>
+            <td>${r.game || '—'}</td>
+            <td class="num">${r.wager_eur != null ? EURf.format(r.wager_eur) : '—'}</td>
+            <td class="num">${r.ggr_eur != null ? EURf.format(r.ggr_eur) : '—'}</td>
+            <td class="num">${r.rtp != null ? (r.rtp > 2 ? r.rtp.toFixed(1) + '%' : (r.rtp*100).toFixed(1) + '%') : '—'}</td>
+            <td class="num">${EURf.format(r.rev_share_eur ?? r.net_revenue_eur ?? 0)}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>`;
+}
+
+function renderGodfather(d) {
+  const panel = document.getElementById('godfather-panel');
+  if (!d.godfather) { panel.style.display = 'none'; return; }
+  panel.style.display = '';
+  const g = d.godfather;
+  document.getElementById('godfather-body').innerHTML = `
+    <div class="muted" style="margin-bottom:10px">Partner: ${g.partner || '—'} · Date: ${g.date || '—'}</div>
+    <table>
+      <thead><tr><th class="num">Wager</th><th class="num">GGR</th><th class="num">RTP</th></tr></thead>
+      <tbody><tr>
+        <td class="num">${EURf.format(g.wager_eur || 0)}</td>
+        <td class="num">${EURf.format(g.ggr_eur || 0)}</td>
+        <td class="num">${g.rtp != null ? g.rtp.toFixed(1) + '%' : '—'}</td>
+      </tr></tbody>
+    </table>
+    <div class="muted" style="margin-top:10px">Cross-check monthly with Kerri @ Bangbang Games.</div>`;
+}
+
+document.querySelectorAll('.tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    state.tab = btn.dataset.tab;
+    render();
+  });
+});
+
+load();
+</script>
+</body>
+</html>

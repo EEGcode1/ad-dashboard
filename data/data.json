@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "1970-01-01T00:00:00+00:00",
+  "sources": {
+    "lnw":        { "name": "lnw",        "ok": false, "error": "not yet run", "row_count": 0, "last_run_utc": "", "covered_date": null },
+    "octopus":    { "name": "octopus",    "ok": false, "error": "not yet run", "row_count": 0, "last_run_utc": "", "covered_date": null },
+    "bgaming":    { "name": "bgaming",    "ok": false, "error": "not yet run", "row_count": 0, "last_run_utc": "", "covered_date": null },
+    "crowncoins": { "name": "crowncoins", "ok": false, "error": "not yet run", "row_count": 0, "last_run_utc": "", "covered_date": null },
+    "godfather":  { "name": "godfather",  "ok": false, "error": "not yet run", "row_count": 0, "last_run_utc": "", "covered_date": null }
+  },
+  "rows": [],
+  "godfather": null,
+  "totals": {
+    "lnw_rev_share_eur": 0,
+    "octopus_rev_share_eur": 0,
+    "bgaming_rev_share_eur": 0,
+    "crowncoins_net_revenue_eur": 0,
+    "regulated_total_eur": 0,
+    "tidal_total_eur": 0,
+    "combined_total_eur": 0
+  }
+}
