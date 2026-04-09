@@ -148,6 +148,11 @@
   .month-btn:hover{background:rgba(59,130,246,.12);color:#93c5fd;border-color:rgba(59,130,246,.3)}
   .month-btn.active{background:rgba(59,130,246,.18);color:#fff;border-color:rgba(59,130,246,.5)}
   .month-btn.incomplete{border-style:dashed}
+  .month-btn.stmt{color:var(--mute2);border-color:rgba(255,255,255,.07);background:rgba(255,255,255,.02)}
+  .month-btn.stmt:hover{background:rgba(251,191,36,.08);color:#fcd34d;border-color:rgba(251,191,36,.25)}
+  .month-btn.stmt.active{background:rgba(251,191,36,.12);color:#fbbf24;border-color:rgba(251,191,36,.4)}
+  .stmt-note{padding:10px 20px;font-size:11px;color:#fcd34d;background:rgba(251,191,36,.06);
+    border-bottom:1px solid rgba(251,191,36,.12);display:flex;align-items:center;gap:8px}
   .month-stats{display:flex;gap:24px;padding:12px 20px;background:rgba(0,0,0,.1);
     border-bottom:1px solid var(--border);font-size:12px;flex-wrap:wrap;align-items:center}
   .month-stat{display:flex;flex-direction:column;gap:2px}
@@ -702,13 +707,19 @@ function renderMonthlyTrendCharts(d){
   const revData = months.map(m => m.totals?.lnw_rev_share_eur || 0);
   const ggrData = months.map(m => m.totals?.ggr_eur || 0);
 
-  // Highlight incomplete month (last one if not complete)
-  const bgRev = months.map((m,i) =>
-    !m.complete ? 'rgba(251,191,36,.55)' : 'rgba(59,130,246,.75)');
-  const bgGgr = months.map((m,i) =>
-    !m.complete ? 'rgba(251,191,36,.45)' : 'rgba(6,182,212,.6)');
-  const borderRev = months.map(m => !m.complete ? '#fbbf24' : '#3b82f6');
-  const borderGgr = months.map(m => !m.complete ? '#fbbf24' : '#06b6d4');
+  // Colour: statement months (muted amber) | complete daily (blue/teal) | incomplete (dashed amber)
+  const bgRev = months.map(m =>
+    m.source==='statement' ? 'rgba(251,191,36,.28)' :
+    !m.complete            ? 'rgba(251,191,36,.55)' : 'rgba(59,130,246,.75)');
+  const bgGgr = months.map(m =>
+    m.source==='statement' ? 'rgba(251,191,36,.22)' :
+    !m.complete            ? 'rgba(251,191,36,.45)' : 'rgba(6,182,212,.6)');
+  const borderRev = months.map(m =>
+    m.source==='statement' ? 'rgba(251,191,36,.5)' :
+    !m.complete            ? '#fbbf24' : '#3b82f6');
+  const borderGgr = months.map(m =>
+    m.source==='statement' ? 'rgba(251,191,36,.4)' :
+    !m.complete            ? '#fbbf24' : '#06b6d4');
 
   const total = revData.reduce((a,v)=>a+v,0);
   const totalGgr = ggrData.reduce((a,v)=>a+v,0);
@@ -910,25 +921,35 @@ function renderMonthly(d){
   const months=d.monthly||[];
   if(!months.length){document.getElementById('monthly-panel').style.display='none';return;}
 
-  // Build month picker
+  // Build month picker — group by year for readability
   const picker=document.getElementById('month-picker');
-  picker.innerHTML=months.map(m=>{
-    const active=m.month===_selectedMonth?'active':'';
-    const inc=!m.complete?'incomplete':'';
-    const tip=!m.complete?` (${m.days_covered}/${m.days_in_month} days)`:'';
-    return `<button class="month-btn ${active} ${inc}" data-month="${m.month}">${m.label}${tip}</button>`;
-  }).join('');
+  let pickerHtml='';
+  let lastYear='';
+  months.forEach(m=>{
+    const yr=m.month.slice(0,4);
+    if(yr!==lastYear){
+      pickerHtml+=`<span style="font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--mute2);
+        text-transform:uppercase;padding:3px 4px;align-self:center">${yr}</span>`;
+      lastYear=yr;
+    }
+    const active  = m.month===_selectedMonth ? 'active' : '';
+    const isStmt  = m.source==='statement';
+    const isInc   = !m.complete && !isStmt;
+    const cls     = `${active} ${isStmt?'stmt':''} ${isInc?'incomplete':''}`;
+    const tip     = isInc ? ` (${m.days_covered}d)` : isStmt ? ' ★' : '';
+    pickerHtml+=`<button class="month-btn ${cls}" data-month="${m.month}">${m.label}${tip}</button>`;
+  });
+  picker.innerHTML=pickerHtml;
   picker.querySelectorAll('.month-btn').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      _selectedMonth=btn.dataset.month;
-      renderMonthly(d);
-    });
+    btn.addEventListener('click',()=>{_selectedMonth=btn.dataset.month;renderMonthly(d);});
   });
 
   // Find selected month data
   const sel=months.find(m=>m.month===_selectedMonth)||months[months.length-1];
+  const isStmt = sel?.source==='statement';
   document.getElementById('monthly-panel-meta').textContent=
-    sel?`${sel.days_covered} of ${sel.days_in_month} days covered`:'';
+    isStmt ? 'From LNW supplier statement' :
+    sel ? `${sel.days_covered} of ${sel.days_in_month} days covered` : '';
 
   // Month stats bar
   const momHtml=sel?.mom_pct!=null
@@ -937,18 +958,32 @@ function renderMonthly(d){
   const rtpYield=sel?.totals?.ggr_eur>0
     ? (sel.totals.lnw_rev_share_eur/sel.totals.ggr_eur*100).toFixed(2)+'%'
     : '—';
+  const wagerHtml = isStmt
+    ? `<div class="month-stat"><div class="ms-label">Wager</div><div class="ms-val" style="color:var(--mute);font-size:12px">not in statements</div></div>`
+    : `<div class="month-stat"><div class="ms-label">Wager</div><div class="ms-val">${EUR(sel?.totals?.wager_eur)}</div></div>`;
   document.getElementById('month-stats').innerHTML=`
-    <div class="month-stat"><div class="ms-label">AD Revenue</div><div class="ms-val rev">${EUR(sel?.totals?.lnw_rev_share_eur)}</div></div>
-    <div class="month-stat"><div class="ms-label">GGR</div><div class="ms-val">${EUR(sel?.totals?.ggr_eur)}</div></div>
-    <div class="month-stat"><div class="ms-label">Wager</div><div class="ms-val">${EUR(sel?.totals?.wager_eur)}</div></div>
-    <div class="month-stat"><div class="ms-label">Eff. Rate</div><div class="ms-val">${rtpYield}</div></div>
-    <div style="margin-left:auto">${momHtml}</div>
+    ${isStmt?`<div class="stmt-note">★ Statement data — GBP converted to EUR at 1.17 · No game-level breakdown available</div>`:''}
+    <div style="display:flex;gap:24px;padding:12px 20px;flex-wrap:wrap;align-items:center;font-size:12px">
+      <div class="month-stat"><div class="ms-label">AD Revenue</div><div class="ms-val rev">${EUR(sel?.totals?.lnw_rev_share_eur)}</div></div>
+      <div class="month-stat"><div class="ms-label">GGR</div><div class="ms-val">${EUR(sel?.totals?.ggr_eur)}</div></div>
+      ${wagerHtml}
+      <div class="month-stat"><div class="ms-label">Eff. Rate</div><div class="ms-val">${rtpYield}</div></div>
+      <div style="margin-left:auto">${momHtml}</div>
+    </div>
   `;
 
-  // Game table
-  document.getElementById('monthly-table').innerHTML=
-    aggTheadHtml(monthlySort)+`<tbody>${aggTableHtml(sel?.by_game||[],monthlySort)}</tbody>`;
-  bindSort('monthly-table',monthlySort,()=>renderMonthly(d));
+  // Game table — statement months have no game-level data
+  if(isStmt){
+    document.getElementById('monthly-table').innerHTML=
+      `<tr><td colspan="4" class="empty" style="padding:32px">
+        Game-level breakdown not available for statement months (Jan–Aug 2025).<br>
+        <span style="font-size:11px;color:var(--mute2)">Daily data collection began Sep 2025.</span>
+      </td></tr>`;
+  } else {
+    document.getElementById('monthly-table').innerHTML=
+      aggTheadHtml(monthlySort)+`<tbody>${aggTableHtml(sel?.by_game||[],monthlySort)}</tbody>`;
+    bindSort('monthly-table',monthlySort,()=>renderMonthly(d));
+  }
 }
 
 /* ── All-time section ── */

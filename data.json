@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-04-09T19:04:19.759020+00:00",
+  "generated_at_utc": "2026-04-09T20:01:32.950647+00:00",
   "sources": {
     "lnw": {
       "name": "lnw",
       "ok": true,
       "error": null,
       "row_count": 4664,
-      "last_run_utc": "2026-04-09T19:04:19.759521+00:00",
+      "last_run_utc": "2026-04-09T20:01:32.952285+00:00",
       "covered_date": "2026-04-08"
     },
     "octopus": {
@@ -14,7 +14,7 @@
       "ok": true,
       "error": null,
       "row_count": 41,
-      "last_run_utc": "2026-04-09T19:04:19.760290+00:00",
+      "last_run_utc": "2026-04-09T20:01:32.952941+00:00",
       "covered_date": "2026-04-08"
     },
     "bgaming": {
@@ -3201,6 +3201,126 @@
   },
   "monthly": [
     {
+      "month": "2025-01",
+      "label": "Jan 2025",
+      "days_covered": 31,
+      "days_in_month": 31,
+      "complete": true,
+      "source": "statement",
+      "totals": {
+        "lnw_rev_share_eur": 43189.38,
+        "ggr_eur": 847959.84,
+        "wager_eur": null
+      },
+      "by_game": [],
+      "mom_pct": null
+    },
+    {
+      "month": "2025-02",
+      "label": "Feb 2025",
+      "days_covered": 28,
+      "days_in_month": 28,
+      "complete": true,
+      "source": "statement",
+      "totals": {
+        "lnw_rev_share_eur": 23278.32,
+        "ggr_eur": 528162.57,
+        "wager_eur": null
+      },
+      "by_game": [],
+      "mom_pct": -46.1
+    },
+    {
+      "month": "2025-03",
+      "label": "Mar 2025",
+      "days_covered": 31,
+      "days_in_month": 31,
+      "complete": true,
+      "source": "statement",
+      "totals": {
+        "lnw_rev_share_eur": 29390.4,
+        "ggr_eur": 526228.56,
+        "wager_eur": null
+      },
+      "by_game": [],
+      "mom_pct": 26.3
+    },
+    {
+      "month": "2025-04",
+      "label": "Apr 2025",
+      "days_covered": 30,
+      "days_in_month": 30,
+      "complete": true,
+      "source": "statement",
+      "totals": {
+        "lnw_rev_share_eur": 31084.56,
+        "ggr_eur": 635410.62,
+        "wager_eur": null
+      },
+      "by_game": [],
+      "mom_pct": 5.8
+    },
+    {
+      "month": "2025-05",
+      "label": "May 2025",
+      "days_covered": 31,
+      "days_in_month": 31,
+      "complete": true,
+      "source": "statement",
+      "totals": {
+        "lnw_rev_share_eur": 53032.59,
+        "ggr_eur": 962968.5,
+        "wager_eur": null
+      },
+      "by_game": [],
+      "mom_pct": 70.6
+    },
+    {
+      "month": "2025-06",
+      "label": "Jun 2025",
+      "days_covered": 30,
+      "days_in_month": 30,
+      "complete": true,
+      "source": "statement",
+      "totals": {
+        "lnw_rev_share_eur": 26812.89,
+        "ggr_eur": 514661.94,
+        "wager_eur": null
+      },
+      "by_game": [],
+      "mom_pct": -49.4
+    },
+    {
+      "month": "2025-07",
+      "label": "Jul 2025",
+      "days_covered": 31,
+      "days_in_month": 31,
+      "complete": true,
+      "source": "statement",
+      "totals": {
+        "lnw_rev_share_eur": 96978.96,
+        "ggr_eur": 2009913.75,
+        "wager_eur": null
+      },
+      "by_game": [],
+      "mom_pct": 261.7
+    },
+    {
+      "month": "2025-08",
+      "label": "Aug 2025",
+      "days_covered": 31,
+      "days_in_month": 31,
+      "complete": true,
+      "source": "statement",
+      "totals": {
+        "lnw_rev_share_eur": 61891.83,
+        "ggr_eur": 1057988.88,
+        "wager_eur": null
+      },
+      "by_game": [],
+      "mom_pct": -36.2
+    },
+    {
       "month": "2025-09",
       "label": "Sep 2025",
       "days_covered": 15,
@@ -3384,7 +3504,7 @@
           "win_eur": 0.0
         }
       ],
-      "mom_pct": null
+      "mom_pct": -32.3
     },
     {
       "month": "2025-10",
