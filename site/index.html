@@ -3,163 +3,476 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Atlantic Digital — Revenue Hub</title>
+<title>Atlantic Digital — Portal</title>
 <style>
-  :root{
-    --ink:#0b1120;--mute:#64748b;--line:#e2e8f0;
-    --bg:#f8fafc;--panel:#ffffff;
-    --lnw:#1d4ed8;--lnw-bg:#dbeafe;
-    --tidal:#0d9488;--tidal-bg:#ccfbf1;
-    --good:#16a34a;--bad:#dc2626;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:var(--bg);color:var(--ink);min-height:100vh;
-    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif}
-  .wrap{max-width:900px;margin:0 auto;padding:56px 24px 40px}
-  .logo-line{display:flex;align-items:center;gap:12px;margin-bottom:6px}
-  .logo{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--mute)}
-  h1{font-size:32px;font-weight:700;letter-spacing:-0.03em;margin-bottom:6px}
-  .sub{color:var(--mute);font-size:15px;margin-bottom:32px}
-  .sources{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
-  .chip{display:inline-flex;align-items:center;gap:7px;padding:6px 12px;
-    border-radius:99px;border:1px solid var(--line);background:#fff;font-size:12px;color:var(--mute)}
-  .chip .dot{width:6px;height:6px;border-radius:99px;background:var(--mute)}
-  .chip.ok .dot{background:var(--good)}
-  .chip.bad .dot{background:var(--bad)}
-  .summary{background:var(--panel);border:1px solid var(--line);border-radius:14px;
-    padding:22px 26px;margin-bottom:24px}
-  .summary h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;
-    color:var(--mute);margin-bottom:12px}
-  .sum-row{display:flex;justify-content:space-between;padding:8px 0;
-    border-top:1px solid var(--line);font-size:14px}
-  .sum-row:first-of-type{border-top:none}
-  .sum-row .sk{color:var(--mute)}
-  .sum-row .sv{font-weight:600;font-variant-numeric:tabular-nums}
-  .sum-row.total .sv{font-size:18px}
-  .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:36px}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;
-    padding:28px 30px;text-decoration:none;color:inherit;display:block;
-    transition:box-shadow .15s,transform .15s;position:relative;overflow:hidden}
-  .card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-2px)}
-  .card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
-  .card.lnw::before{background:var(--lnw)}
-  .card.tidal::before{background:var(--tidal)}
-  .card .tag{display:inline-block;padding:3px 10px;border-radius:99px;font-size:11px;
-    font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
-  .card.lnw .tag{background:var(--lnw-bg);color:var(--lnw)}
-  .card.tidal .tag{background:var(--tidal-bg);color:var(--tidal)}
-  .card h2{font-size:20px;font-weight:700;letter-spacing:-0.02em;margin-bottom:8px}
-  .card .desc{font-size:13px;color:var(--mute);line-height:1.6;margin-bottom:18px}
-  .card .metrics{display:flex;flex-direction:column;gap:0}
-  .card .metric{display:flex;justify-content:space-between;font-size:13px;
-    padding:7px 0;border-top:1px solid var(--line)}
-  .card .metric .mk{color:var(--mute)}
-  .card .metric .mv{font-weight:600;font-variant-numeric:tabular-nums}
-  .card .metric .mv.ok{color:var(--good)}
-  .card .metric .mv.bad{color:var(--bad)}
-  .card .cta{display:inline-flex;align-items:center;gap:6px;margin-top:18px;
-    font-size:13px;font-weight:600}
-  .card.lnw .cta{color:var(--lnw)}
-  .card.tidal .cta{color:var(--tidal)}
-  footer{text-align:center;font-size:12px;color:var(--mute);padding-top:4px}
-  @media(max-width:660px){.cards{grid-template-columns:1fr}}
+:root{
+  --ink:#0b1120;--mute:#64748b;--line:#e2e8f0;
+  --bg:#f1f5f9;--panel:#ffffff;
+  --ad:#1d4ed8;--ad-dark:#1e3a8a;
+  --good:#16a34a;--bad:#dc2626;--warn:#d97706;
+  --nav-bg:#0b1120;--nav-h:56px;
+  --hero-from:#0f172a;--hero-to:#1e3a8a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink);min-height:100vh;
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:100;height:var(--nav-h);
+  background:var(--nav-bg);display:flex;align-items:center;
+  padding:0 28px;gap:32px;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-brand{font-size:14px;font-weight:700;letter-spacing:.04em;color:#fff;
+  text-decoration:none;white-space:nowrap;margin-right:8px}
+.nav-brand span{opacity:.5;font-weight:400}
+.nav-links{display:flex;gap:4px;flex:1}
+.nav-link{display:inline-flex;align-items:center;gap:7px;padding:6px 13px;
+  border-radius:8px;font-size:13px;font-weight:500;color:rgba(255,255,255,.6);
+  text-decoration:none;transition:background .15s,color .15s}
+.nav-link:hover,.nav-link.active{background:rgba(255,255,255,.1);color:#fff}
+.nav-link svg{opacity:.7;flex-shrink:0}
+.nav-link.active svg{opacity:1}
+.nav-sources{display:flex;gap:6px;align-items:center;flex-shrink:0}
+.src-dot{width:7px;height:7px;border-radius:99px;background:var(--mute);
+  transition:background .3s}
+.src-dot.ok{background:var(--good)}
+.src-dot.bad{background:var(--bad)}
+.src-label{font-size:11px;color:rgba(255,255,255,.4);margin-right:2px;
+  white-space:nowrap}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,var(--hero-from) 0%,var(--hero-to) 100%);
+  padding:52px 28px 44px;color:#fff;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 70% 50%,rgba(99,102,241,.18) 0%,transparent 70%);
+  pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1}
+.hero-top{margin-bottom:32px}
+.hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(255,255,255,.5);margin-bottom:10px}
+.hero-title{font-size:34px;font-weight:800;letter-spacing:-0.03em;line-height:1.15;
+  margin-bottom:8px}
+.hero-sub{font-size:15px;color:rgba(255,255,255,.6);max-width:560px}
+.hero-id{font-size:12px;color:rgba(255,255,255,.35);margin-top:6px}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.kpi{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  border-radius:14px;padding:20px 22px;backdrop-filter:blur(8px)}
+.kpi .label{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  color:rgba(255,255,255,.5);margin-bottom:8px}
+.kpi .val{font-size:28px;font-weight:800;letter-spacing:-0.03em;
+  font-variant-numeric:tabular-nums;color:#fff}
+.kpi .sub2{font-size:12px;color:rgba(255,255,255,.45);margin-top:4px}
+.kpi.accent{background:rgba(99,102,241,.25);border-color:rgba(99,102,241,.4)}
+
+/* ── MAIN ── */
+.main{max-width:1100px;margin:0 auto;padding:40px 28px 60px}
+
+/* section heading */
+.sec-head{display:flex;align-items:baseline;gap:10px;margin-bottom:18px}
+.sec-head h2{font-size:18px;font-weight:700;letter-spacing:-0.02em}
+.sec-head .badge{font-size:11px;font-weight:600;padding:2px 9px;border-radius:99px;
+  background:var(--line);color:var(--mute)}
+
+/* ── SECTION CARDS ── */
+.section-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:44px}
+.sec-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;
+  padding:28px 28px 24px;text-decoration:none;color:inherit;display:flex;
+  flex-direction:column;gap:0;position:relative;overflow:hidden;
+  transition:box-shadow .15s,transform .15s}
+.sec-card:hover{box-shadow:0 10px 32px rgba(0,0,0,.09);transform:translateY(-2px)}
+.sec-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  border-radius:18px 18px 0 0}
+.sec-card.fin::before{background:linear-gradient(90deg,#1d4ed8,#6366f1)}
+.sec-card.games::before{background:linear-gradient(90deg,#7c3aed,#ec4899)}
+.sec-card.road::before{background:linear-gradient(90deg,#0d9488,#22c55e)}
+.sec-card .sc-icon{width:40px;height:40px;border-radius:12px;display:flex;
+  align-items:center;justify-content:center;margin-bottom:16px}
+.sec-card.fin .sc-icon{background:#dbeafe}
+.sec-card.games .sc-icon{background:#ede9fe}
+.sec-card.road .sc-icon{background:#ccfbf1}
+.sec-card .sc-tag{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--mute);margin-bottom:8px}
+.sec-card h3{font-size:17px;font-weight:700;letter-spacing:-0.02em;margin-bottom:8px}
+.sec-card p{font-size:13px;color:var(--mute);line-height:1.6;flex:1;margin-bottom:18px}
+.sec-card .sc-metrics{display:flex;flex-direction:column;gap:0;margin-bottom:16px}
+.sec-card .sc-m{display:flex;justify-content:space-between;font-size:13px;
+  padding:6px 0;border-top:1px solid var(--line)}
+.sec-card .sc-m .mk{color:var(--mute)}
+.sec-card .sc-m .mv{font-weight:600;font-variant-numeric:tabular-nums}
+.sec-card .sc-cta{font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:5px}
+.sec-card.fin .sc-cta{color:#1d4ed8}
+.sec-card.games .sc-cta{color:#7c3aed}
+.sec-card.road .sc-cta{color:#0d9488}
+
+/* ── BOTTOM SPLIT ── */
+.split{display:grid;grid-template-columns:1fr 340px;gap:24px}
+
+/* Top games table */
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.panel-head{padding:18px 22px 14px;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between}
+.panel-head h3{font-size:14px;font-weight:700}
+.panel-head .phn{font-size:12px;color:var(--mute)}
+table{width:100%;border-collapse:collapse}
+th{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--mute);text-align:left;padding:10px 14px;border-bottom:1px solid var(--line)}
+th:last-child,td:last-child{text-align:right}
+td{font-size:13px;padding:10px 14px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#f8fafc}
+td.game-name{font-weight:500;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+td.num{font-variant-numeric:tabular-nums;font-weight:600}
+td.src{font-size:11px;padding:10px 8px}
+.src-badge{display:inline-block;padding:2px 7px;border-radius:99px;font-size:10px;font-weight:600}
+.sb-lnw{background:#dbeafe;color:#1d4ed8}
+.sb-oct{background:#ede9fe;color:#7c3aed}
+.sb-bg{background:#fce7f3;color:#be185d}
+.sb-cc{background:#ccfbf1;color:#0d9488}
+.empty-row td{text-align:center;color:var(--mute);font-style:italic;padding:28px}
+
+/* Source status panel */
+.status-panel{}
+.status-item{display:flex;align-items:center;gap:12px;padding:14px 22px;
+  border-bottom:1px solid var(--line)}
+.status-item:last-child{border-bottom:none}
+.status-dot{width:8px;height:8px;border-radius:99px;flex-shrink:0}
+.status-dot.ok{background:var(--good)}
+.status-dot.bad{background:var(--bad)}
+.status-dot.unknown{background:var(--mute)}
+.status-info{flex:1;min-width:0}
+.status-name{font-size:13px;font-weight:600}
+.status-detail{font-size:11px;color:var(--mute);margin-top:1px;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.status-time{font-size:11px;color:var(--mute);text-align:right;white-space:nowrap}
+
+footer{text-align:center;font-size:12px;color:var(--mute);padding:32px 0 20px}
+
+@media(max-width:900px){
+  .kpi-grid{grid-template-columns:1fr 1fr}
+  .section-cards{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .kpi-grid{grid-template-columns:1fr 1fr}
+  .hero-title{font-size:26px}
+  nav{padding:0 16px;gap:16px}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="logo-line"><span class="logo">Atlantic Digital</span></div>
-  <h1>Revenue Hub</h1>
-  <p class="sub" id="sub">Loading latest data…</p>
 
-  <div class="sources" id="source-chips"></div>
-
-  <div class="summary" id="summary">
-    <h3>Yesterday + MTD — <span id="summary-date"></span></h3>
-    <div id="summary-rows"></div>
-  </div>
-
-  <div class="cards">
-    <a class="card lnw" href="lnw.html">
-      <div class="tag">Regulated</div>
-      <h2>LNW Revenue</h2>
-      <p class="desc">LNW SGI reporting — "Previous Day - By Game" tab only. 4% GGR revenue share. Source: SGI_Reporting@lnw.com.</p>
-      <div class="metrics" id="lnw-metrics"></div>
-      <div class="cta">Open LNW dashboard →</div>
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="index.html">Atlantic Digital <span>/ Portal</span></a>
+  <div class="nav-links">
+    <a class="nav-link active" href="index.html">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      Hub
     </a>
-    <a class="card tidal" href="tidal.html">
-      <div class="tag">Pre-Reg · Tidal</div>
-      <h2>Tidal Revenue</h2>
-      <p class="desc">Octopus (Kraken email) · BGaming backoffice · Crown Coins Superset. 4% GGR share on Octopus + BGaming; CC = net revenue.</p>
-      <div class="metrics" id="tidal-metrics"></div>
-      <div class="cta">Open Tidal dashboard →</div>
+    <a class="nav-link" href="lnw.html">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      LNW Finance
+    </a>
+    <a class="nav-link" href="games.html">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+      Games
+    </a>
+    <a class="nav-link" href="roadmap.html">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+      Roadmap
     </a>
   </div>
+  <div class="nav-sources" id="nav-sources">
+    <span class="src-label">sources</span>
+    <span class="src-dot" id="nd-lnw" title="LNW"></span>
+    <span class="src-dot" id="nd-oct" title="Octopus"></span>
+    <span class="src-dot" id="nd-bg"  title="BGaming"></span>
+    <span class="src-dot" id="nd-cc"  title="Crown Coins"></span>
+  </div>
+</nav>
 
-  <footer id="footer">ad-dashboard · GitHub Actions · source-of-truth parsers only</footer>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-eyebrow">Atlantic Digital · Internal Portal</div>
+      <div class="hero-title">Revenue &amp; Pipeline Hub</div>
+      <div class="hero-sub">Live regulated + pre-reg revenue. Games catalogue. Delivery roadmap. One place.</div>
+      <div class="hero-id" id="hero-stamp">Loading data…</div>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi">
+        <div class="label">Yesterday Combined</div>
+        <div class="val" id="k-yesterday">—</div>
+        <div class="sub2" id="k-date">—</div>
+      </div>
+      <div class="kpi">
+        <div class="label">MTD Combined</div>
+        <div class="val" id="k-mtd">—</div>
+        <div class="sub2" id="k-month">—</div>
+      </div>
+      <div class="kpi">
+        <div class="label">LNW Pipeline</div>
+        <div class="val" id="k-pipeline">68</div>
+        <div class="sub2">games · Apr 2026 → 2027</div>
+      </div>
+      <div class="kpi accent">
+        <div class="label">Live Games</div>
+        <div class="val" id="k-live">—</div>
+        <div class="sub2">across all platforms</div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- SECTION CARDS -->
+  <div class="sec-head">
+    <h2>Sections</h2>
+  </div>
+  <div class="section-cards">
+
+    <a class="sec-card fin" href="lnw.html">
+      <div class="sc-icon">
+        <svg width="20" height="20" fill="none" stroke="#1d4ed8" stroke-width="2" viewBox="0 0 24 24">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+        </svg>
+      </div>
+      <div class="sc-tag">Finance · Regulated</div>
+      <h3>LNW Revenue</h3>
+      <p>SGI "Previous Day – By Game" reporting. 4% GGR rev share. Source-of-truth parsers only — no Gary's reports.</p>
+      <div class="sc-metrics" id="fin-metrics">
+        <div class="sc-m"><span class="mk">Yesterday rev share</span><span class="mv" id="fm-yesterday">—</span></div>
+        <div class="sc-m"><span class="mk">MTD rev share</span><span class="mv" id="fm-mtd">—</span></div>
+        <div class="sc-m"><span class="mk">Source</span><span class="mv" id="fm-src">—</span></div>
+      </div>
+      <div class="sc-cta">Open Finance dashboard →</div>
+    </a>
+
+    <a class="sec-card games" href="games.html">
+      <div class="sc-icon">
+        <svg width="20" height="20" fill="none" stroke="#7c3aed" stroke-width="2" viewBox="0 0 24 24">
+          <rect x="2" y="7" width="20" height="15" rx="2"/>
+          <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+          <line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/>
+        </svg>
+      </div>
+      <div class="sc-tag">Games Catalogue</div>
+      <h3>Games Hub</h3>
+      <p>Marketing thumbnails from Drive. GGR per game. Platform status. Filtered by brand, mechanic, or launch window.</p>
+      <div class="sc-metrics">
+        <div class="sc-m"><span class="mk">Top game (MTD GGR)</span><span class="mv" id="gm-top">—</span></div>
+        <div class="sc-m"><span class="mk">Active games (yesterday)</span><span class="mv" id="gm-active">—</span></div>
+        <div class="sc-m"><span class="mk">Pipeline titles</span><span class="mv">68</span></div>
+      </div>
+      <div class="sc-cta">Open Games Hub →</div>
+    </a>
+
+    <a class="sec-card road" href="roadmap.html">
+      <div class="sc-icon">
+        <svg width="20" height="20" fill="none" stroke="#0d9488" stroke-width="2" viewBox="0 0 24 24">
+          <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
+          <line x1="8" y1="18" x2="21" y2="18"/>
+          <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/>
+          <line x1="3" y1="18" x2="3.01" y2="18"/>
+        </svg>
+      </div>
+      <div class="sc-tag">Delivery Roadmap</div>
+      <h3>Release Planner</h3>
+      <p>Paul's LNW pipeline — 68 games, Apr 2026 → 2027. Gantt timeline, PA submissions, GLI status. Live from Google Sheets.</p>
+      <div class="sc-metrics">
+        <div class="sc-m"><span class="mk">Q2 2026 titles</span><span class="mv" id="rm-q2">—</span></div>
+        <div class="sc-m"><span class="mk">PA submissions pending</span><span class="mv" id="rm-pa">—</span></div>
+        <div class="sc-m"><span class="mk">Next launch</span><span class="mv" id="rm-next">—</span></div>
+      </div>
+      <div class="sc-cta">Open Roadmap →</div>
+    </a>
+
+  </div>
+
+  <!-- BOTTOM SPLIT -->
+  <div class="split">
+
+    <!-- TOP 10 GAMES -->
+    <div>
+      <div class="sec-head">
+        <h2>Top Games</h2>
+        <span class="badge" id="top-badge">MTD by GGR</span>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Top 10 by GGR — Month to Date</h3>
+          <span class="phn" id="top-date">—</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Game</th>
+              <th>Source</th>
+              <th>GGR</th>
+              <th>Rev Share</th>
+            </tr>
+          </thead>
+          <tbody id="top-games-body">
+            <tr class="empty-row"><td colspan="5">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SOURCE STATUS -->
+    <div>
+      <div class="sec-head">
+        <h2>Data Sources</h2>
+      </div>
+      <div class="panel status-panel">
+        <div class="panel-head">
+          <h3>Source Health</h3>
+        </div>
+        <div id="source-status-list">
+          <div class="status-item">
+            <div class="status-dot unknown"></div>
+            <div class="status-info"><div class="status-name">Loading…</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer id="footer">Atlantic Digital · Internal Portal · ad-dashboard · GitHub Actions</footer>
 
 <script>
 const EUR = v => '€' + Number(v||0).toLocaleString('en-GB',{minimumFractionDigits:0,maximumFractionDigits:0});
 const DT  = new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short'});
-const SRC_LABELS = {lnw:'LNW',octopus:'Octopus',bgaming:'BGaming',crowncoins:'Crown Coins'};
+const SRC_LABELS = {lnw:'LNW',octopus:'Octopus',bgaming:'BGaming',crowncoins:'Crown Coins',godfather:'Godfather'};
+const SRC_BADGE  = {lnw:'sb-lnw',octopus:'sb-oct',bgaming:'sb-bg',crowncoins:'sb-cc'};
 
 async function load(){
   try{
     const res = await fetch('data.json?ts='+Date.now());
     render(await res.json());
   }catch(e){
-    document.getElementById('sub').textContent = 'Failed to load data: '+e.message;
+    document.getElementById('hero-stamp').textContent = 'Failed to load data: '+e.message;
   }
 }
 
 function render(d){
   const gen = d.generated_at_utc ? DT.format(new Date(d.generated_at_utc)) : '—';
-  document.getElementById('sub').textContent = `Last updated: ${gen}`;
-  document.getElementById('footer').textContent = `Built ${gen} · ad-dashboard · GitHub Actions · source-of-truth parsers`;
+  document.getElementById('hero-stamp').textContent = `Last updated: ${gen}`;
+  document.getElementById('footer').textContent =
+    `Atlantic Digital · Internal Portal · Built ${gen} · ad-dashboard · GitHub Actions`;
 
-  // Source chips
-  document.getElementById('source-chips').innerHTML =
-    ['lnw','octopus','bgaming','crowncoins'].map(name=>{
-      const s = d.sources?.[name];
-      const covered = s?.covered_date ? ` ${s.covered_date}` : '';
-      return `<div class="chip ${s?.ok?'ok':'bad'}"><span class="dot"></span>${SRC_LABELS[name]}${covered}</div>`;
-    }).join('');
-
-  // Summary
   const td = d.day?.totals||{};
   const tm = d.mtd?.totals||{};
-  document.getElementById('summary-date').textContent = d.day?.date||'—';
-  document.getElementById('summary-rows').innerHTML = [
-    {k:'LNW rev share (yesterday)',  v: EUR(td.lnw_rev_share_eur)},
-    {k:'Tidal total (yesterday)',    v: EUR(td.tidal_total_eur)},
-    {k:'Combined (yesterday)',       v: EUR(td.combined_total_eur), total:true},
-    {k:'MTD LNW',                    v: EUR(tm.lnw_rev_share_eur)},
-    {k:'MTD Tidal',                  v: EUR(tm.tidal_total_eur)},
-    {k:'MTD Combined',               v: EUR(tm.combined_total_eur), total:true},
-  ].map(r=>
-    `<div class="sum-row ${r.total?'total':''}"><span class="sk">${r.k}</span><span class="sv">${r.v}</span></div>`
-  ).join('');
+  const dayDate = d.day?.date||'—';
+  const mtdMonth = d.mtd?.month||'—';
 
-  // LNW card
-  const lnwDayRows = (d.day?.rows||[]).filter(r=>r.source==='lnw');
-  document.getElementById('lnw-metrics').innerHTML = [
-    {k:'Yesterday rev share', v: EUR(td.lnw_rev_share_eur)},
-    {k:'MTD rev share',       v: EUR(tm.lnw_rev_share_eur)},
-    {k:'Yesterday games',     v: lnwDayRows.length},
-    {k:'Source',              v: d.sources?.lnw?.ok?'Live':'Stale', cls: d.sources?.lnw?.ok?'ok':'bad'},
-  ].map(m=>`<div class="metric"><span class="mk">${m.k}</span><span class="mv${m.cls?' '+m.cls:''}">${m.v}</span></div>`).join('');
+  // KPIs
+  document.getElementById('k-yesterday').textContent = EUR(td.combined_total_eur);
+  document.getElementById('k-date').textContent = dayDate;
+  document.getElementById('k-mtd').textContent = EUR(tm.combined_total_eur);
+  document.getElementById('k-month').textContent = mtdMonth;
 
-  // Tidal card
-  const stale = ['octopus','bgaming','crowncoins'].filter(s=>!d.sources?.[s]?.ok);
-  document.getElementById('tidal-metrics').innerHTML = [
-    {k:'Yesterday total',  v: EUR(td.tidal_total_eur)},
-    {k:'MTD total',        v: EUR(tm.tidal_total_eur)},
-    {k:'MTD Octopus',      v: EUR(tm.octopus_rev_share_eur)},
-    {k:'Sources stale',    v: stale.length ? stale.join(', ') : 'none', cls: stale.length?'bad':'ok'},
-  ].map(m=>`<div class="metric"><span class="mk">${m.k}</span><span class="mv${m.cls?' '+m.cls:''}">${m.v}</span></div>`).join('');
+  // Live games count (unique games with yesterday data)
+  const liveGames = new Set((d.day?.rows||[]).map(r=>r.game)).size;
+  document.getElementById('k-live').textContent = liveGames||'—';
+
+  // Finance card
+  document.getElementById('fm-yesterday').textContent = EUR(td.lnw_rev_share_eur);
+  document.getElementById('fm-mtd').textContent = EUR(tm.lnw_rev_share_eur);
+  const lnwOk = d.sources?.lnw?.ok;
+  const fmSrc = document.getElementById('fm-src');
+  fmSrc.textContent = lnwOk ? 'Live ✓' : 'Stale ✗';
+  fmSrc.style.color = lnwOk ? 'var(--good)' : 'var(--bad)';
+
+  // Games card
+  const mtdGames = (d.mtd?.by_game||[]);
+  const topGame  = mtdGames[0];
+  document.getElementById('gm-top').textContent = topGame ? topGame.game.slice(0,22) : '—';
+  document.getElementById('gm-active').textContent =
+    new Set((d.day?.rows||[]).map(r=>r.game)).size || '—';
+
+  // Nav dots
+  ['lnw','octopus','bgaming','crowncoins'].forEach((s,i)=>{
+    const ids = ['nd-lnw','nd-oct','nd-bg','nd-cc'];
+    const el  = document.getElementById(ids[i]);
+    const ok  = d.sources?.[s]?.ok;
+    el.className = 'src-dot '+(ok?'ok':ok===false?'bad':'');
+  });
+
+  // Source status panel
+  const srcs = ['lnw','octopus','bgaming','crowncoins'];
+  document.getElementById('source-status-list').innerHTML = srcs.map(s=>{
+    const src = d.sources?.[s]||{};
+    const stClass = src.ok ? 'ok' : src.ok===false ? 'bad' : 'unknown';
+    const detail  = src.ok
+      ? `${src.row_count||0} rows · ${src.covered_date||'—'}`
+      : (src.error||'No data');
+    return `<div class="status-item">
+      <div class="status-dot ${stClass}"></div>
+      <div class="status-info">
+        <div class="status-name">${SRC_LABELS[s]}</div>
+        <div class="status-detail">${detail}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Top 10 games table
+  document.getElementById('top-date').textContent = mtdMonth;
+  const top10 = mtdGames.slice(0,10);
+  if(top10.length===0){
+    document.getElementById('top-games-body').innerHTML =
+      '<tr class="empty-row"><td colspan="5">No data yet — run the build first.</td></tr>';
+  } else {
+    document.getElementById('top-games-body').innerHTML = top10.map((g,i)=>{
+      const cls = SRC_BADGE[g.source]||'';
+      return `<tr>
+        <td style="color:var(--mute);font-size:12px">${i+1}</td>
+        <td class="game-name">${g.game}</td>
+        <td class="src"><span class="src-badge ${cls}">${SRC_LABELS[g.source]||g.source}</span></td>
+        <td class="num">${EUR(g.ggr_eur)}</td>
+        <td class="num">${EUR(g.rev_share_eur||g.net_revenue_eur)}</td>
+      </tr>`;
+    }).join('');
+  }
 }
 
 load();
+
+// Roadmap card stats from Google Sheets (gviz/tq — no auth needed)
+(async()=>{
+  try{
+    const SHEET_ID = '19PDSB8pdtyNKFLeVP5Sw4-ve7i3s2ZivLy9kdnl9iq0';
+    const GID_PIPELINE = '1736378104';
+    const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&gid=${GID_PIPELINE}`;
+    const r = await fetch(url);
+    const text = await r.text();
+    const json = JSON.parse(text.match(/google\.visualization\.Query\.setResponse\(([\s\S]*)\)/)[1]);
+    const rows = json.table?.rows||[];
+    // Count Q2 2026 titles (col with launch date Apr–Jun 2026)
+    let q2=0, paCount=0, nextDate=null, nextGame='';
+    const today = new Date();
+    rows.forEach(row=>{
+      const cols = row.c||[];
+      const launchRaw = cols[2]?.v;  // assume col 2 = launch date
+      if(!launchRaw) return;
+      const d = new Date(launchRaw);
+      if(isNaN(d)) return;
+      const m = d.getMonth()+1, y = d.getFullYear();
+      if(y===2026 && m>=4 && m<=6) q2++;
+      if(d > today){
+        if(!nextDate || d < nextDate){ nextDate=d; nextGame=cols[0]?.v||''; }
+      }
+    });
+    if(q2)  document.getElementById('rm-q2').textContent   = q2;
+    if(nextDate) document.getElementById('rm-next').textContent =
+      nextGame.slice(0,18)||nextDate.toLocaleDateString('en-GB',{month:'short',day:'numeric'});
+  }catch(_){}
+})();
 </script>
 </body>
 </html>
