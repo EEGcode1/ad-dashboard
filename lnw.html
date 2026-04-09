@@ -35,9 +35,7 @@
   .hero{
     background: linear-gradient(135deg, #0a1628 0%, #0f2252 40%, #0a1a3a 70%, #060e1f 100%);
     border-bottom:1px solid var(--border2);
-    padding:0;
-    position:relative;
-    overflow:hidden;
+    padding:0;position:relative;overflow:hidden;
   }
   .hero::before{
     content:'';position:absolute;inset:0;
@@ -93,39 +91,73 @@
   .banner.info{background:rgba(59,130,246,.09);color:#93c5fd;border-color:rgba(59,130,246,.2)}
   .banner strong{color:#fff}
 
-  /* ── KPI ROW ── */
-  .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+  /* ── KPI ROWS ── */
+  .kpi-row{display:grid;gap:14px;margin-bottom:18px}
+  .kpi-row.r6{grid-template-columns:repeat(6,1fr)}
+  .kpi-row.r3{grid-template-columns:repeat(3,1fr)}
   .kpi{
-    background:var(--surface);border:1px solid var(--border);border-radius:16px;
-    padding:22px 24px;position:relative;overflow:hidden;
+    background:var(--surface);border:1px solid var(--border);border-radius:14px;
+    padding:18px 20px;position:relative;overflow:hidden;
     transition:border-color .2s,box-shadow .2s;
   }
   .kpi:hover{border-color:var(--border2);box-shadow:0 0 0 1px rgba(59,130,246,.15),0 8px 24px rgba(0,0,0,.4)}
-  .kpi-icon{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;
-    justify-content:center;margin-bottom:16px;font-size:22px}
-  .kpi-icon.blue {background:rgba(59,130,246,.15)}
-  .kpi-icon.teal {background:rgba(6,182,212,.12)}
+  .kpi-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;
+    justify-content:center;margin-bottom:12px;font-size:18px}
+  .kpi-icon.blue  {background:rgba(59,130,246,.15)}
+  .kpi-icon.teal  {background:rgba(6,182,212,.12)}
   .kpi-icon.purple{background:rgba(167,139,250,.12)}
-  .kpi-icon.gold {background:rgba(251,191,36,.1)}
+  .kpi-icon.gold  {background:rgba(251,191,36,.1)}
+  .kpi-icon.green {background:rgba(34,197,94,.1)}
+  .kpi-icon.rose  {background:rgba(244,63,94,.1)}
   .kpi .label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--mute);
-    margin-bottom:8px;font-weight:700}
-  .kpi .val{font-size:30px;font-weight:800;letter-spacing:-0.04em;line-height:1;color:#fff}
+    margin-bottom:6px;font-weight:700}
+  .kpi .val{font-size:24px;font-weight:800;letter-spacing:-0.03em;line-height:1;color:#fff}
+  .kpi .val.sm{font-size:20px}
   .kpi .val.accent{color:var(--accent)}
-  .kpi .sub{font-size:12px;color:var(--mute);margin-top:8px}
+  .kpi .sub{font-size:11px;color:var(--mute);margin-top:6px}
+  .kpi .sub .up{color:#4ade80} .kpi .sub .dn{color:#f87171}
   .kpi-bar{position:absolute;bottom:0;left:0;right:0;height:3px}
   .kpi-bar.blue  {background:linear-gradient(90deg,#2563eb,#06b6d4)}
   .kpi-bar.teal  {background:linear-gradient(90deg,#06b6d4,#22c55e)}
   .kpi-bar.purple{background:linear-gradient(90deg,#7c3aed,#a78bfa)}
   .kpi-bar.gold  {background:linear-gradient(90deg,#d97706,#fbbf24)}
+  .kpi-bar.green {background:linear-gradient(90deg,#16a34a,#4ade80)}
+  .kpi-bar.rose  {background:linear-gradient(90deg,#be123c,#fb7185)}
+
+  /* Projection pace bar */
+  .pace-track{height:5px;background:var(--border2);border-radius:99px;margin-top:8px;overflow:hidden}
+  .pace-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#2563eb,#06b6d4);transition:width .6s ease}
 
   /* ── PANELS ── */
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
   .panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden}
-  .panel-head{padding:18px 22px;border-bottom:1px solid var(--border);
-    display:flex;justify-content:space-between;align-items:center}
+  .panel-head{padding:16px 20px;border-bottom:1px solid var(--border);
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
   .panel-head h2{font-size:14px;font-weight:700;color:#fff;letter-spacing:.01em}
   .panel-head .meta{font-size:12px;color:var(--mute)}
   .chart-wrap{padding:16px 20px 20px}
+
+  /* ── MONTH PICKER ── */
+  .month-picker{display:flex;gap:6px;flex-wrap:wrap;padding:12px 20px;
+    border-bottom:1px solid var(--border);background:rgba(0,0,0,.15)}
+  .month-btn{
+    padding:5px 12px;border-radius:8px;font-size:12px;font-weight:600;
+    border:1px solid var(--border2);background:transparent;color:var(--mute);
+    cursor:pointer;transition:all .15s;white-space:nowrap;
+  }
+  .month-btn:hover{background:rgba(59,130,246,.12);color:#93c5fd;border-color:rgba(59,130,246,.3)}
+  .month-btn.active{background:rgba(59,130,246,.18);color:#fff;border-color:rgba(59,130,246,.5)}
+  .month-btn.incomplete{border-style:dashed}
+  .month-stats{display:flex;gap:24px;padding:12px 20px;background:rgba(0,0,0,.1);
+    border-bottom:1px solid var(--border);font-size:12px;flex-wrap:wrap;align-items:center}
+  .month-stat{display:flex;flex-direction:column;gap:2px}
+  .month-stat .ms-label{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);font-weight:700}
+  .month-stat .ms-val{font-size:16px;font-weight:700;color:#fff}
+  .month-stat .ms-val.rev{color:#60a5fa}
+  .mom-badge{padding:3px 10px;border-radius:99px;font-size:11px;font-weight:700}
+  .mom-badge.up{background:rgba(34,197,94,.12);color:#4ade80;border:1px solid rgba(34,197,94,.2)}
+  .mom-badge.dn{background:rgba(239,68,68,.1);color:#f87171;border:1px solid rgba(239,68,68,.2)}
+  .mom-badge.neu{background:rgba(255,255,255,.06);color:var(--mute);border:1px solid var(--border2)}
 
   /* ── TABLE ── */
   table{width:100%;border-collapse:collapse;font-size:13px}
@@ -139,7 +171,6 @@
   thead th.sorted-asc::after  {content:' ↑';color:var(--accent);font-size:9px}
   thead th.sorted-desc::after {content:' ↓';color:var(--accent);font-size:9px}
   thead th.sortable::after{content:' ↕';color:var(--mute2);font-size:9px}
-  thead th.sorted-asc::after,thead th.sorted-desc::after{font-size:10px}
   td{padding:0;vertical-align:middle}
   td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
   .game-row{border-bottom:1px solid var(--border);transition:background .1s}
@@ -149,17 +180,12 @@
 
   /* ── GAME THUMB ── */
   .game-cell{display:flex;align-items:center;gap:12px}
-  .game-thumb{
-    width:46px;height:46px;border-radius:10px;flex-shrink:0;
-    object-fit:cover;border:1px solid var(--border2);
-    background:var(--surface2);
-  }
-  .game-thumb-fallback{
-    width:46px;height:46px;border-radius:10px;flex-shrink:0;
+  .game-thumb{width:46px;height:46px;border-radius:10px;flex-shrink:0;
+    object-fit:cover;border:1px solid var(--border2);background:var(--surface2)}
+  .game-thumb-fallback{width:46px;height:46px;border-radius:10px;flex-shrink:0;
     display:flex;align-items:center;justify-content:center;
     font-size:11px;font-weight:800;color:#fff;text-align:center;
-    letter-spacing:.01em;line-height:1.2;border:1px solid var(--border2);
-  }
+    letter-spacing:.01em;line-height:1.2;border:1px solid var(--border2)}
   .game-info{display:flex;flex-direction:column;gap:3px}
   .game-name{font-size:13px;font-weight:600;color:#fff;line-height:1.3}
   .game-tag{display:inline-flex;align-items:center;gap:4px;padding:2px 7px;
@@ -171,11 +197,9 @@
   .rev-val{font-weight:700;color:#60a5fa;font-size:13px}
   .ggr-val{font-weight:600;color:#e2e8ff}
   .num-mute{color:var(--mute)}
-
   .tfoot-row td{font-weight:700;background:var(--surface2);padding:12px 14px;
     border-top:1px solid var(--border2);color:#fff}
   .tfoot-row .rev-val{font-size:14px;color:#60a5fa}
-
   .empty{padding:48px;text-align:center;color:var(--mute);font-size:13px}
 
   /* ── LEGEND ── */
@@ -185,11 +209,16 @@
   .legend-item{display:flex;align-items:center;gap:7px}
   .legend-dot{width:8px;height:8px;border-radius:3px;flex-shrink:0}
 
+  /* ── SECTION LABEL ── */
+  .section-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--mute2);margin:28px 0 10px;display:flex;align-items:center;gap:10px}
+  .section-label::after{content:'';flex:1;height:1px;background:var(--border)}
+
   footer{margin-top:32px;text-align:center;font-size:11px;color:var(--mute2);padding-bottom:24px}
 
-  @media(max-width:1100px){.kpi-row{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:900px){.grid2{grid-template-columns:1fr}}
-  @media(max-width:640px){.kpi-row{grid-template-columns:1fr 1fr}}
+  @media(max-width:1100px){.kpi-row.r6{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:900px){.grid2{grid-template-columns:1fr}.kpi-row.r3{grid-template-columns:1fr 1fr}}
+  @media(max-width:640px){.kpi-row.r6,.kpi-row.r3{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -247,10 +276,13 @@
 <div class="wrap">
   <div id="banners"></div>
 
-  <div class="kpi-row" id="kpis">
-    <div class="kpi"><div class="label">Loading…</div></div>
-  </div>
+  <!-- ── KPI ROW 1 — headline figures ── -->
+  <div class="kpi-row r6" id="kpis-main"></div>
 
+  <!-- ── KPI ROW 2 — projection ── -->
+  <div class="kpi-row r3" id="kpis-proj"></div>
+
+  <!-- ── Charts ── -->
   <div class="grid2">
     <div class="panel">
       <div class="panel-head">
@@ -268,6 +300,8 @@
     </div>
   </div>
 
+  <!-- ── Yesterday by game ── -->
+  <div class="section-label">Yesterday</div>
   <div class="panel" style="margin-bottom:20px">
     <div class="panel-head">
       <h2 id="day-title">Yesterday by game</h2>
@@ -281,6 +315,8 @@
     </div>
   </div>
 
+  <!-- ── 7-day by game ── -->
+  <div class="section-label">Last 7 Days</div>
   <div class="panel" style="margin-bottom:20px">
     <div class="panel-head">
       <h2>7-day by game</h2>
@@ -291,6 +327,38 @@
       <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>Direct LNW (4.38%)</div>
       <div class="legend-item"><div class="legend-dot" style="background:#a78bfa"></div>BBG — Ace Ventura (3.29% AD net)</div>
       <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div>BBG — Godfather The Offer (2.49% AD net · branded fee correction pending)</div>
+    </div>
+  </div>
+
+  <!-- ── Monthly by game ── -->
+  <div class="section-label">Monthly</div>
+  <div class="panel" style="margin-bottom:20px" id="monthly-panel">
+    <div class="panel-head">
+      <h2>Monthly by game</h2>
+      <span class="meta" id="monthly-panel-meta"></span>
+    </div>
+    <div class="month-picker" id="month-picker"></div>
+    <div class="month-stats" id="month-stats"></div>
+    <table id="monthly-table"><tbody><tr><td class="empty">Loading…</td></tr></tbody></table>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>Direct LNW (4.38%)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#a78bfa"></div>BBG — Ace Ventura (3.29% AD net)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div>BBG — Godfather The Offer (2.49% AD net)</div>
+    </div>
+  </div>
+
+  <!-- ── All-time by game ── -->
+  <div class="section-label">All-Time</div>
+  <div class="panel" style="margin-bottom:20px">
+    <div class="panel-head">
+      <h2>All-time by game</h2>
+      <span class="meta" id="alltime-meta"></span>
+    </div>
+    <table id="alltime-table"><tbody><tr><td class="empty">Loading…</td></tr></tbody></table>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>Direct LNW (4.38%)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#a78bfa"></div>BBG — Ace Ventura (3.29% AD net)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div>BBG — Godfather The Offer (2.49% AD net)</div>
     </div>
   </div>
 
@@ -308,46 +376,48 @@ const DT   = new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'shor
 const S3 = 'https://atlantic-digital-games.s3.eu-west-2.amazonaws.com/public/assets/';
 // Ordered longest-match-first so specifics win over partials
 const THUMB_MAP = [
-  ['jewel boom triple drop',   'ad_JB_TD.png'],
-  ['jewel boom super drop',    'Jewel_boom_super_drop.png'],
-  ['jewel boom xxx',           'ad_jbxxx.jpg'],
-  ['jewel boom',               'ad_JB_TD.png'],
-  ['godfather 3 pillars',      'GF3.jpg'],
-  ['godfather: 3 pillars',     'GF3.jpg'],
-  ['godfather megaways',       'ad_GFMW.gif'],
-  ['godfather the offer',      'ad_aceventura.gif'],  // no specific thumb — use AV as fallback
-  ['the godfather',            'ad_god_father.gif'],
-  ['star trek megaways',       'ad_star_trek_mw.jpg'],
-  ['star trek',                'ad_star_trek.svg'],
-  ['ace ventura',              'ad_aceventura.gif'],
-  ['family feud multi drop',   'ad_FF_MD.png'],
-  ['family feud',              'ad_family_feud.png'],
-  ['friends bursting bonus',   'ad_Friends_BB.jpg'],
-  ['friends triple shot',      'ad_friends_ts.jpg'],
-  ["friends rollin",           'ad_friends_rollinrespins.png'],
-  ['friends multi drop',       'ad_friends_multidrop.png'],
-  ['friends',                  'ad_Friends_BB.jpg'],
-  ['rocket eruption triple drop','ad_retd.png'],
+  ['jewel boom triple drop',      'ad_JB_TD.png'],
+  ['jewel boom super drop',       'Jewel_boom_super_drop.png'],
+  ['jewel boom xxx',              'ad_jbxxx.jpg'],
+  ['jewel boom',                  'ad_JB_TD.png'],
+  ['godfather 3 pillars',         'GF3.jpg'],
+  ['godfather: 3 pillars',        'GF3.jpg'],
+  ['godfather megaways',          'ad_GFMW.gif'],
+  ['godfather the offer',         'ad_GF_TheOffer.png'],   // BBG-routed; S3 path TBC
+  ['the godfather',               'ad_god_father.gif'],
+  ['raging rhino double danger',  'ad_raging_rhino_dd.png'],  // AD licensed brand; S3 upload TBC
+  ['raging rhino',                'ad_raging_rhino_dd.png'],
+  ['star trek megaways',          'ad_star_trek_mw.jpg'],
+  ['star trek',                   'ad_star_trek.svg'],
+  ['ace ventura',                 'ad_aceventura.gif'],
+  ['family feud multi drop',      'ad_FF_MD.png'],
+  ['family feud',                 'ad_family_feud.png'],
+  ['friends bursting bonus',      'ad_Friends_BB.jpg'],
+  ['friends triple shot',         'ad_friends_ts.jpg'],
+  ["friends rollin",              'ad_friends_rollinrespins.png'],
+  ['friends multi drop',          'ad_friends_multidrop.png'],
+  ['friends',                     'ad_Friends_BB.jpg'],
+  ['rocket eruption triple drop', 'ad_retd.png'],
   ['rocket eruption triple blast','ad_RE_TB.png'],
-  ['rocket eruption super drop','ad_resd.png'],
-  ['rocket eruption megaways', 'ad_remw.jpg'],
-  ['rocket eruption xxx',      'ad_REXXX.jpg'],
-  ['rocket eruption',          'ad_retd.png'],
-  ['candy mine sugar blitz',   'ad_CM_SB.png'],
-  ['candy mine megaways',      'ad_CMM.jpg'],
-  ['candy mine mega mines',    'ad_candy_mine-mm.png'],
-  ['candy mine',               'ad_candy_mine.gif'],
-  ['young guns',               'ad_young_guns.gif'],
-  ['bill & ted',               'ad_bill_and_ted.jpg'],
-  ['bill and ted',             'ad_bill_and_ted.jpg'],
-  ['mask of zorro',            'ad_MOZ.jpg'],
-  ['blazing bandits',          'ad_blazingbandits.jpg'],
-  ['rambo mega mines',         'at_rambo-mm.gif'],
-  ['rambo',                    'at_rambo.gif'],
-  ['csi',                      'ad_csi.gif'],
-  ['cheers',                   'at_cheers.svg'],
-  ["charlie's angels",         'ad_charlies_angels.gif'],
-  ['charlies angels',          'ad_charlies_angels.gif'],
+  ['rocket eruption super drop',  'ad_resd.png'],
+  ['rocket eruption megaways',    'ad_remw.jpg'],
+  ['rocket eruption xxx',         'ad_REXXX.jpg'],
+  ['rocket eruption',             'ad_retd.png'],
+  ['candy mine sugar blitz',      'ad_CM_SB.png'],
+  ['candy mine megaways',         'ad_CMM.jpg'],
+  ['candy mine mega mines',       'ad_candy_mine-mm.png'],
+  ['candy mine',                  'ad_candy_mine.gif'],
+  ['young guns',                  'ad_young_guns.gif'],
+  ['bill & ted',                  'ad_bill_and_ted.jpg'],
+  ['bill and ted',                'ad_bill_and_ted.jpg'],
+  ['mask of zorro',               'ad_MOZ.jpg'],
+  ['blazing bandits',             'ad_blazingbandits.jpg'],
+  ['rambo mega mines',            'at_rambo-mm.gif'],
+  ['rambo',                       'at_rambo.gif'],
+  ['csi',                         'ad_csi.gif'],
+  ['cheers',                      'at_cheers.svg'],
+  ["charlie's angels",            'ad_charlies_angels.gif'],
+  ['charlies angels',             'ad_charlies_angels.gif'],
 ];
 
 function thumbUrl(name){
@@ -358,7 +428,7 @@ function thumbUrl(name){
   return null;
 }
 
-/* Gradient fallback using hash */
+/* Gradient fallback */
 const PALETTES=[['#1d4ed8','#0ea5e9'],['#7c3aed','#ec4899'],['#0f766e','#22d3ee'],
   ['#b45309','#f59e0b'],['#065f46','#34d399'],['#9f1239','#f43f5e'],
   ['#1e3a8a','#6366f1'],['#7e22ce','#a855f7'],['#0369a1','#38bdf8'],['#92400e','#fb923c']];
@@ -370,13 +440,6 @@ function fallbackThumb(name){
   const abbr=(name||'?').trim().split(/\s+/).slice(0,2).map(w=>w[0]).join('').toUpperCase();
   return `<div class="game-thumb-fallback" style="background:linear-gradient(${deg}deg,${c1},${c2})">${abbr}</div>`;
 }
-function thumbEl(name){
-  const url=thumbUrl(name);
-  if(url) return `<img class="game-thumb" src="${url}" alt="${name}" onerror="this.outerHTML=this.nextElementSibling.outerHTML||'';this.nextElementSibling&&(this.nextElementSibling.style.display='flex')">${fallbackThumb(name).replace('class="game-thumb-fallback"','class="game-thumb-fallback" style="display:none;background:...')}`;
-  return fallbackThumb(name);
-}
-
-/* Simpler: img with inline fallback */
 function gameThumbHtml(name){
   const url = thumbUrl(name);
   if(!url) return fallbackThumb(name);
@@ -397,16 +460,26 @@ const LNW_RATE=0.0438, BBG_AV_RATE=0.0329, BBG_GF_RATE=0.0249;
 function revRate(g){if(isBbgAv(g))return BBG_AV_RATE;if(isBbgGf(g))return BBG_GF_RATE;return LNW_RATE}
 
 /* ── Sorting state ── */
-let daySort  = {col:'ggr_eur',dir:-1};
-let weekSort = {col:'ggr_eur',dir:-1};
+let daySort      = {col:'ggr_eur',dir:-1};
+let weekSort     = {col:'ggr_eur',dir:-1};
+let monthlySort  = {col:'ggr_eur',dir:-1};
+let alltimeSort  = {col:'ggr_eur',dir:-1};
 
 let mtdChart, weekChart;
 let _data = null;
+let _selectedMonth = null;  // 'YYYY-MM' string
 
 async function load(){
   try{
     const r = await fetch('data.json?ts='+Date.now());
     _data = await r.json();
+    // Default to most recent complete month (or latest month available)
+    if(_data.monthly?.length){
+      const complete = _data.monthly.filter(m=>m.complete);
+      _selectedMonth = complete.length
+        ? complete[complete.length-1].month
+        : _data.monthly[_data.monthly.length-1].month;
+    }
     render(_data);
   }catch(e){
     document.getElementById('banners').innerHTML=
@@ -418,11 +491,14 @@ function render(d){
   renderHeroStatus(d);
   renderBadge(d);
   renderBanners(d);
-  renderKPIs(d);
+  renderKPIsMain(d);
+  renderKPIsProj(d);
   renderMtdChart(d);
   renderWeekChart(d);
   renderDayTable(d);
   renderWeekTable(d);
+  renderMonthly(d);
+  renderAlltime(d);
   document.getElementById('footer').textContent=
     'Generated '+( d.generated_at_utc ? DT.format(new Date(d.generated_at_utc)) : '')+
     ' · Atlantic Digital Revenue Portal · Source: SGI_Reporting@lnw.com';
@@ -456,28 +532,82 @@ function renderBanners(d){
   host.innerHTML=msgs.join('');
 }
 
-function renderKPIs(d){
-  const td=d.day?.totals||{}, tw=d.week?.totals||{}, tm=d.mtd?.totals||{};
+/* ── KPI rows ── */
+function renderKPIsMain(d){
+  const tw=d.week?.totals||{}, tm=d.mtd?.totals||{};
+  const ytd=d.ytd||{};
+  const at=d.all_time?.totals||{};
   const dayLnw=(d.day?.rows||[]).filter(r=>r.source==='lnw');
   const dayGGR=dayLnw.reduce((a,r)=>a+(r.ggr_eur||0),0);
-  const mtdGGR=(d.mtd?.by_game||[]).filter(r=>r.source==='lnw').reduce((a,r)=>a+(r.ggr_eur||0),0);
+  const dayRev=dayLnw.reduce((a,r)=>a+(r.ggr_eur||0)*revRate(r.game),0);
+
+  // MoM from monthly data (last 2 complete months)
+  const complete=(_data?.monthly||[]).filter(m=>m.complete);
+  let momHtml='';
+  if(complete.length>=2){
+    const mom=complete[complete.length-1].mom_pct;
+    if(mom!=null){
+      const cls=mom>0?'up':'dn';
+      momHtml=`<span class="${cls}">${mom>0?'▲':'▼'} ${Math.abs(mom)}% MoM</span>`;
+    }
+  }
+
+  // 7-day daily avg
+  const week7Days=(d.week?.by_day||[]).length||7;
+  const dailyAvg7=(tw.lnw_rev_share_eur||0)/week7Days;
+
   const kpis=[
-    {icon:'💰',cls:'blue',accent:true,label:'Yesterday rev share',
-      val:EUR(td.lnw_rev_share_eur),sub:`GGR ${EUR(dayGGR)} · ${dayLnw.length} games`},
+    {icon:'💰',cls:'blue',label:'Yesterday rev share',
+      val:EUR(dayRev),sub:`GGR ${EUR(dayGGR)} · ${dayLnw.length} games`},
     {icon:'📈',cls:'teal',label:'MTD rev share',
-      val:EUR(tm.lnw_rev_share_eur),sub:`${d.mtd?.month||''} · GGR ${EUR(mtdGGR)}`},
-    {icon:'📅',cls:'purple',label:'7-day rev share',
-      val:EUR(tw.lnw_rev_share_eur),sub:`${d.week?.from||''} → ${d.week?.to||''}`},
-    {icon:'🎮',cls:'gold',label:'Active games (yesterday)',
+      val:EUR(tm.lnw_rev_share_eur),sub:`${d.mtd?.month||''} · ${momHtml||'first month'}`},
+    {icon:'🗓️',cls:'purple',label:'YTD rev share',
+      val:EUR(ytd.lnw_rev_share_eur),sub:`Jan – ${d.ytd?.to||''}`},
+    {icon:'📊',cls:'gold',label:'7-day rev share',
+      val:EUR(tw.lnw_rev_share_eur),sub:`Avg ${EUR(dailyAvg7)}/day`},
+    {icon:'🎯',cls:'green',label:'All-time rev share',
+      val:EUR(at.lnw_rev_share_eur),sub:`Sep 2025 → present`},
+    {icon:'🎮',cls:'rose',label:'Active games (yesterday)',
       val:dayLnw.length,sub:`GGR ${EUR(dayGGR)} total`},
   ];
-  document.getElementById('kpis').innerHTML=kpis.map(k=>
+  document.getElementById('kpis-main').innerHTML=kpis.map(k=>
     `<div class="kpi">
       <div class="kpi-bar ${k.cls}"></div>
       <div class="kpi-icon ${k.cls}">${k.icon}</div>
       <div class="label">${k.label}</div>
-      <div class="val${k.accent?' accent':''}">${k.val}</div>
+      <div class="val sm">${k.val}</div>
       <div class="sub">${k.sub}</div>
+    </div>`).join('');
+}
+
+function renderKPIsProj(d){
+  const p=d.projection||{};
+  const pct100=Math.min(100,p.pace_pct||0);
+  const dailyAvg=p.daily_avg_rev_eur||0;
+  const annualised=dailyAvg*365;
+
+  const kpis=[
+    {icon:'🎯',cls:'blue',label:`${p.month||''} — Projected EOM`,
+      val:EUR(p.projected_rev_eur),
+      sub:`${p.days_elapsed} of ${p.days_in_month} days · ${p.days_remaining} remaining`,
+      pace:pct100},
+    {icon:'📅',cls:'teal',label:'MTD to date',
+      val:EUR(p.mtd_rev_eur),
+      sub:`Pace: ${p.pace_pct||0}% through month`,
+      pace:null},
+    {icon:'📉',cls:'gold',label:'Daily run rate (30-day avg)',
+      val:EUR(dailyAvg),
+      sub:`≈ ${EUR(annualised)} annualised`,
+      pace:null},
+  ];
+  document.getElementById('kpis-proj').innerHTML=kpis.map(k=>
+    `<div class="kpi">
+      <div class="kpi-bar ${k.cls}"></div>
+      <div class="kpi-icon ${k.cls}">${k.icon}</div>
+      <div class="label">${k.label}</div>
+      <div class="val">${k.val}</div>
+      <div class="sub">${k.sub}</div>
+      ${k.pace!=null?`<div class="pace-track"><div class="pace-fill" style="width:${k.pace}%"></div></div>`:''}
     </div>`).join('');
 }
 
@@ -535,7 +665,7 @@ function renderWeekChart(d){
   });
 }
 
-/* ── Sortable game table ── */
+/* ── Sortable game table helpers ── */
 const TAG_LABEL={'bbg-av':'BBG · AV · 3.29%','bbg-gf':'BBG · GF · 2.49% ⚠','lnw':'LNW · 4.38%'};
 
 function sortRows(rows, col, dir){
@@ -545,14 +675,23 @@ function sortRows(rows, col, dir){
     return av<bv?-dir:av>bv?dir:0;
   });
 }
-
 function thHtml(label,col,sortState,numCls=''){
   let cls='sortable';
   if(sortState.col===col) cls=sortState.dir===-1?'sorted-desc':'sorted-asc';
   return `<th class="${numCls} ${cls}" data-col="${col}">${label}</th>`;
 }
+function theadHtml(sortState, withRtp=true){
+  return `<thead><tr>
+    ${thHtml('Game','game',sortState)}
+    ${thHtml('GGR','ggr_eur',sortState,'num')}
+    ${thHtml('Wager','wager_eur',sortState,'num')}
+    ${withRtp?thHtml('RTP','rtp',sortState,'num'):''}
+    ${thHtml('Rev Share','rev_share_eur',sortState,'num')}
+  </tr></thead>`;
+}
 
-function gameTableHtml(rows, sortState, includeTotal){
+/* For day/week tables — raw rows, recalc rev from rate */
+function gameTableHtml(rows, sortState, includeTotal, withRtp=true){
   if(!rows?.length) return '<tr><td colspan="6" class="empty">No data.</td></tr>';
   const lnwRows=rows.filter(r=>r.source==='lnw');
   if(!lnwRows.length) return '<tr><td colspan="6" class="empty">No LNW rows in this period.</td></tr>';
@@ -563,7 +702,6 @@ function gameTableHtml(rows, sortState, includeTotal){
     _route:gameRoute(r.game),
     _rtpNum:r.rtp?(r.rtp>2?r.rtp:r.rtp*100):null,
   }));
-
   const sorted=sortRows(enriched,
     sortState.col==='rev_share_eur'?'_rev':
     sortState.col==='rtp'?'_rtpNum':sortState.col,
@@ -571,18 +709,16 @@ function gameTableHtml(rows, sortState, includeTotal){
 
   let html=sorted.map(r=>`
     <tr class="game-row">
-      <td>
-        <div class="game-cell">
-          ${gameThumbHtml(r.game||'?')}
-          <div class="game-info">
-            <div class="game-name">${r.game||'—'}</div>
-            <span class="game-tag ${r._route}">${TAG_LABEL[r._route]}</span>
-          </div>
+      <td><div class="game-cell">
+        ${gameThumbHtml(r.game||'?')}
+        <div class="game-info">
+          <div class="game-name">${r.game||'—'}</div>
+          <span class="game-tag ${r._route}">${TAG_LABEL[r._route]}</span>
         </div>
-      </td>
+      </div></td>
       <td class="num ggr-val">${EUR(r.ggr_eur)}</td>
       <td class="num num-mute">${EUR(r.wager_eur)}</td>
-      <td class="num num-mute">${r._rtpNum!=null?r._rtpNum.toFixed(1)+'%':'—'}</td>
+      ${withRtp?`<td class="num num-mute">${r._rtpNum!=null?r._rtpNum.toFixed(1)+'%':'—'}</td>`:''}
       <td class="num rev-val">${EURf(r._rev)}</td>
     </tr>`).join('');
 
@@ -594,41 +730,61 @@ function gameTableHtml(rows, sortState, includeTotal){
       <td><strong>${enriched.length} games</strong></td>
       <td class="num ggr-val">${EUR(tg)}</td>
       <td class="num num-mute">${EUR(tw)}</td>
-      <td class="num">—</td>
+      ${withRtp?'<td class="num">—</td>':''}
       <td class="num rev-val">${EURf(ts)}</td>
     </tr>`;
   }
   return html;
 }
 
-function theadHtml(sortState){
+/* For monthly/alltime tables — pre-aggregated by_game (rev_share_eur already computed) */
+function aggTableHtml(byGame, sortState){
+  if(!byGame?.length) return '<tr><td colspan="5" class="empty">No data.</td></tr>';
+  const lnwRows=byGame.filter(r=>r.source==='lnw');
+  if(!lnwRows.length) return '<tr><td colspan="5" class="empty">No LNW rows.</td></tr>';
+
+  const enriched=lnwRows.map(r=>({...r, _route:gameRoute(r.game)}));
+  const sorted=sortRows(enriched, sortState.col, sortState.dir);
+
+  let html=sorted.map(r=>`
+    <tr class="game-row">
+      <td><div class="game-cell">
+        ${gameThumbHtml(r.game||'?')}
+        <div class="game-info">
+          <div class="game-name">${r.game||'—'}</div>
+          <span class="game-tag ${r._route}">${TAG_LABEL[r._route]}</span>
+        </div>
+      </div></td>
+      <td class="num ggr-val">${EUR(r.ggr_eur)}</td>
+      <td class="num num-mute">${EUR(r.wager_eur)}</td>
+      <td class="num rev-val">${EURf(r.rev_share_eur)}</td>
+    </tr>`).join('');
+
+  const tg=lnwRows.reduce((a,r)=>a+(r.ggr_eur||0),0);
+  const tw=lnwRows.reduce((a,r)=>a+(r.wager_eur||0),0);
+  const ts=lnwRows.reduce((a,r)=>a+(r.rev_share_eur||0),0);
+  html+=`<tr class="tfoot-row">
+    <td><strong>${lnwRows.length} games</strong></td>
+    <td class="num ggr-val">${EUR(tg)}</td>
+    <td class="num num-mute">${EUR(tw)}</td>
+    <td class="num rev-val">${EURf(ts)}</td>
+  </tr>`;
+  return html;
+}
+
+function aggTheadHtml(sortState){
   return `<thead><tr>
     ${thHtml('Game','game',sortState)}
     ${thHtml('GGR','ggr_eur',sortState,'num')}
     ${thHtml('Wager','wager_eur',sortState,'num')}
-    ${thHtml('RTP','rtp',sortState,'num')}
     ${thHtml('Rev Share','rev_share_eur',sortState,'num')}
   </tr></thead>`;
 }
 
-function renderDayTable(d){
-  const lnw=(d.day?.rows||[]).filter(r=>r.source==='lnw');
-  document.getElementById('day-title').textContent=`Yesterday by game — ${d.day?.date||''}`;
-  document.getElementById('day-meta').textContent=`${lnw.length} game titles`;
-  document.getElementById('day-table').innerHTML=
-    theadHtml(daySort)+`<tbody>${gameTableHtml(d.day?.rows||[],daySort,true)}</tbody>`;
-  bindSort('day-table',daySort,()=>renderDayTable(d));
-}
-
-function renderWeekTable(d){
-  document.getElementById('week-table-meta').textContent=`${d.week?.from||''} → ${d.week?.to||''}`;
-  document.getElementById('week-table').innerHTML=
-    theadHtml(weekSort)+`<tbody>${gameTableHtml(d.week?.by_game||[],weekSort,true)}</tbody>`;
-  bindSort('week-table',weekSort,()=>renderWeekTable(d));
-}
-
 function bindSort(tableId,sortState,rerender){
-  document.getElementById(tableId).querySelectorAll('thead th[data-col]').forEach(th=>{
+  const tbl=document.getElementById(tableId);
+  if(!tbl) return;
+  tbl.querySelectorAll('thead th[data-col]').forEach(th=>{
     th.addEventListener('click',()=>{
       const col=th.dataset.col;
       if(sortState.col===col) sortState.dir*=-1;
@@ -636,6 +792,80 @@ function bindSort(tableId,sortState,rerender){
       rerender();
     });
   });
+}
+
+function renderDayTable(d){
+  const lnw=(d.day?.rows||[]).filter(r=>r.source==='lnw');
+  document.getElementById('day-title').textContent=`Yesterday by game — ${d.day?.date||''}`;
+  document.getElementById('day-meta').textContent=`${lnw.length} game titles`;
+  document.getElementById('day-table').innerHTML=
+    theadHtml(daySort,true)+`<tbody>${gameTableHtml(d.day?.rows||[],daySort,true,true)}</tbody>`;
+  bindSort('day-table',daySort,()=>renderDayTable(d));
+}
+
+function renderWeekTable(d){
+  document.getElementById('week-table-meta').textContent=`${d.week?.from||''} → ${d.week?.to||''}`;
+  document.getElementById('week-table').innerHTML=
+    theadHtml(weekSort,false)+`<tbody>${gameTableHtml(d.week?.by_game||[],weekSort,true,false)}</tbody>`;
+  bindSort('week-table',weekSort,()=>renderWeekTable(d));
+}
+
+/* ── Monthly section ── */
+function renderMonthly(d){
+  const months=d.monthly||[];
+  if(!months.length){document.getElementById('monthly-panel').style.display='none';return;}
+
+  // Build month picker
+  const picker=document.getElementById('month-picker');
+  picker.innerHTML=months.map(m=>{
+    const active=m.month===_selectedMonth?'active':'';
+    const inc=!m.complete?'incomplete':'';
+    const tip=!m.complete?` (${m.days_covered}/${m.days_in_month} days)`:'';
+    return `<button class="month-btn ${active} ${inc}" data-month="${m.month}">${m.label}${tip}</button>`;
+  }).join('');
+  picker.querySelectorAll('.month-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      _selectedMonth=btn.dataset.month;
+      renderMonthly(d);
+    });
+  });
+
+  // Find selected month data
+  const sel=months.find(m=>m.month===_selectedMonth)||months[months.length-1];
+  document.getElementById('monthly-panel-meta').textContent=
+    sel?`${sel.days_covered} of ${sel.days_in_month} days covered`:'';
+
+  // Month stats bar
+  const momHtml=sel?.mom_pct!=null
+    ? `<span class="mom-badge ${sel.mom_pct>0?'up':sel.mom_pct<0?'dn':'neu'}">${sel.mom_pct>0?'▲':'▼'} ${Math.abs(sel.mom_pct)}% vs prev month</span>`
+    : `<span class="mom-badge neu">First month</span>`;
+  const rtpYield=sel?.totals?.ggr_eur>0
+    ? (sel.totals.lnw_rev_share_eur/sel.totals.ggr_eur*100).toFixed(2)+'%'
+    : '—';
+  document.getElementById('month-stats').innerHTML=`
+    <div class="month-stat"><div class="ms-label">Rev Share</div><div class="ms-val rev">${EUR(sel?.totals?.lnw_rev_share_eur)}</div></div>
+    <div class="month-stat"><div class="ms-label">GGR</div><div class="ms-val">${EUR(sel?.totals?.ggr_eur)}</div></div>
+    <div class="month-stat"><div class="ms-label">Wager</div><div class="ms-val">${EUR(sel?.totals?.wager_eur)}</div></div>
+    <div class="month-stat"><div class="ms-label">Eff. Rate</div><div class="ms-val">${rtpYield}</div></div>
+    <div style="margin-left:auto">${momHtml}</div>
+  `;
+
+  // Game table
+  document.getElementById('monthly-table').innerHTML=
+    aggTheadHtml(monthlySort)+`<tbody>${aggTableHtml(sel?.by_game||[],monthlySort)}</tbody>`;
+  bindSort('monthly-table',monthlySort,()=>renderMonthly(d));
+}
+
+/* ── All-time section ── */
+function renderAlltime(d){
+  const at=d.all_time||{};
+  const totals=at.totals||{};
+  const rtpYield=totals.ggr_eur>0?(totals.lnw_rev_share_eur/totals.ggr_eur*100).toFixed(2)+'%':'—';
+  document.getElementById('alltime-meta').textContent=
+    `${EUR(totals.lnw_rev_share_eur)} total · GGR ${EUR(totals.ggr_eur)} · Yield ${rtpYield}`;
+  document.getElementById('alltime-table').innerHTML=
+    aggTheadHtml(alltimeSort)+`<tbody>${aggTableHtml(at.by_game||[],alltimeSort)}</tbody>`;
+  bindSort('alltime-table',alltimeSort,()=>renderAlltime(d));
 }
 
 load();
