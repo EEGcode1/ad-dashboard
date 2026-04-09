@@ -14,6 +14,14 @@ DATA_JSON = Path('/tmp/ad-dashboard/data/data.json')
 
 TODAY = date.today()
 
+# Effective LNW GP rate derived from actual monthly supplier statements
+# Oct 25: 3.94%, Nov 25: 5.02%, Dec 25: 4.79%, Jan 26: 3.77% → average 4.38%
+LNW_EFFECTIVE_RATE = 0.0438
+
+def lnw_rev_share(row: dict) -> float:
+    """Return LNW rev share: use actual rate applied to GGR."""
+    return (row.get('ggr_eur') or 0) * LNW_EFFECTIVE_RATE
+
 def load_history(from_d: str, to_d: str) -> list[dict]:
     rows = []
     for snap in sorted(HISTORY_DIR.glob('*.json')):
@@ -38,7 +46,7 @@ def aggregate(rows, source_filter=None):
     return {'by_game': by_game, 'totals': compute_totals(rows)}
 
 def compute_totals(rows):
-    lnw = sum(r.get('rev_share_eur') or 0 for r in rows if r.get('source')=='lnw')
+    lnw = sum(lnw_rev_share(r) for r in rows if r.get('source')=='lnw')
     oct_ = sum(r.get('rev_share_eur') or 0 for r in rows if r.get('source')=='octopus')
     bg = sum(r.get('rev_share_eur') or 0 for r in rows if r.get('source')=='bgaming')
     cc = sum(r.get('net_revenue_eur') or 0 for r in rows if r.get('source')=='crowncoins')
@@ -57,7 +65,9 @@ def daily_series(rows):
     for r in rows:
         d = r.get('date','')
         src = r.get('source','')
-        if src in ('lnw','octopus','bgaming'):
+        if src == 'lnw':
+            by_date[d]['lnw'] += lnw_rev_share(r)
+        elif src in ('octopus','bgaming'):
             by_date[d][src] += r.get('rev_share_eur') or 0
         elif src == 'crowncoins':
             by_date[d]['crowncoins'] += r.get('net_revenue_eur') or 0
