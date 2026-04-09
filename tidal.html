@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tidal Pre-Reg — Atlantic Digital</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{
+    --ink:#0b1120;--mute:#64748b;--line:#e2e8f0;
+    --bg:#f0fdf8;--panel:#ffffff;
+    --tidal:#0d9488;--tidal-light:#ccfbf1;
+    --oct:#7c3aed;--bg-col:#ea580c;--cc:#0891b2;
+    --good:#16a34a;--warn:#d97706;--bad:#dc2626;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--ink);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif}
+  a{color:var(--tidal);text-decoration:none}
+  .nav{background:#fff;border-bottom:1px solid var(--line);padding:14px 28px;
+    display:flex;align-items:center;gap:20px;font-size:13px}
+  .nav .logo{font-weight:700;font-size:15px;color:var(--ink);letter-spacing:-0.01em}
+  .nav .crumb{color:var(--mute)}
+  .nav a.active{color:var(--tidal);font-weight:600}
+  .wrap{max-width:1280px;margin:0 auto;padding:28px 24px}
+  .page-header{margin-bottom:24px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px}
+  .page-header h1{font-size:22px;letter-spacing:-0.02em}
+  .source-pills{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+  .pill{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;
+    border-radius:99px;border:1px solid var(--line);background:#fff;font-size:12px}
+  .pill .dot{width:7px;height:7px;border-radius:99px;background:var(--mute)}
+  .pill.ok .dot{background:var(--good)}
+  .pill.bad .dot{background:var(--bad)}
+  .pill .when{color:var(--mute);font-size:11px}
+  .banner{padding:12px 16px;border-radius:10px;margin-bottom:16px;font-size:13px}
+  .banner.err{background:#fee2e2;color:#7f1d1d;border:1px solid #fca5a5}
+  .banner.warn{background:#fef3c7;color:#78350f;border:1px solid #fcd34d}
+  .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;border-top:4px solid var(--tidal)}
+  .kpi.oct{border-top-color:var(--oct)}
+  .kpi.bg{border-top-color:var(--bg-col)}
+  .kpi.cc{border-top-color:var(--cc)}
+  .kpi .label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin-bottom:8px}
+  .kpi .val{font-size:28px;font-weight:700;letter-spacing:-0.03em}
+  .kpi .sub{font-size:12px;color:var(--mute);margin-top:4px}
+  .kpi.total .val{color:var(--tidal)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:20px}
+  .panel-head{padding:16px 20px;border-bottom:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center}
+  .panel-head h2{font-size:15px;font-weight:600}
+  .panel-head .meta{font-size:12px;color:var(--mute)}
+  .chart-wrap{padding:16px 20px 20px}
+  .section-label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);
+    padding:10px 14px 6px;background:#f8fafc;border-bottom:1px solid var(--line)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line)}
+  th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);font-weight:600}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover td{background:#f8fafc}
+  .tfoot-row td{font-weight:700;background:#f8fafc}
+  .empty{padding:24px;text-align:center;color:var(--mute);font-size:13px}
+  .gf-box{margin:0 20px 20px;padding:16px;background:#fafafa;border-radius:10px;border:1px solid var(--line);font-size:13px}
+  .gf-box .gf-title{font-weight:600;margin-bottom:8px}
+  .gf-box .gf-meta{color:var(--mute);font-size:12px;margin-top:8px}
+  footer{margin-top:32px;text-align:center;font-size:12px;color:var(--mute);padding-bottom:20px}
+  @media(max-width:900px){
+    .kpi-row{grid-template-columns:repeat(2,1fr)}
+    .grid2{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <span class="logo">Atlantic Digital</span>
+  <span class="crumb">/</span>
+  <a href="index.html">Revenue Hub</a>
+  <span class="crumb">/</span>
+  <a href="tidal.html" class="active">Tidal Pre-Reg</a>
+  <span style="margin-left:auto"><a href="lnw.html">→ LNW Regulated</a></span>
+</nav>
+
+<div class="wrap">
+  <div class="page-header">
+    <div>
+      <h1>Tidal Interactive — Pre-Reg Revenue</h1>
+      <div style="font-size:13px;color:var(--mute);margin-top:4px">
+        Octopus (Kraken email) · BGaming (backoffice) · Crown Coins (Superset) · 4% GGR share on Octopus + BGaming · CC = net revenue
+      </div>
+    </div>
+  </div>
+
+  <div id="banners"></div>
+
+  <div class="source-pills" id="source-pills"></div>
+
+  <div class="kpi-row" id="kpis">
+    <div class="kpi"><div class="label">Loading…</div></div>
+  </div>
+
+  <div class="grid2">
+    <div class="panel" style="margin-bottom:0">
+      <div class="panel-head">
+        <h2>MTD cumulative — Tidal total</h2>
+        <span class="meta" id="mtd-meta"></span>
+      </div>
+      <div class="chart-wrap" style="height:240px">
+        <canvas id="mtd-chart"></canvas>
+      </div>
+    </div>
+    <div class="panel" style="margin-bottom:0">
+      <div class="panel-head">
+        <h2>Daily by source — last 7 days</h2>
+        <span class="meta" id="week-meta"></span>
+      </div>
+      <div class="chart-wrap" style="height:240px">
+        <canvas id="week-chart"></canvas>
+      </div>
+    </div>
+  </div>
+  <div style="margin-bottom:20px"></div>
+
+  <!-- Yesterday tables split by source -->
+  <div class="panel" id="day-panel">
+    <div class="panel-head">
+      <h2 id="day-title">Yesterday by source</h2>
+      <span class="meta" id="day-meta"></span>
+    </div>
+    <!-- Octopus -->
+    <div class="section-label">Octopus (kraken@octopusrgs.com)</div>
+    <table id="oct-day-table"></table>
+    <!-- BGaming -->
+    <div class="section-label">BGaming (backoffice)</div>
+    <table id="bg-day-table"></table>
+    <!-- Crown Coins -->
+    <div class="section-label">Crown Coins (Superset)</div>
+    <table id="cc-day-table"></table>
+  </div>
+
+  <!-- 7-day aggregate tables -->
+  <div class="panel" id="week-panel">
+    <div class="panel-head">
+      <h2>7-day by source</h2>
+      <span class="meta" id="week-table-meta"></span>
+    </div>
+    <div class="section-label">Octopus</div>
+    <table id="oct-week-table"></table>
+    <div class="section-label">BGaming</div>
+    <table id="bg-week-table"></table>
+    <div class="section-label">Crown Coins</div>
+    <table id="cc-week-table"></table>
+  </div>
+
+  <!-- Godfather collab -->
+  <div class="panel" id="godfather-panel" style="display:none">
+    <div class="panel-head">
+      <h2>Godfather the Offer — Bangbang Games collab</h2>
+      <span class="meta">Separate line item · cross-check with Kerri @ Bangbang</span>
+    </div>
+    <div class="gf-box" id="godfather-body"></div>
+  </div>
+
+  <footer id="footer">Built by ad-dashboard · GitHub Actions · source-of-truth parsers</footer>
+</div>
+
+<script>
+const EUR  = v => '€' + Number(v||0).toLocaleString('en-GB',{minimumFractionDigits:0,maximumFractionDigits:0});
+const EURf = v => '€' + Number(v||0).toLocaleString('en-GB',{minimumFractionDigits:2,maximumFractionDigits:2});
+const DT   = new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short'});
+const SRC_COLORS = {octopus:'#7c3aed', bgaming:'#ea580c', crowncoins:'#0891b2'};
+let mtdChart, weekChart;
+
+async function load(){
+  try{
+    const res = await fetch('data.json?ts='+Date.now());
+    render(await res.json());
+  } catch(e){
+    document.getElementById('banners').innerHTML =
+      `<div class="banner err">Failed to load data.json: ${e.message}</div>`;
+  }
+}
+
+function render(d){
+  renderBanners(d);
+  renderPills(d);
+  renderKPIs(d);
+  renderMtdChart(d);
+  renderWeekChart(d);
+  renderDayTables(d);
+  renderWeekTables(d);
+  renderGodfather(d);
+  document.getElementById('footer').textContent =
+    'Built ' + (d.generated_at_utc ? DT.format(new Date(d.generated_at_utc)) : '') +
+    ' · ad-dashboard · GitHub Actions';
+}
+
+function renderBanners(d){
+  const msgs = [];
+  const stale = ['octopus','bgaming','crowncoins'].filter(s=>!d.sources?.[s]?.ok);
+  stale.forEach(s=>{
+    const cls = stale.length>=2 ? 'err' : 'warn';
+    msgs.push(`<div class="banner ${cls}">⚠ ${s} source is stale: ${d.sources[s]?.error||'unknown'}</div>`);
+  });
+  document.getElementById('banners').innerHTML = msgs.join('');
+}
+
+function renderPills(d){
+  const host = document.getElementById('source-pills');
+  const srcs = ['octopus','bgaming','crowncoins'];
+  host.innerHTML = srcs.map(name=>{
+    const s = d.sources?.[name];
+    const ok = s?.ok;
+    const when = s?.last_run_utc ? DT.format(new Date(s.last_run_utc)) : 'never';
+    const covered = s?.covered_date ? ` · ${s.covered_date}` : '';
+    const label = {octopus:'Octopus',bgaming:'BGaming',crowncoins:'Crown Coins'}[name];
+    return `<div class="pill ${ok?'ok':'bad'}"><span class="dot"></span>${label}${covered}<span class="when">${when}</span></div>`;
+  }).join('');
+}
+
+function renderKPIs(d){
+  const td = d.day?.totals||{};
+  const tm = d.mtd?.totals||{};
+  const kpis = [
+    {label:'Yesterday total', val:EUR(td.tidal_total_eur), sub:'Octopus + BGaming + CC', cls:'total'},
+    {label:'Octopus yesterday', val:EUR(td.octopus_rev_share_eur), sub:'4% GGR share', cls:'oct'},
+    {label:'BGaming yesterday', val:EUR(td.bgaming_rev_share_eur), sub:'4% GGR share', cls:'bg'},
+    {label:'Crown Coins yesterday', val:EUR(td.crowncoins_net_revenue_eur), sub:'Net revenue', cls:'cc'},
+    {label:'MTD Tidal total', val:EUR(tm.tidal_total_eur), sub:d.mtd?.month||'', cls:'total'},
+    {label:'MTD Octopus', val:EUR(tm.octopus_rev_share_eur), sub:'', cls:'oct'},
+    {label:'MTD BGaming', val:EUR(tm.bgaming_rev_share_eur), sub:'', cls:'bg'},
+    {label:'MTD Crown Coins', val:EUR(tm.crowncoins_net_revenue_eur), sub:'', cls:'cc'},
+  ];
+  document.getElementById('kpis').innerHTML = kpis.slice(0,4).map(k=>
+    `<div class="kpi ${k.cls}"><div class="label">${k.label}</div><div class="val">${k.val}</div><div class="sub">${k.sub}</div></div>`
+  ).join('');
+  // Append second row of MTD KPIs
+  document.getElementById('kpis').insertAdjacentHTML('afterend',
+    `<div class="kpi-row" style="margin-bottom:24px">`+
+    kpis.slice(4).map(k=>
+      `<div class="kpi ${k.cls}"><div class="label">${k.label}</div><div class="val">${k.val}</div><div class="sub">${k.sub}</div></div>`
+    ).join('')+`</div>`
+  );
+}
+
+function renderMtdChart(d){
+  const cum = d.mtd?.cumulative||[];
+  const labels = cum.map(c=>c.date.slice(5));
+  document.getElementById('mtd-meta').textContent = d.mtd?.month||'';
+  const ctx = document.getElementById('mtd-chart').getContext('2d');
+  if(mtdChart) mtdChart.destroy();
+  mtdChart = new Chart(ctx,{
+    type:'line',
+    data:{labels, datasets:[{
+      label:'Tidal cumulative',
+      data: cum.map(c=>c.tidal_cum),
+      fill:true,
+      backgroundColor:'rgba(13,148,136,0.09)',
+      borderColor:'#0d9488',
+      borderWidth:2,
+      tension:0.3,
+      pointRadius: cum.length>14?0:3,
+    }]},
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>'€'+c.parsed.y.toLocaleString('en-GB')}}},
+      scales:{
+        y:{grid:{color:'#f1f5f9'},ticks:{callback:v=>'€'+Number(v).toLocaleString('en-GB',{notation:'compact'})}},
+        x:{grid:{display:false}}
+      }
+    }
+  });
+}
+
+function renderWeekChart(d){
+  const series = d.week?.by_day||[];
+  const labels = series.map(s=>s.date.slice(5));
+  document.getElementById('week-meta').textContent =
+    `${d.week?.from||''} → ${d.week?.to||''}`;
+  const ctx = document.getElementById('week-chart').getContext('2d');
+  if(weekChart) weekChart.destroy();
+  weekChart = new Chart(ctx,{
+    type:'bar',
+    data:{labels, datasets:[
+      {label:'Octopus',     data:series.map(s=>s.octopus||0),  backgroundColor:'#a78bfa',borderRadius:4},
+      {label:'BGaming',     data:series.map(s=>s.bgaming||0),  backgroundColor:'#fb923c',borderRadius:4},
+      {label:'Crown Coins', data:series.map(s=>s.crowncoins||0),backgroundColor:'#22d3ee',borderRadius:4},
+    ]},
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{position:'bottom',labels:{boxWidth:12,padding:16}}},
+      scales:{
+        y:{stacked:true,grid:{color:'#f1f5f9'},
+          ticks:{callback:v=>'€'+Number(v).toLocaleString('en-GB',{notation:'compact'})}},
+        x:{stacked:true,grid:{display:false}}
+      }
+    }
+  });
+}
+
+function gameRows(rows, src, isCC){
+  const filtered = rows.filter(r=>r.source===src);
+  if(!filtered.length) return `<tr><td colspan="5" class="empty">No data — ${src} source may be stale.</td></tr>`;
+
+  if(isCC){
+    // CC has net_revenue not per-game
+    return filtered.map(r=>
+      `<tr><td>—</td><td class="num">—</td><td class="num">—</td>
+        <td class="num" style="font-weight:600;color:var(--cc)">${EURf(r.net_revenue_eur)}</td></tr>`
+    ).join('')+
+    `<tr class="tfoot-row"><td>Total</td><td class="num">—</td><td class="num">—</td>
+      <td class="num" style="color:var(--cc)">${EURf(filtered.reduce((a,r)=>a+(r.net_revenue_eur||0),0))}</td></tr>`;
+  }
+  const sorted = [...filtered].sort((a,b)=>(b.ggr_eur||0)-(a.ggr_eur||0));
+  const tg = sorted.reduce((a,r)=>a+(r.ggr_eur||0),0);
+  const ts = sorted.reduce((a,r)=>a+(r.rev_share_eur||0),0);
+  const accentCol = src==='octopus'?'var(--oct)':'var(--bg-col)';
+  return sorted.map(r=>
+    `<tr><td>${r.game||'—'}</td><td class="num">${EURf(r.wager_eur)}</td>
+      <td class="num">${EURf(r.ggr_eur)}</td>
+      <td class="num" style="font-weight:600;color:${accentCol}">${EURf(r.rev_share_eur)}</td></tr>`
+  ).join('')+
+  `<tr class="tfoot-row"><td>Total</td><td class="num">—</td><td class="num">${EURf(tg)}</td>
+    <td class="num" style="color:${accentCol}">${EURf(ts)}</td></tr>`;
+}
+
+function ggrHead(isCC){
+  if(isCC) return `<thead><tr><th>Date</th><th class="num">Wager</th><th class="num">GGR</th><th class="num">Net Revenue</th></tr></thead>`;
+  return `<thead><tr><th>Game</th><th class="num">Wager</th><th class="num">GGR</th><th class="num">Rev Share (4%)</th></tr></thead>`;
+}
+
+function renderDayTables(d){
+  const rows = d.day?.rows||[];
+  const date = d.day?.date||'';
+  document.getElementById('day-title').textContent = `Yesterday by source — ${date}`;
+  document.getElementById('day-meta').textContent = `${rows.filter(r=>r.source!=='lnw').length} rows`;
+  document.getElementById('oct-day-table').innerHTML  = ggrHead(false)+`<tbody>${gameRows(rows,'octopus',false)}</tbody>`;
+  document.getElementById('bg-day-table').innerHTML   = ggrHead(false)+`<tbody>${gameRows(rows,'bgaming',false)}</tbody>`;
+  document.getElementById('cc-day-table').innerHTML   = ggrHead(true) +`<tbody>${gameRows(rows,'crowncoins',true)}</tbody>`;
+}
+
+function renderWeekTables(d){
+  const rows = d.week?.by_game||[];
+  const meta = `${d.week?.from||''} → ${d.week?.to||''}`;
+  document.getElementById('week-table-meta').textContent = meta;
+  document.getElementById('oct-week-table').innerHTML  = ggrHead(false)+`<tbody>${gameRows(rows,'octopus',false)}</tbody>`;
+  document.getElementById('bg-week-table').innerHTML   = ggrHead(false)+`<tbody>${gameRows(rows,'bgaming',false)}</tbody>`;
+  document.getElementById('cc-week-table').innerHTML   = ggrHead(true) +`<tbody>${gameRows(rows,'crowncoins',true)}</tbody>`;
+}
+
+function renderGodfather(d){
+  const panel = document.getElementById('godfather-panel');
+  if(!d.godfather){panel.style.display='none';return;}
+  panel.style.display='';
+  const g = d.godfather;
+  document.getElementById('godfather-body').innerHTML =
+    `<div class="gf-title">Godfather the Offer</div>`+
+    `<div>Date: ${g.date||'—'} &nbsp;·&nbsp; Wager: ${EURf(g.wager_eur)} &nbsp;·&nbsp; GGR: ${EURf(g.ggr_eur)}`+
+    (g.rtp!=null?` &nbsp;·&nbsp; RTP: ${Number(g.rtp).toFixed(1)}%`:'')+`</div>`+
+    `<div class="gf-meta">Revenue share for this collab is negotiated separately — cross-check monthly with Kerri @ Bangbang Games.</div>`;
+}
+
+load();
+</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlantic Digital — Revenue Hub</title>
+<style>
+  :root{
+    --ink:#0b1120;--mute:#64748b;--line:#e2e8f0;
+    --bg:#f8fafc;--panel:#ffffff;
+    --lnw:#1d4ed8;--lnw-bg:#dbeafe;
+    --tidal:#0d9488;--tidal-bg:#ccfbf1;
+    --good:#16a34a;--bad:#dc2626;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--ink);min-height:100vh;
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:56px 24px 40px}
+  .logo-line{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .logo{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--mute)}
+  h1{font-size:32px;font-weight:700;letter-spacing:-0.03em;margin-bottom:6px}
+  .sub{color:var(--mute);font-size:15px;margin-bottom:32px}
+  .sources{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+  .chip{display:inline-flex;align-items:center;gap:7px;padding:6px 12px;
+    border-radius:99px;border:1px solid var(--line);background:#fff;font-size:12px;color:var(--mute)}
+  .chip .dot{width:6px;height:6px;border-radius:99px;background:var(--mute)}
+  .chip.ok .dot{background:var(--good)}
+  .chip.bad .dot{background:var(--bad)}
+  .summary{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    padding:22px 26px;margin-bottom:24px}
+  .summary h3{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;
+    color:var(--mute);margin-bottom:12px}
+  .sum-row{display:flex;justify-content:space-between;padding:8px 0;
+    border-top:1px solid var(--line);font-size:14px}
+  .sum-row:first-of-type{border-top:none}
+  .sum-row .sk{color:var(--mute)}
+  .sum-row .sv{font-weight:600;font-variant-numeric:tabular-nums}
+  .sum-row.total .sv{font-size:18px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:36px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:28px 30px;text-decoration:none;color:inherit;display:block;
+    transition:box-shadow .15s,transform .15s;position:relative;overflow:hidden}
+  .card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-2px)}
+  .card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+  .card.lnw::before{background:var(--lnw)}
+  .card.tidal::before{background:var(--tidal)}
+  .card .tag{display:inline-block;padding:3px 10px;border-radius:99px;font-size:11px;
+    font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
+  .card.lnw .tag{background:var(--lnw-bg);color:var(--lnw)}
+  .card.tidal .tag{background:var(--tidal-bg);color:var(--tidal)}
+  .card h2{font-size:20px;font-weight:700;letter-spacing:-0.02em;margin-bottom:8px}
+  .card .desc{font-size:13px;color:var(--mute);line-height:1.6;margin-bottom:18px}
+  .card .metrics{display:flex;flex-direction:column;gap:0}
+  .card .metric{display:flex;justify-content:space-between;font-size:13px;
+    padding:7px 0;border-top:1px solid var(--line)}
+  .card .metric .mk{color:var(--mute)}
+  .card .metric .mv{font-weight:600;font-variant-numeric:tabular-nums}
+  .card .metric .mv.ok{color:var(--good)}
+  .card .metric .mv.bad{color:var(--bad)}
+  .card .cta{display:inline-flex;align-items:center;gap:6px;margin-top:18px;
+    font-size:13px;font-weight:600}
+  .card.lnw .cta{color:var(--lnw)}
+  .card.tidal .cta{color:var(--tidal)}
+  footer{text-align:center;font-size:12px;color:var(--mute);padding-top:4px}
+  @media(max-width:660px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo-line"><span class="logo">Atlantic Digital</span></div>
+  <h1>Revenue Hub</h1>
+  <p class="sub" id="sub">Loading latest data…</p>
+
+  <div class="sources" id="source-chips"></div>
+
+  <div class="summary" id="summary">
+    <h3>Yesterday + MTD — <span id="summary-date"></span></h3>
+    <div id="summary-rows"></div>
+  </div>
+
+  <div class="cards">
+    <a class="card lnw" href="lnw.html">
+      <div class="tag">Regulated</div>
+      <h2>LNW Revenue</h2>
+      <p class="desc">LNW SGI reporting — "Previous Day - By Game" tab only. 4% GGR revenue share. Source: SGI_Reporting@lnw.com.</p>
+      <div class="metrics" id="lnw-metrics"></div>
+      <div class="cta">Open LNW dashboard →</div>
+    </a>
+    <a class="card tidal" href="tidal.html">
+      <div class="tag">Pre-Reg · Tidal</div>
+      <h2>Tidal Revenue</h2>
+      <p class="desc">Octopus (Kraken email) · BGaming backoffice · Crown Coins Superset. 4% GGR share on Octopus + BGaming; CC = net revenue.</p>
+      <div class="metrics" id="tidal-metrics"></div>
+      <div class="cta">Open Tidal dashboard →</div>
+    </a>
+  </div>
+
+  <footer id="footer">ad-dashboard · GitHub Actions · source-of-truth parsers only</footer>
+</div>
+
+<script>
+const EUR = v => '€' + Number(v||0).toLocaleString('en-GB',{minimumFractionDigits:0,maximumFractionDigits:0});
+const DT  = new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short'});
+const SRC_LABELS = {lnw:'LNW',octopus:'Octopus',bgaming:'BGaming',crowncoins:'Crown Coins'};
+
+async function load(){
+  try{
+    const res = await fetch('data.json?ts='+Date.now());
+    render(await res.json());
+  }catch(e){
+    document.getElementById('sub').textContent = 'Failed to load data: '+e.message;
+  }
+}
+
+function render(d){
+  const gen = d.generated_at_utc ? DT.format(new Date(d.generated_at_utc)) : '—';
+  document.getElementById('sub').textContent = `Last updated: ${gen}`;
+  document.getElementById('footer').textContent = `Built ${gen} · ad-dashboard · GitHub Actions · source-of-truth parsers`;
+
+  // Source chips
+  document.getElementById('source-chips').innerHTML =
+    ['lnw','octopus','bgaming','crowncoins'].map(name=>{
+      const s = d.sources?.[name];
+      const covered = s?.covered_date ? ` ${s.covered_date}` : '';
+      return `<div class="chip ${s?.ok?'ok':'bad'}"><span class="dot"></span>${SRC_LABELS[name]}${covered}</div>`;
+    }).join('');
+
+  // Summary
+  const td = d.day?.totals||{};
+  const tm = d.mtd?.totals||{};
+  document.getElementById('summary-date').textContent = d.day?.date||'—';
+  document.getElementById('summary-rows').innerHTML = [
+    {k:'LNW rev share (yesterday)',  v: EUR(td.lnw_rev_share_eur)},
+    {k:'Tidal total (yesterday)',    v: EUR(td.tidal_total_eur)},
+    {k:'Combined (yesterday)',       v: EUR(td.combined_total_eur), total:true},
+    {k:'MTD LNW',                    v: EUR(tm.lnw_rev_share_eur)},
+    {k:'MTD Tidal',                  v: EUR(tm.tidal_total_eur)},
+    {k:'MTD Combined',               v: EUR(tm.combined_total_eur), total:true},
+  ].map(r=>
+    `<div class="sum-row ${r.total?'total':''}"><span class="sk">${r.k}</span><span class="sv">${r.v}</span></div>`
+  ).join('');
+
+  // LNW card
+  const lnwDayRows = (d.day?.rows||[]).filter(r=>r.source==='lnw');
+  document.getElementById('lnw-metrics').innerHTML = [
+    {k:'Yesterday rev share', v: EUR(td.lnw_rev_share_eur)},
+    {k:'MTD rev share',       v: EUR(tm.lnw_rev_share_eur)},
+    {k:'Yesterday games',     v: lnwDayRows.length},
+    {k:'Source',              v: d.sources?.lnw?.ok?'Live':'Stale', cls: d.sources?.lnw?.ok?'ok':'bad'},
+  ].map(m=>`<div class="metric"><span class="mk">${m.k}</span><span class="mv${m.cls?' '+m.cls:''}">${m.v}</span></div>`).join('');
+
+  // Tidal card
+  const stale = ['octopus','bgaming','crowncoins'].filter(s=>!d.sources?.[s]?.ok);
+  document.getElementById('tidal-metrics').innerHTML = [
+    {k:'Yesterday total',  v: EUR(td.tidal_total_eur)},
+    {k:'MTD total',        v: EUR(tm.tidal_total_eur)},
+    {k:'MTD Octopus',      v: EUR(tm.octopus_rev_share_eur)},
+    {k:'Sources stale',    v: stale.length ? stale.join(', ') : 'none', cls: stale.length?'bad':'ok'},
+  ].map(m=>`<div class="metric"><span class="mk">${m.k}</span><span class="mv${m.cls?' '+m.cls:''}">${m.v}</span></div>`).join('');
+}
+
+load();
+</script>
+</body>
+</html>
