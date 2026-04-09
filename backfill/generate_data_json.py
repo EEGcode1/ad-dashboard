@@ -57,7 +57,7 @@ def compute_totals(rows):
         'crowncoins_net_revenue_eur': round(cc,2),
         'regulated_total_eur': round(lnw,2),
         'tidal_total_eur': round(oct_+bg+cc,2),
-        'combined_total_eur': round(lnw+oct_+bg+cc,2),
+        'combined_total_eur': round(lnw,2),  # regulated only — Octopus/BGaming/CC excluded
     }
 
 def daily_series(rows):
@@ -81,7 +81,7 @@ def daily_series(rows):
             'bgaming': round(v['bgaming'],2),
             'crowncoins': round(v['crowncoins'],2),
             'tidal': round(v['octopus']+v['bgaming']+v['crowncoins'],2),
-            'combined': round(sum(v.values()),2),
+            'combined': round(v['lnw'],2),  # regulated only
         })
     return series
 

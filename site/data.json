@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-04-09T18:04:48.673975+00:00",
+  "generated_at_utc": "2026-04-09T18:07:52.693540+00:00",
   "sources": {
     "lnw": {
       "name": "lnw",
       "ok": true,
       "error": null,
       "row_count": 4664,
-      "last_run_utc": "2026-04-09T18:04:48.674448+00:00",
+      "last_run_utc": "2026-04-09T18:07:52.694100+00:00",
       "covered_date": "2026-04-08"
     },
     "octopus": {
@@ -14,7 +14,7 @@
       "ok": true,
       "error": null,
       "row_count": 41,
-      "last_run_utc": "2026-04-09T18:04:48.675121+00:00",
+      "last_run_utc": "2026-04-09T18:07:52.695218+00:00",
       "covered_date": "2026-04-08"
     },
     "bgaming": {
@@ -463,7 +463,7 @@
       "crowncoins_net_revenue_eur": 0,
       "regulated_total_eur": 6743.6,
       "tidal_total_eur": 228.96,
-      "combined_total_eur": 6972.56
+      "combined_total_eur": 6743.6
     }
   },
   "week": {
@@ -848,7 +848,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 176.78,
-        "combined": 10984.87
+        "combined": 10808.09
       },
       {
         "date": "2026-04-03",
@@ -857,7 +857,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 508.4,
-        "combined": 11440.43
+        "combined": 10932.03
       },
       {
         "date": "2026-04-04",
@@ -866,7 +866,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 105.59,
-        "combined": 7975.93
+        "combined": 7870.34
       },
       {
         "date": "2026-04-05",
@@ -875,7 +875,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 415.86,
-        "combined": 9471.39
+        "combined": 9055.53
       },
       {
         "date": "2026-04-06",
@@ -884,7 +884,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 61.63,
-        "combined": 7509.54
+        "combined": 7447.91
       },
       {
         "date": "2026-04-07",
@@ -893,7 +893,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 210.1,
-        "combined": 7646.71
+        "combined": 7436.61
       },
       {
         "date": "2026-04-08",
@@ -902,7 +902,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 228.96,
-        "combined": 6972.56
+        "combined": 6743.6
       }
     ],
     "totals": {
@@ -912,7 +912,7 @@
       "crowncoins_net_revenue_eur": 0,
       "regulated_total_eur": 60294.12,
       "tidal_total_eur": 1707.32,
-      "combined_total_eur": 62001.44
+      "combined_total_eur": 60294.12
     }
   },
   "mtd": {
@@ -1296,7 +1296,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 230.87,
-        "combined": 8383.26
+        "combined": 8152.39
       },
       {
         "date": "2026-04-02",
@@ -1305,7 +1305,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 176.78,
-        "combined": 10984.87
+        "combined": 10808.09
       },
       {
         "date": "2026-04-03",
@@ -1314,7 +1314,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 508.4,
-        "combined": 11440.43
+        "combined": 10932.03
       },
       {
         "date": "2026-04-04",
@@ -1323,7 +1323,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 105.59,
-        "combined": 7975.93
+        "combined": 7870.34
       },
       {
         "date": "2026-04-05",
@@ -1332,7 +1332,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 415.86,
-        "combined": 9471.39
+        "combined": 9055.53
       },
       {
         "date": "2026-04-06",
@@ -1341,7 +1341,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 61.63,
-        "combined": 7509.54
+        "combined": 7447.91
       },
       {
         "date": "2026-04-07",
@@ -1350,7 +1350,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 210.1,
-        "combined": 7646.71
+        "combined": 7436.61
       },
       {
         "date": "2026-04-08",
@@ -1359,7 +1359,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 228.96,
-        "combined": 6972.56
+        "combined": 6743.6
       }
     ],
     "cumulative": [
@@ -1367,49 +1367,49 @@
         "date": "2026-04-01",
         "lnw_cum": 8152.39,
         "tidal_cum": 230.87,
-        "combined_cum": 8383.26
+        "combined_cum": 8152.39
       },
       {
         "date": "2026-04-02",
         "lnw_cum": 18960.48,
         "tidal_cum": 407.65,
-        "combined_cum": 19368.13
+        "combined_cum": 18960.48
       },
       {
         "date": "2026-04-03",
         "lnw_cum": 29892.51,
         "tidal_cum": 916.05,
-        "combined_cum": 30808.56
+        "combined_cum": 29892.51
       },
       {
         "date": "2026-04-04",
         "lnw_cum": 37762.85,
         "tidal_cum": 1021.64,
-        "combined_cum": 38784.49
+        "combined_cum": 37762.85
       },
       {
         "date": "2026-04-05",
         "lnw_cum": 46818.38,
         "tidal_cum": 1437.5,
-        "combined_cum": 48255.88
+        "combined_cum": 46818.38
       },
       {
         "date": "2026-04-06",
         "lnw_cum": 54266.29,
         "tidal_cum": 1499.13,
-        "combined_cum": 55765.42
+        "combined_cum": 54266.29
       },
       {
         "date": "2026-04-07",
         "lnw_cum": 61702.9,
         "tidal_cum": 1709.23,
-        "combined_cum": 63412.13
+        "combined_cum": 61702.9
       },
       {
         "date": "2026-04-08",
         "lnw_cum": 68446.5,
         "tidal_cum": 1938.19,
-        "combined_cum": 70384.69
+        "combined_cum": 68446.5
       }
     ],
     "totals": {
@@ -1419,7 +1419,7 @@
       "crowncoins_net_revenue_eur": 0,
       "regulated_total_eur": 68446.51,
       "tidal_total_eur": 1938.19,
-      "combined_total_eur": 70384.7
+      "combined_total_eur": 68446.51
     }
   },
   "all": {
@@ -2313,7 +2313,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 158.7,
-        "combined": 158.7
+        "combined": 0.0
       },
       {
         "date": "2026-01-01",
@@ -2322,7 +2322,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 951.01,
-        "combined": 7165.49
+        "combined": 6214.48
       },
       {
         "date": "2026-01-02",
@@ -2331,7 +2331,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 28.93,
-        "combined": 7056.71
+        "combined": 7027.78
       },
       {
         "date": "2026-01-03",
@@ -2340,7 +2340,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 459.1,
-        "combined": 5654.39
+        "combined": 5195.29
       },
       {
         "date": "2026-01-04",
@@ -2349,7 +2349,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 724.85,
-        "combined": 5886.63
+        "combined": 5161.78
       },
       {
         "date": "2026-01-05",
@@ -2358,7 +2358,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 1186.72,
-        "combined": 8642.06
+        "combined": 7455.34
       },
       {
         "date": "2026-01-06",
@@ -2367,7 +2367,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 325.28,
-        "combined": 6737.08
+        "combined": 6411.8
       },
       {
         "date": "2026-01-07",
@@ -2376,7 +2376,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 895.97,
-        "combined": 8138.25
+        "combined": 7242.28
       },
       {
         "date": "2026-01-08",
@@ -2385,7 +2385,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 584.0,
-        "combined": 6434.79
+        "combined": 5850.79
       },
       {
         "date": "2026-01-09",
@@ -2394,7 +2394,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 452.08,
-        "combined": 6595.06
+        "combined": 6142.98
       },
       {
         "date": "2026-01-10",
@@ -2403,7 +2403,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 931.12,
-        "combined": 6170.89
+        "combined": 5239.77
       },
       {
         "date": "2026-01-11",
@@ -2412,7 +2412,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 605.89,
-        "combined": 5915.01
+        "combined": 5309.12
       },
       {
         "date": "2026-01-12",
@@ -2421,7 +2421,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 437.5,
-        "combined": 4605.66
+        "combined": 4168.16
       },
       {
         "date": "2026-01-13",
@@ -2430,7 +2430,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 677.95,
-        "combined": 5129.97
+        "combined": 4452.02
       },
       {
         "date": "2026-01-14",
@@ -2439,7 +2439,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 692.15,
-        "combined": 4889.61
+        "combined": 4197.46
       },
       {
         "date": "2026-01-15",
@@ -2448,7 +2448,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 590.69,
-        "combined": 4445.87
+        "combined": 3855.18
       },
       {
         "date": "2026-01-16",
@@ -2457,7 +2457,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 756.27,
-        "combined": 4419.74
+        "combined": 3663.47
       },
       {
         "date": "2026-01-17",
@@ -2466,7 +2466,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 1536.45,
-        "combined": 6246.48
+        "combined": 4710.03
       },
       {
         "date": "2026-01-18",
@@ -2475,7 +2475,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 539.01,
-        "combined": 4038.16
+        "combined": 3499.15
       },
       {
         "date": "2026-01-19",
@@ -2484,7 +2484,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": -275.49,
-        "combined": 2796.6
+        "combined": 3072.09
       },
       {
         "date": "2026-01-20",
@@ -2493,7 +2493,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 548.68,
-        "combined": 4006.49
+        "combined": 3457.81
       },
       {
         "date": "2026-01-21",
@@ -2502,7 +2502,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 559.22,
-        "combined": 3559.04
+        "combined": 2999.82
       },
       {
         "date": "2026-01-22",
@@ -2511,7 +2511,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 1461.58,
-        "combined": 6257.25
+        "combined": 4795.67
       },
       {
         "date": "2026-01-23",
@@ -2520,7 +2520,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 283.53,
-        "combined": 6454.25
+        "combined": 6170.72
       },
       {
         "date": "2026-01-24",
@@ -2529,7 +2529,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": -40.66,
-        "combined": 6003.47
+        "combined": 6044.13
       },
       {
         "date": "2026-01-25",
@@ -2538,7 +2538,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 411.65,
-        "combined": 3815.63
+        "combined": 3403.98
       },
       {
         "date": "2026-01-26",
@@ -2547,7 +2547,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 358.02,
-        "combined": -1264.62
+        "combined": -1622.64
       },
       {
         "date": "2026-01-27",
@@ -2556,7 +2556,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 452.69,
-        "combined": 12317.24
+        "combined": 11864.55
       },
       {
         "date": "2026-01-28",
@@ -2565,7 +2565,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 396.63,
-        "combined": 9808.61
+        "combined": 9411.98
       },
       {
         "date": "2026-01-29",
@@ -2574,7 +2574,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 449.12,
-        "combined": 7311.01
+        "combined": 6861.89
       },
       {
         "date": "2026-01-30",
@@ -2583,7 +2583,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 626.36,
-        "combined": 10171.14
+        "combined": 9544.78
       },
       {
         "date": "2026-01-31",
@@ -2592,7 +2592,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 248.2,
-        "combined": 9392.76
+        "combined": 9144.56
       },
       {
         "date": "2026-02-01",
@@ -2601,7 +2601,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 279.0,
-        "combined": 6835.96
+        "combined": 6556.96
       },
       {
         "date": "2026-02-02",
@@ -2610,7 +2610,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 298.21,
-        "combined": 6813.08
+        "combined": 6514.87
       },
       {
         "date": "2026-02-03",
@@ -2619,7 +2619,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 890.78,
-        "combined": 9629.58
+        "combined": 8738.8
       },
       {
         "date": "2026-02-04",
@@ -2628,7 +2628,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 201.02,
-        "combined": 9363.4
+        "combined": 9162.38
       },
       {
         "date": "2026-02-05",
@@ -2637,7 +2637,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 399.49,
-        "combined": 9231.54
+        "combined": 8832.05
       },
       {
         "date": "2026-02-06",
@@ -2646,7 +2646,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 699.59,
-        "combined": 8224.08
+        "combined": 7524.49
       },
       {
         "date": "2026-02-07",
@@ -2655,7 +2655,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 444.89,
-        "combined": 8320.03
+        "combined": 7875.14
       },
       {
         "date": "2026-02-08",
@@ -2664,7 +2664,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 10.2,
-        "combined": 7329.84
+        "combined": 7319.64
       },
       {
         "date": "2026-02-09",
@@ -2673,7 +2673,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 854.63,
-        "combined": 5867.69
+        "combined": 5013.06
       },
       {
         "date": "2026-02-10",
@@ -2682,7 +2682,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 184.91,
-        "combined": 6496.17
+        "combined": 6311.26
       },
       {
         "date": "2026-02-11",
@@ -2691,7 +2691,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 129.27,
-        "combined": 7488.25
+        "combined": 7358.98
       },
       {
         "date": "2026-02-12",
@@ -2700,7 +2700,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 416.71,
-        "combined": 7289.83
+        "combined": 6873.12
       },
       {
         "date": "2026-02-13",
@@ -2709,7 +2709,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 183.9,
-        "combined": 6053.35
+        "combined": 5869.45
       },
       {
         "date": "2026-02-14",
@@ -2718,7 +2718,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 506.82,
-        "combined": 6744.71
+        "combined": 6237.89
       },
       {
         "date": "2026-02-15",
@@ -2727,7 +2727,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 519.78,
-        "combined": 5922.7
+        "combined": 5402.92
       },
       {
         "date": "2026-02-16",
@@ -2736,7 +2736,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 254.81,
-        "combined": 3587.05
+        "combined": 3332.24
       },
       {
         "date": "2026-02-17",
@@ -2745,7 +2745,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 335.52,
-        "combined": 6382.43
+        "combined": 6046.91
       },
       {
         "date": "2026-02-18",
@@ -2754,7 +2754,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 179.15,
-        "combined": 5253.77
+        "combined": 5074.62
       },
       {
         "date": "2026-02-19",
@@ -2763,7 +2763,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 307.57,
-        "combined": 9055.0
+        "combined": 8747.43
       },
       {
         "date": "2026-02-20",
@@ -2772,7 +2772,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 189.1,
-        "combined": 6606.06
+        "combined": 6416.96
       },
       {
         "date": "2026-02-21",
@@ -2781,7 +2781,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 633.93,
-        "combined": 7754.98
+        "combined": 7121.05
       },
       {
         "date": "2026-02-22",
@@ -2790,7 +2790,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 465.34,
-        "combined": 6709.85
+        "combined": 6244.51
       },
       {
         "date": "2026-02-23",
@@ -2799,7 +2799,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 103.78,
-        "combined": 5335.24
+        "combined": 5231.46
       },
       {
         "date": "2026-02-24",
@@ -2808,7 +2808,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 416.73,
-        "combined": 5516.62
+        "combined": 5099.89
       },
       {
         "date": "2026-02-25",
@@ -2817,7 +2817,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 550.48,
-        "combined": 8122.08
+        "combined": 7571.6
       },
       {
         "date": "2026-02-26",
@@ -2826,7 +2826,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 501.36,
-        "combined": 7473.0
+        "combined": 6971.64
       },
       {
         "date": "2026-02-27",
@@ -2835,7 +2835,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 854.72,
-        "combined": 7595.48
+        "combined": 6740.76
       },
       {
         "date": "2026-02-28",
@@ -2844,7 +2844,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 497.09,
-        "combined": 9136.99
+        "combined": 8639.9
       },
       {
         "date": "2026-03-01",
@@ -2853,7 +2853,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 500.62,
-        "combined": 7798.89
+        "combined": 7298.27
       },
       {
         "date": "2026-03-02",
@@ -2862,7 +2862,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 219.35,
-        "combined": 6063.08
+        "combined": 5843.73
       },
       {
         "date": "2026-03-03",
@@ -2871,7 +2871,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 213.99,
-        "combined": 6177.83
+        "combined": 5963.84
       },
       {
         "date": "2026-03-04",
@@ -2880,7 +2880,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 186.94,
-        "combined": 6421.92
+        "combined": 6234.98
       },
       {
         "date": "2026-03-05",
@@ -2889,7 +2889,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 317.35,
-        "combined": 6434.61
+        "combined": 6117.26
       },
       {
         "date": "2026-03-06",
@@ -2898,7 +2898,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 495.7,
-        "combined": 6120.92
+        "combined": 5625.22
       },
       {
         "date": "2026-03-07",
@@ -2907,7 +2907,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 118.81,
-        "combined": 5073.03
+        "combined": 4954.22
       },
       {
         "date": "2026-03-08",
@@ -2916,7 +2916,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 706.0,
-        "combined": 6318.54
+        "combined": 5612.54
       },
       {
         "date": "2026-03-09",
@@ -2925,7 +2925,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 249.45,
-        "combined": 4345.51
+        "combined": 4096.06
       },
       {
         "date": "2026-03-10",
@@ -2934,7 +2934,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 257.99,
-        "combined": 3243.72
+        "combined": 2985.73
       },
       {
         "date": "2026-03-11",
@@ -2943,7 +2943,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 444.59,
-        "combined": 4616.75
+        "combined": 4172.16
       },
       {
         "date": "2026-03-12",
@@ -2952,7 +2952,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 334.31,
-        "combined": 4156.76
+        "combined": 3822.45
       },
       {
         "date": "2026-03-13",
@@ -2961,7 +2961,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 483.61,
-        "combined": 5753.73
+        "combined": 5270.12
       },
       {
         "date": "2026-03-14",
@@ -2970,7 +2970,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 397.28,
-        "combined": 2562.0
+        "combined": 2164.72
       },
       {
         "date": "2026-03-15",
@@ -2979,7 +2979,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 199.89,
-        "combined": 3578.61
+        "combined": 3378.72
       },
       {
         "date": "2026-03-16",
@@ -2988,7 +2988,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 749.54,
-        "combined": 8819.4
+        "combined": 8069.86
       },
       {
         "date": "2026-03-17",
@@ -2997,7 +2997,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 868.52,
-        "combined": 9723.08
+        "combined": 8854.56
       },
       {
         "date": "2026-03-18",
@@ -3006,7 +3006,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 44.76,
-        "combined": 9445.36
+        "combined": 9400.6
       },
       {
         "date": "2026-03-19",
@@ -3015,7 +3015,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": -83.02,
-        "combined": 12077.39
+        "combined": 12160.41
       },
       {
         "date": "2026-03-20",
@@ -3024,7 +3024,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 382.11,
-        "combined": 10834.96
+        "combined": 10452.85
       },
       {
         "date": "2026-03-21",
@@ -3033,7 +3033,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 35.07,
-        "combined": 8608.69
+        "combined": 8573.62
       },
       {
         "date": "2026-03-22",
@@ -3042,7 +3042,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 440.13,
-        "combined": 8592.13
+        "combined": 8152.0
       },
       {
         "date": "2026-03-23",
@@ -3051,7 +3051,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 185.16,
-        "combined": 7483.13
+        "combined": 7297.97
       },
       {
         "date": "2026-03-24",
@@ -3060,7 +3060,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 627.44,
-        "combined": 9300.83
+        "combined": 8673.39
       },
       {
         "date": "2026-03-25",
@@ -3069,7 +3069,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": -534.66,
-        "combined": 6964.49
+        "combined": 7499.15
       },
       {
         "date": "2026-03-26",
@@ -3078,7 +3078,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": -57.62,
-        "combined": 7955.22
+        "combined": 8012.84
       },
       {
         "date": "2026-03-27",
@@ -3087,7 +3087,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 4.16,
-        "combined": 6343.81
+        "combined": 6339.65
       },
       {
         "date": "2026-03-28",
@@ -3096,7 +3096,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 139.29,
-        "combined": 8056.47
+        "combined": 7917.18
       },
       {
         "date": "2026-03-29",
@@ -3105,7 +3105,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 453.07,
-        "combined": 7079.23
+        "combined": 6626.16
       },
       {
         "date": "2026-03-30",
@@ -3114,7 +3114,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 235.71,
-        "combined": 6344.19
+        "combined": 6108.48
       },
       {
         "date": "2026-03-31",
@@ -3123,7 +3123,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 373.49,
-        "combined": 7907.06
+        "combined": 7533.57
       },
       {
         "date": "2026-04-01",
@@ -3132,7 +3132,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 230.87,
-        "combined": 8383.26
+        "combined": 8152.39
       },
       {
         "date": "2026-04-02",
@@ -3141,7 +3141,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 176.78,
-        "combined": 10984.87
+        "combined": 10808.09
       },
       {
         "date": "2026-04-03",
@@ -3150,7 +3150,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 508.4,
-        "combined": 11440.43
+        "combined": 10932.03
       },
       {
         "date": "2026-04-04",
@@ -3159,7 +3159,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 105.59,
-        "combined": 7975.93
+        "combined": 7870.34
       },
       {
         "date": "2026-04-05",
@@ -3168,7 +3168,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 415.86,
-        "combined": 9471.39
+        "combined": 9055.53
       },
       {
         "date": "2026-04-06",
@@ -3177,7 +3177,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 61.63,
-        "combined": 7509.54
+        "combined": 7447.91
       },
       {
         "date": "2026-04-07",
@@ -3186,7 +3186,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 210.1,
-        "combined": 7646.71
+        "combined": 7436.61
       },
       {
         "date": "2026-04-08",
@@ -3195,7 +3195,7 @@
         "bgaming": 0.0,
         "crowncoins": 0.0,
         "tidal": 228.96,
-        "combined": 6972.56
+        "combined": 6743.6
       }
     ]
   },
