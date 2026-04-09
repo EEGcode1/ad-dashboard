@@ -265,9 +265,9 @@
     <div id="source-badge" style="display:inline-block;margin-left:12px;vertical-align:middle"></div>
     <div class="subtitle">
       Source: <strong>SGI_Reporting@lnw.com</strong> · "Previous Day – By Game" ·
-      Rates: <strong>4.38%</strong> direct LNW ·
-      <strong>3.29%</strong> Ace Ventura net (BBG) ·
-      <strong>2.49%</strong> Godfather The Offer net (BBG) ·
+      AD Revenue rates: <strong>4.38%</strong> direct LNW ·
+      <strong>3.29%</strong> Ace Ventura (BBG) ·
+      <strong>2.49%</strong> Godfather The Offer (BBG) ·
       derived from actual GP fees ÷ LNW daily GGR · AD deal = 10% IP fee + 50/50 split
     </div>
   </div>
@@ -286,14 +286,14 @@
   <div class="grid2">
     <div class="panel">
       <div class="panel-head">
-        <h2>MTD cumulative rev share</h2>
+        <h2>MTD cumulative AD revenue</h2>
         <span class="meta" id="mtd-meta"></span>
       </div>
       <div class="chart-wrap" style="height:240px"><canvas id="mtd-chart"></canvas></div>
     </div>
     <div class="panel">
       <div class="panel-head">
-        <h2>Daily rev share — last 7 days</h2>
+        <h2>Daily AD revenue — last 7 days</h2>
         <span class="meta" id="week-meta"></span>
       </div>
       <div class="chart-wrap" style="height:240px"><canvas id="week-chart"></canvas></div>
@@ -305,7 +305,7 @@
   <div class="grid2" style="margin-bottom:20px">
     <div class="panel">
       <div class="panel-head">
-        <h2>Monthly rev share</h2>
+        <h2>Monthly AD revenue</h2>
         <span class="meta" id="monthly-rev-meta"></span>
       </div>
       <div class="chart-wrap" style="height:240px"><canvas id="monthly-rev-chart"></canvas></div>
@@ -580,13 +580,13 @@ function renderKPIsMain(d){
   const dailyAvg7=(tw.lnw_rev_share_eur||0)/week7Days;
 
   const kpis=[
-    {icon:'💰',cls:'blue',label:'Yesterday rev share',
+    {icon:'💰',cls:'blue',label:'Yesterday AD revenue',
       val:EUR(dayRev),sub:`GGR ${EUR(dayGGR)} · ${dayLnw.length} games`},
-    {icon:'📈',cls:'teal',label:'MTD rev share',
+    {icon:'📈',cls:'teal',label:'MTD AD revenue',
       val:EUR(tm.lnw_rev_share_eur),sub:`${d.mtd?.month||''} · ${momHtml||'first month'}`},
-    {icon:'🗓️',cls:'purple',label:'YTD rev share',
+    {icon:'🗓️',cls:'purple',label:'YTD AD revenue',
       val:EUR(ytd.lnw_rev_share_eur),sub:`Jan – ${d.ytd?.to||''}`},
-    {icon:'📊',cls:'gold',label:'7-day rev share',
+    {icon:'📊',cls:'gold',label:'7-day AD revenue',
       val:EUR(tw.lnw_rev_share_eur),sub:`Avg ${EUR(dailyAvg7)}/day`},
     {icon:'🎯',cls:'green',label:'Since Sep 2025',
       val:EUR(at.lnw_rev_share_eur),sub:`${(_data?.monthly||[]).length} months of data`},
@@ -777,7 +777,7 @@ function theadHtml(sortState, withRtp=true){
     ${thHtml('GGR','ggr_eur',sortState,'num')}
     ${thHtml('Wager','wager_eur',sortState,'num')}
     ${withRtp?thHtml('RTP','rtp',sortState,'num'):''}
-    ${thHtml('Rev Share','rev_share_eur',sortState,'num')}
+    ${thHtml('AD Revenue','rev_share_eur',sortState,'num')}
   </tr></thead>`;
 }
 
@@ -868,7 +868,7 @@ function aggTheadHtml(sortState){
     ${thHtml('Game','game',sortState)}
     ${thHtml('GGR','ggr_eur',sortState,'num')}
     ${thHtml('Wager','wager_eur',sortState,'num')}
-    ${thHtml('Rev Share','rev_share_eur',sortState,'num')}
+    ${thHtml('AD Revenue','rev_share_eur',sortState,'num')}
   </tr></thead>`;
 }
 
@@ -934,7 +934,7 @@ function renderMonthly(d){
     ? (sel.totals.lnw_rev_share_eur/sel.totals.ggr_eur*100).toFixed(2)+'%'
     : '—';
   document.getElementById('month-stats').innerHTML=`
-    <div class="month-stat"><div class="ms-label">Rev Share</div><div class="ms-val rev">${EUR(sel?.totals?.lnw_rev_share_eur)}</div></div>
+    <div class="month-stat"><div class="ms-label">AD Revenue</div><div class="ms-val rev">${EUR(sel?.totals?.lnw_rev_share_eur)}</div></div>
     <div class="month-stat"><div class="ms-label">GGR</div><div class="ms-val">${EUR(sel?.totals?.ggr_eur)}</div></div>
     <div class="month-stat"><div class="ms-label">Wager</div><div class="ms-val">${EUR(sel?.totals?.wager_eur)}</div></div>
     <div class="month-stat"><div class="ms-label">Eff. Rate</div><div class="ms-val">${rtpYield}</div></div>
