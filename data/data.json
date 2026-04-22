@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-04-21T07:21:57.063544+00:00",
+  "generated_at_utc": "2026-04-22T07:19:55.188371+00:00",
   "sources": {
     "lnw": {
       "name": "lnw",
       "ok": false,
       "error": "RefreshError: ('invalid_client: The OAuth client was not found.', {'error': 'invalid_client', 'error_description': 'The OAuth client was not found.'})",
       "row_count": 0,
-      "last_run_utc": "2026-04-21T07:21:16.723236+00:00",
+      "last_run_utc": "2026-04-22T07:19:14.388520+00:00",
       "covered_date": null
     },
     "octopus": {
@@ -14,7 +14,7 @@
       "ok": false,
       "error": "RefreshError: ('invalid_client: The OAuth client was not found.', {'error': 'invalid_client', 'error_description': 'The OAuth client was not found.'})",
       "row_count": 0,
-      "last_run_utc": "2026-04-21T07:21:16.930601+00:00",
+      "last_run_utc": "2026-04-22T07:19:14.508096+00:00",
       "covered_date": null
     },
     "bgaming": {
@@ -22,7 +22,7 @@
       "ok": false,
       "error": "RuntimeError: BGaming scrape timed out: Page.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"input[name=\\\"email\\\"]\")\n",
       "row_count": 0,
-      "last_run_utc": "2026-04-21T07:21:17.124263+00:00",
+      "last_run_utc": "2026-04-22T07:19:14.612832+00:00",
       "covered_date": null
     },
     "crowncoins": {
@@ -30,24 +30,24 @@
       "ok": true,
       "error": null,
       "row_count": 1,
-      "last_run_utc": "2026-04-21T07:21:49.316223+00:00",
-      "covered_date": "2026-04-20"
+      "last_run_utc": "2026-04-22T07:19:47.757420+00:00",
+      "covered_date": "2026-04-21"
     },
     "godfather": {
       "name": "godfather",
       "ok": false,
       "error": "RefreshError: ('invalid_client: The OAuth client was not found.', {'error': 'invalid_client', 'error_description': 'The OAuth client was not found.'})",
       "row_count": 0,
-      "last_run_utc": "2026-04-21T07:21:56.862098+00:00",
+      "last_run_utc": "2026-04-22T07:19:55.076964+00:00",
       "covered_date": null
     }
   },
   "day": {
-    "date": "2026-04-20",
+    "date": "2026-04-21",
     "rows": [
       {
         "source": "crowncoins",
-        "date": "2026-04-20",
+        "date": "2026-04-21",
         "net_revenue_eur": 0.0,
         "notes": null
       }
@@ -63,8 +63,8 @@
     }
   },
   "week": {
-    "from": "2026-04-15",
-    "to": "2026-04-21",
+    "from": "2026-04-16",
+    "to": "2026-04-22",
     "by_game": [
       {
         "source": "crowncoins",
@@ -77,15 +77,6 @@
       }
     ],
     "by_day": [
-      {
-        "date": "2026-04-15",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
       {
         "date": "2026-04-16",
         "lnw": 0.0,
@@ -124,6 +115,15 @@
       },
       {
         "date": "2026-04-20",
+        "lnw": 0.0,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 0.0
+      },
+      {
+        "date": "2026-04-21",
         "lnw": 0.0,
         "octopus": 0.0,
         "bgaming": 0.0,
@@ -704,6 +704,15 @@
         "crowncoins": 0.0,
         "tidal": 0.0,
         "combined": 0.0
+      },
+      {
+        "date": "2026-04-21",
+        "lnw": 0.0,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 0.0
       }
     ],
     "cumulative": [
@@ -823,6 +832,12 @@
       },
       {
         "date": "2026-04-20",
+        "lnw_cum": 62508.16,
+        "tidal_cum": 1938.19,
+        "combined_cum": 64446.35
+      },
+      {
+        "date": "2026-04-21",
         "lnw_cum": 62508.16,
         "tidal_cum": 1938.19,
         "combined_cum": 64446.35
