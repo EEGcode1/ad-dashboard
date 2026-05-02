@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-05-01T08:00:35.784845+00:00",
+  "generated_at_utc": "2026-05-02T07:19:12.058142+00:00",
   "sources": {
     "lnw": {
       "name": "lnw",
       "ok": false,
       "error": "RefreshError: ('invalid_client: The OAuth client was not found.', {'error': 'invalid_client', 'error_description': 'The OAuth client was not found.'})",
       "row_count": 0,
-      "last_run_utc": "2026-05-01T07:59:55.119165+00:00",
+      "last_run_utc": "2026-05-02T07:18:30.747280+00:00",
       "covered_date": null
     },
     "octopus": {
@@ -14,7 +14,7 @@
       "ok": false,
       "error": "RefreshError: ('invalid_client: The OAuth client was not found.', {'error': 'invalid_client', 'error_description': 'The OAuth client was not found.'})",
       "row_count": 0,
-      "last_run_utc": "2026-05-01T07:59:55.268207+00:00",
+      "last_run_utc": "2026-05-02T07:18:30.851857+00:00",
       "covered_date": null
     },
     "bgaming": {
@@ -22,7 +22,7 @@
       "ok": false,
       "error": "RuntimeError: BGaming scrape timed out: Page.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"input[name=\\\"email\\\"]\")\n",
       "row_count": 0,
-      "last_run_utc": "2026-05-01T07:59:55.371680+00:00",
+      "last_run_utc": "2026-05-02T07:18:30.952755+00:00",
       "covered_date": null
     },
     "crowncoins": {
@@ -30,24 +30,24 @@
       "ok": true,
       "error": null,
       "row_count": 1,
-      "last_run_utc": "2026-05-01T08:00:28.896329+00:00",
-      "covered_date": "2026-04-30"
+      "last_run_utc": "2026-05-02T07:19:03.461979+00:00",
+      "covered_date": "2026-05-01"
     },
     "godfather": {
       "name": "godfather",
       "ok": false,
       "error": "RefreshError: ('invalid_client: The OAuth client was not found.', {'error': 'invalid_client', 'error_description': 'The OAuth client was not found.'})",
       "row_count": 0,
-      "last_run_utc": "2026-05-01T08:00:35.678693+00:00",
+      "last_run_utc": "2026-05-02T07:19:11.948226+00:00",
       "covered_date": null
     }
   },
   "day": {
-    "date": "2026-04-30",
+    "date": "2026-05-01",
     "rows": [
       {
         "source": "crowncoins",
-        "date": "2026-04-30",
+        "date": "2026-05-01",
         "net_revenue_eur": 0.0,
         "notes": null
       }
@@ -63,8 +63,8 @@
     }
   },
   "week": {
-    "from": "2026-04-25",
-    "to": "2026-05-01",
+    "from": "2026-04-26",
+    "to": "2026-05-02",
     "by_game": [
       {
         "source": "crowncoins",
@@ -77,15 +77,6 @@
       }
     ],
     "by_day": [
-      {
-        "date": "2026-04-25",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
       {
         "date": "2026-04-26",
         "lnw": 0.0,
@@ -130,6 +121,15 @@
         "crowncoins": 0.0,
         "tidal": 0.0,
         "combined": 0.0
+      },
+      {
+        "date": "2026-05-01",
+        "lnw": 0.0,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 0.0
       }
     ],
     "totals": {
@@ -144,17 +144,44 @@
   },
   "mtd": {
     "month": "2026-05",
-    "by_game": [],
-    "by_day": [],
-    "cumulative": [],
+    "by_game": [
+      {
+        "source": "crowncoins",
+        "game": "",
+        "wager_eur": 0.0,
+        "win_eur": 0.0,
+        "ggr_eur": 0.0,
+        "rev_share_eur": 0.0,
+        "net_revenue_eur": 0.0
+      }
+    ],
+    "by_day": [
+      {
+        "date": "2026-05-01",
+        "lnw": 0.0,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 0.0
+      }
+    ],
+    "cumulative": [
+      {
+        "date": "2026-05-01",
+        "lnw_cum": 0.0,
+        "tidal_cum": 0.0,
+        "combined_cum": 0.0
+      }
+    ],
     "totals": {
       "lnw_rev_share_eur": 0,
       "octopus_rev_share_eur": 0,
       "bgaming_rev_share_eur": 0,
-      "crowncoins_net_revenue_eur": 0,
+      "crowncoins_net_revenue_eur": 0.0,
       "regulated_total_eur": 0,
-      "tidal_total_eur": 0,
-      "combined_total_eur": 0
+      "tidal_total_eur": 0.0,
+      "combined_total_eur": 0.0
     }
   },
   "godfather": null
