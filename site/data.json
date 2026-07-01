@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-06-30T08:54:30.595201+00:00",
+  "generated_at_utc": "2026-07-01T09:28:01.294583+00:00",
   "sources": {
     "lnw": {
       "name": "lnw",
       "ok": false,
       "error": "RefreshError: ('invalid_client: The OAuth client was not found.', {'error': 'invalid_client', 'error_description': 'The OAuth client was not found.'})",
       "row_count": 0,
-      "last_run_utc": "2026-06-30T08:53:51.685200+00:00",
+      "last_run_utc": "2026-07-01T09:27:21.119087+00:00",
       "covered_date": null
     },
     "octopus": {
@@ -14,7 +14,7 @@
       "ok": false,
       "error": "RefreshError: ('invalid_client: The OAuth client was not found.', {'error': 'invalid_client', 'error_description': 'The OAuth client was not found.'})",
       "row_count": 0,
-      "last_run_utc": "2026-06-30T08:53:51.799718+00:00",
+      "last_run_utc": "2026-07-01T09:27:21.232797+00:00",
       "covered_date": null
     },
     "bgaming": {
@@ -22,7 +22,7 @@
       "ok": false,
       "error": "RuntimeError: BGaming scrape timed out: Page.fill: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"input[name=\\\"email\\\"]\")\n",
       "row_count": 0,
-      "last_run_utc": "2026-06-30T08:53:51.923840+00:00",
+      "last_run_utc": "2026-07-01T09:27:21.340184+00:00",
       "covered_date": null
     },
     "crowncoins": {
@@ -30,24 +30,24 @@
       "ok": true,
       "error": null,
       "row_count": 1,
-      "last_run_utc": "2026-06-30T08:54:24.523827+00:00",
-      "covered_date": "2026-06-29"
+      "last_run_utc": "2026-07-01T09:27:53.729209+00:00",
+      "covered_date": "2026-06-30"
     },
     "godfather": {
       "name": "godfather",
       "ok": false,
       "error": "RefreshError: ('invalid_client: The OAuth client was not found.', {'error': 'invalid_client', 'error_description': 'The OAuth client was not found.'})",
       "row_count": 0,
-      "last_run_utc": "2026-06-30T08:54:30.476714+00:00",
+      "last_run_utc": "2026-07-01T09:28:01.188502+00:00",
       "covered_date": null
     }
   },
   "day": {
-    "date": "2026-06-29",
+    "date": "2026-06-30",
     "rows": [
       {
         "source": "crowncoins",
-        "date": "2026-06-29",
+        "date": "2026-06-30",
         "net_revenue_eur": 0.0,
         "notes": null
       }
@@ -63,8 +63,8 @@
     }
   },
   "week": {
-    "from": "2026-06-24",
-    "to": "2026-06-30",
+    "from": "2026-06-25",
+    "to": "2026-07-01",
     "by_game": [
       {
         "source": "crowncoins",
@@ -77,15 +77,6 @@
       }
     ],
     "by_day": [
-      {
-        "date": "2026-06-24",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
       {
         "date": "2026-06-25",
         "lnw": 0.0,
@@ -124,6 +115,15 @@
       },
       {
         "date": "2026-06-29",
+        "lnw": 0.0,
+        "octopus": 0.0,
+        "bgaming": 0.0,
+        "crowncoins": 0.0,
+        "tidal": 0.0,
+        "combined": 0.0
+      },
+      {
+        "date": "2026-06-30",
         "lnw": 0.0,
         "octopus": 0.0,
         "bgaming": 0.0,
@@ -143,465 +143,18 @@
     }
   },
   "mtd": {
-    "month": "2026-06",
-    "by_game": [
-      {
-        "source": "crowncoins",
-        "game": "",
-        "wager_eur": 0.0,
-        "win_eur": 0.0,
-        "ggr_eur": 0.0,
-        "rev_share_eur": 0.0,
-        "net_revenue_eur": 0.0
-      }
-    ],
-    "by_day": [
-      {
-        "date": "2026-06-01",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-02",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-03",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-04",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-05",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-06",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-07",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-08",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-09",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-10",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-11",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-12",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-13",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-14",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-15",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-16",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-17",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-18",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-19",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-20",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-21",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-22",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-23",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-24",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-25",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-26",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-27",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-28",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      },
-      {
-        "date": "2026-06-29",
-        "lnw": 0.0,
-        "octopus": 0.0,
-        "bgaming": 0.0,
-        "crowncoins": 0.0,
-        "tidal": 0.0,
-        "combined": 0.0
-      }
-    ],
-    "cumulative": [
-      {
-        "date": "2026-06-01",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-02",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-03",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-04",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-05",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-06",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-07",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-08",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-09",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-10",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-11",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-12",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-13",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-14",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-15",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-16",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-17",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-18",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-19",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-20",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-21",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-22",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-23",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-24",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-25",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-26",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-27",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-28",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      },
-      {
-        "date": "2026-06-29",
-        "lnw_cum": 0.0,
-        "tidal_cum": 0.0,
-        "combined_cum": 0.0
-      }
-    ],
+    "month": "2026-07",
+    "by_game": [],
+    "by_day": [],
+    "cumulative": [],
     "totals": {
       "lnw_rev_share_eur": 0,
       "octopus_rev_share_eur": 0,
       "bgaming_rev_share_eur": 0,
-      "crowncoins_net_revenue_eur": 0.0,
+      "crowncoins_net_revenue_eur": 0,
       "regulated_total_eur": 0,
-      "tidal_total_eur": 0.0,
-      "combined_total_eur": 0.0
+      "tidal_total_eur": 0,
+      "combined_total_eur": 0
     }
   },
   "godfather": null
